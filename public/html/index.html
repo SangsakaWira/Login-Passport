@@ -1,0 +1,431 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../assets/images/favicon.png">
+    <meta name="description" content="">
+    <title> Landing Pages </title>
+    <!-- Favicon -->
+    <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png">
+    <!-- Your stylesheet-->
+    <link rel="stylesheet" href="../assets/css/uikit.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <!--  javascript -->
+    <script src="../assets/js/simplebar.js"></script>
+    <script src="../assets/js/uikit.js"></script>
+</head>
+
+<body>
+    <!-- PreLoader -->
+    <div id="spinneroverlay">
+        <div class="spinner"></div>
+    </div>
+    <!-- Nav for  mobile  -->
+    <div class="tm-mobile-header uk-hidden@m">
+        <nav class="uk-navbar-container uk-navbar" uk-navbar="">
+            <div class="uk-navbar-left">
+                <!-- <a class="uk-hidden@m uk-logo" href="index.html" style="left: 0;">  Codedirect </a>  -->
+                <img src="../assets/images/LOGO.png" style="width: 140px;margin-top: -5px;">
+            </div>
+            <div class="uk-navbar-right">
+                <a class="uk-navbar-toggle" href="#tm-mobile" uk-toggle>
+                    <div class="uk-navbar-toggle-icon">
+                        <i class="far fa-bars icon-large uk-text-black"></i>
+                    </div>
+                </a>
+            </div>
+        </nav>
+        <!-- model mobile menu -->
+        <div id="tm-mobile" class="uk-modal-full uk-modal" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body uk-text-center uk-flex" uk-height-viewport>
+                <button class="uk-modal-close-full uk-close uk-icon" type="button" uk-close></button>
+                <div class="uk-margin-auto-vertical uk-width-1-1">
+                    <div class="uk-child-width-1-1" uk-grid>
+                        <div>
+                            <div class="uk-panel">
+                                <ul class="uk-nav uk-nav-primary uk-nav-center nav-white">
+                                    <li class="uk-active">
+                                        <a href="/home">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="/kursus">Kursus Tersedia</a>
+                                    </li>
+                                    <li>
+                                        <a href="/projects">Our Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="/pricing">Pricing</a>
+                                    </li>
+                                    <li>
+                                        <a href="../main/authentication.html">Login</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel widget-text" id="widget-text-1">
+                                <div class="textwidget">
+                                    <p class="uk-text-center"><a class="uk-button uk-button-success uk-button-large"
+                                            href="../main/Homepage.html"> Start now </a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar   -->
+    <div class="tm-header uk-visible@m tm-header-transparent uk-margin-top">
+        <div uk-sticky media="768" animation="uk-animation-slide-top" cls-active="uk-navbar-sticky uk-nav-dark"
+            sel-target=".uk-navbar-container"
+            top=".tm-header ~ [class*=&quot;uk-section&quot;], .tm-header ~ * > [class*=&quot;uk-section&quot;]"
+            cls-inactive="uk-navbar-transparent   uk-dark" class="uk-sticky uk-navbar-container">
+            <div class="uk-container  uk-position-relative">
+                <nav class="uk-navbar uk-navbar-transparent">
+                    <!-- logo -->
+                    <div class="uk-navbar-left">
+                        <!-- <a href="#" class="uk-logo"><i class="fas fa-graduation-cap"></i> CodeDirect Online</a> -->
+                        <img src="../assets/images/LOGO.png" style="width: 240px;margin-top: -10px;">
+                    </div>
+                    <!-- right navbar  -->
+                    <div class="uk-navbar-right">
+                        <ul class="uk-navbar-nav toolbar-nav">
+                            <li class="uk-active">
+                                <a href="/home">Home</a>
+                            </li>
+                            <li>
+                                <a href="/kursus">Kursus Tersedia</a>
+                            </li>
+                            <li>
+                                <a href="/projects">Our Projects</a>
+                            </li>
+                            <li>
+                                <a href="/pricing">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="../main/authentication.html">Login</a>
+                            </li>
+                        </ul>
+                        <!-- <a class="el-content uk-button uk-button-success uk-circle" href="../main/Homepage.html"> Free Trailer  </a> -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section-default" tm-header-transparent="dark" tm-header-transparent-placeholder="">
+        <div data-src="../assets/images/backgrounds/landing-background.jpg" uk-img
+            class="uk-background-norepeat uk-background-center-center uk-background-fixe uk-section uk-section-large uk-padding-remove-top uk-flex uk-flex-middle uk-background-cover"
+            uk-height-viewport="offset-top: true" style="box-sizing: border-box; min-height: calc(100vh - 0px);">
+            <div class="uk-width-1-1 uk-margin-xlarge-top">
+                <div class="uk-container">
+                    <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid="">
+                        <div class="uk-width-1-1@m uk-first-column uk-margin-large-top">
+                            <h2
+                                class="uk-margin-remove-vertical uk-text-white  uk-h1 uk-scrollspy-inview uk-animation-slide-top-small">
+                                Belajar Lebih Mudah dengan Codedirect Online </h2>
+                            <p
+                                class="uk-scrollspy-inview uk-light uk-animation-slide-top-small uk-text-medium uk-text-large  uk-text-light">
+                                Codedirect Online menawarkan kursus online lebih dari 40 jam per kursus dengan harga
+                                terjangkau. <br> Belajar dimana saja dan kapan saja, harga mulai dari 75rb/bulan dan
+                                dapatkan akses ke ratusan video berkualitas. </p>
+                            <!-- <a class="el-content uk-button uk-button-success uk-button-large  uk-circle" href="Homepage.html"> MULAI BELAJAR </a> -->
+                            <a class="el-content uk-button uk-button-success uk-circle" href="../main/Homepage.html">
+                                MULAI BELAJAR </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section uk-section-muted" style="background: #eef5fd;">
+        <h2 class="uk-h1 uk-text-center" uk-scrollspy="cls:uk-animation-fade"> Our Services </h2>
+        <p
+            class="uk-text-center uk-text-medium uk-margin uk-width-xlarge uk-margin-large-bottom uk-margin-auto uk-animation-slide-bottom-medium">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod tempor incididunt labore dolore aliqua.
+        </p>
+        <div class="uk-container uk-align-center" uk-scrollspy="cls:uk-animation-fade">
+            <div uk-grid>
+                <div class="uk-width-2-3@m uk-padding-large uk-padding-remove-bottom">
+                    <img src="../assets/images/demos/home-labtop.png" alt="">
+                </div>
+                <div class="uk-width-1-3@m uk-position-relative">
+                    <img src="../assets/images/demos/oncomputer-gray.png" class="uk-visible@m"
+                        style="position: absolute; width: 80%;left: -36%; bottom: 0;" alt="">
+                    <h2 uk-scrollspy="cls:uk-animation-slide-right-medium"> Online Course </h2>
+                    <p class="uk-text-bold" uk-scrollspy="cls:uk-animation-scale-up">Codedirect Online menyediakan video
+                        kursus secara online dan beberapa artikel yang berisi tutorial pemrograman.</p>
+                    <p class="uk-text-bold" uk-scrollspy="cls:uk-animation-scale-up"> Semua video dan artikel dapat
+                        diakses dimana saja.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section-default uk-section-large">
+        <div class="uk-container-small uk-padding-small uk-margin-auto">
+            <h2 class="uk-h1 uk-text-center" uk-scrollspy="cls:uk-animation-fade"> Our Team </h2>
+            <p
+                class="uk-text-center uk-text-medium uk-margin uk-width-xlarge uk-margin-large-bottom uk-margin-auto uk-animation-slide-bottom-medium">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod tempor incididunt labore dolore
+                aliqua. </p>
+            <div class="uk-grid-large uk-text-center"
+                uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div ; delay: 300;repeat:true" uk-grid>
+                <div class="uk-width-1-3@m">
+                    <img src="../assets/images/avatures/Leadership.jpg" class="uk-border-circle uk-box-shadow-large"
+                        alt="">
+                    <h3 class="uk-margin uk-margin-remove-adjacent uk-margin-remove-bottom">Nickolas Hill </h3>
+                    <div class="uk-text-meta">Founder CEO</div>
+                </div>
+                <div class="uk-width-1-3@m">
+                    <img src="../assets/images/avatures/Leadership.jpg" class="uk-border-circle uk-box-shadow-large"
+                        alt="">
+                    <h3 class="uk-margin uk-margin-remove-adjacent uk-margin-remove-bottom">Felix Hoffman </h3>
+                    <div class="uk-text-meta">PR Manager</div>
+                </div>
+                <div class="uk-width-1-3@m">
+                    <img src="../assets/images/avatures/Leadership.jpg" class="uk-border-circle uk-box-shadow-large"
+                        alt="">
+                    <h3 class="uk-margin uk-margin-remove-adjacent uk-margin-remove-bottom">Erika Johnston </h3>
+                    <div class="uk-text-meta">Developer</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section-default uk-section" style="    background:#4567AF">
+        <div class="uk-container">
+            <div class="uk-flex-middle" uk-grid>
+                <div class="uk-width-1-2@m">
+                    <h1 class="uk-text-bold uk-text-white"> Designed to help you retain knowledge more effectively </h1>
+                    <p class="uk-text-white uk-text-medium">
+                        Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore
+                    </p>
+                </div>
+                <div class="uk-width-1-2@m">
+                    <img src="../assets/images/demos/home-feature-4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="../assets/images/backgrounds/diver-1.png" style="position: absolute; margin-top: -66px;" alt="">
+    <div class="uk-section-grey uk-section">
+        <div class="uk-container">
+            <div class="uk-flex-middle" uk-grid>
+                <div class="uk-width-1-2@m">
+                    <h1 class="uk-text-bold uk-margin-small-bottom"> Experience the best </h1>
+                    <p class="uk-text-medium uk-text-white uk-margin-remove-top ">
+                        Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam</p>
+                    <a class="el-content uk-button uk-button-primary uk-button-large" href="index1dfd.html?page_id=25">
+                        MULAI BELAJAR </a>
+                </div>
+                <div class="uk-width-1-2@m uk-flex-first">
+                    <img src="../assets/images/demos/home-feature-5.png" alt="">
+                </div>
+            </div>
+            <div uk-grid class="uk-child-width-1-2@m uk-text-white">
+                <div>
+                    <div class="uk-grid-small" uk-grid>
+                        <div class="uk-width-1-5">
+                            <img src="../assets/images/demos/icons/TV Show_50px.png" class="img-small" alt="Image">
+                        </div>
+                        <div class="uk-width-3-4">
+                            <h3> Video Learning </h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut
+                                labore et dolore magna aliqua . Ut enim ad minim veniam </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-grid-small" uk-grid>
+                        <div class="uk-width-1-5">
+                            <img src="../assets/images/demos/icons/Book Shelf_50px.png" class="img-small" alt="Image">
+                        </div>
+                        <div class="uk-width-3-4">
+                            <h3> EBooks </h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-grid-small" uk-grid>
+                        <div class="uk-width-1-5">
+                            <img src="../assets/images/demos/icons/Code_50px.png" class="img-small" alt="Image">
+                        </div>
+                        <div class="uk-width-3-4">
+                            <h3> Source Code </h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-grid-small" uk-grid>
+                        <div class="uk-width-1-5">
+                            <img src="../assets/images/demos/icons/Discussion Forum_50px.png" class="img-small"
+                                alt="Image">
+                        </div>
+                        <div class="uk-width-3-4">
+                            <h3> Discussions </h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section-default uk-section">
+        <div class="uk-container-small uk-margin-auto uk-padding-small">
+            <h2 class="uk-text-center"> Start your Leaning today </h2>
+            <form class="uk-grid-small uk-flex uk-flex-bottom" uk-grid>
+                <div class="uk-width-1-3@s">
+                    <div class="uk-form-label uk-text-bold">Email </div>
+
+                    <input class="uk-input uk-form-large" type="text">
+                </div>
+                <div class="uk-width-1-3@s">
+                    <div class="uk-form-label uk-text-bold">Password </div>
+
+                    <input class="uk-input uk-form-large" type="password">
+                </div>
+                <div class="uk-width-1-3@s">
+                    <button class="uk-button uk-button-success uk-button-large"> Start free trailer </button>
+                </div>
+                <div class="uk-width-1-1@s">
+                    <label>
+                        <input class="uk-checkbox" type="checkbox">
+                        <span class="checkmark uk-text-small"> I agree to the </span>
+                        <a href="pages-terms.html" target="_blank" class="uk-text-bold uk-text-small uk-link-reset">
+                            Terms and Conditions </a>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="uk-section  uk-section-default">
+        <div class="uk-container uk-align-center uk-margin-remove-bottom uk-position-relative">
+            <div class="uk-margin-small" uk-grid>
+                <div class="uk-width-1-3@m uk-width-1-2@s uk-first-column">
+                    <a href="pages-about.html" class="uk-link-heading uk-text-lead uk-text-bold"> <i
+                            class="fas fa-graduation-cap"></i> CoursePlus </a>
+                    <div class="uk-width-xlarge tm-footer-description">A unique and beautiful collection of UI elements
+                        that are all flexible and modular. building the website of your dreams.</div>
+                </div>
+                <div class="uk-width-expand@m uk-width-1-2@s">
+                    <ul class="uk-list  tm-footer-list">
+                        <li>
+                            <a href="#"> Browse Our Library </a>
+                        </li>
+                        <li>
+                            <a href="#"> Tutorials/Articles </a>
+                        </li>
+                        <li>
+                            <a href="#"> Scripts and Themes</a>
+                        </li>
+                        <li>
+                            <a href="#"> Ebooks</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="uk-width-expand@m uk-width-1-2@s">
+                    <ul class="uk-list tm-footer-list">
+                        <li>
+                            <a href="#"> About us </a>
+                        </li>
+                        <li>
+                            <a href="#"> Contact Us </a>
+                        </li>
+                        <li>
+                            <a href="#"> Privacy </a>
+                        </li>
+                        <li>
+                            <a href="#"> Policy </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="uk-width-expand@m uk-width-1-2@s">
+                    <ul class="uk-list  tm-footer-list">
+                        <li>
+                            <a href="#">Web Design </a>
+                        </li>
+                        <li>
+                            <a href="#">Web Development </a>
+                        </li>
+                        <li>
+                            <a href="#"> iOS Development </a>
+                        </li>
+                        <li>
+                            <a href="#"> PHP Development </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="uk-postion-absoult uk-margin-remove uk-position-bottom-right" style="bottom: 8px;right: 60px;"
+                uk-tooltip="title: Visit Our Site; pos: top-center"> Powered By <a href="#"
+                    class="uk-text-bold uk-link-reset"> CoursePlus </a></p>
+            <div class="uk-margin-small" uk-grid>
+                <div class="uk-width-1-2@m uk-width-1-2@s uk-first-column">
+                    <p class="uk-text-small"><i class="far fa-copyright"></i> 2019 <span
+                            class="uk-text-bold">CoursePlus</span> . All rights reserved.</p>
+                </div>
+                <div class="uk-width-1-3@m uk-width-1-2@s">
+                    <a href="#" class="uk-icon-button uk-link-reset"
+                        uk-tooltip="title: Our Youtube Chanal; pos: top-center"><i class="fab fa-youtube"
+                            style=" color: #fb7575  !important;"></i></a>
+                    <a href="#" class="uk-icon-button uk-link-reset"
+                        uk-tooltip="title: Our Facebook; pos: top-center"><i class="fab fa-Facebook"
+                            style=" color: #9160ec  !important;"></i></a>
+                    <a href="#" class="uk-icon-button uk-link-reset"
+                        uk-tooltip="title: Our Instagram; pos: top-center"><i class="fab fa-Instagram"
+                            style=" color: #dc2d2d  !important;"></i></a>
+                    <a href="#" class="uk-icon-button uk-link-reset"
+                        uk-tooltip="title: Our linkedin; pos: top-center"><i class="fab fa-linkedin "
+                            style=" color: #6949a5  !important;"></i></a>
+                    <a href="#" class="uk-icon-button uk-link-reset"
+                        uk-tooltip="title: Our google-plus; pos: top-center"><i class="fab fa-google-plus"
+                            style=" color: #f77070 !important;"></i></a>
+                    <a href="#" class="uk-icon-button uk-link-reset" uk-tooltip="title: Our Twitter; pos: top-center"><i
+                            class="fab fa-twitter" style=" color: #6f23ff !important;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- button scrollTop -->
+    <button id="scrollTop" class="uk-animation-slide-bottom-medium">
+        <a href="#" class="uk-text-white" uk-totop uk-scroll></a>
+    </button>
+    <script>
+        // Preloader
+        var spinneroverlay = document.getElementById("spinneroverlay");
+        window.addEventListener('load', function () {
+            spinneroverlay.style.display = 'none';
+        });
+        //scrollTop
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollTop").style.display = "block";
+            } else {
+                document.getElementById("scrollTop").style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>

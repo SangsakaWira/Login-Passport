@@ -1,0 +1,386 @@
+<html lang="en"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="shortcut icon" href="../assets/images/favicon.png"> 
+        <meta name="description" content=""> 
+        <title> Lesson </title>         
+        <!-- Favicon -->         
+        <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png"> 
+        <!-- Your stylesheet-->         
+        <link rel="stylesheet" href="../assets/css/uikit.css"> 
+        <link rel="stylesheet" href="../assets/css/main.css"> 
+        <link rel="stylesheet" href="../assets/css/admin.css"> 
+        <!-- font awesome -->         
+        <link rel="stylesheet" href="../assets/css/fontawesome.css"> 
+        <!--  javascript -->         
+        <script src="../assets/js/simplebar.js"></script>         
+        <script src="../assets/js/uikit.js"></script>         
+        <!-- for uploads -->         
+        <link rel="stylesheet" href="../assets/css/dropzone.css"> 
+        <script src="../assets/js/dropzone.min.js"></script>         
+    </head>     
+    <body> 
+        <!-- sidebar -->         
+        <div class="admin-side" id="admin-side"> 
+            <a href="#" class="admin-logo"><i class="fas fa-graduation-cap"></i> CoursePlus</a> 
+            <ul data-simplebar> 
+                <li> 
+                    <a href="admin.html"> <i class="fas fa-user"></i> Dashboard  </a>
+                </li>                 
+                <li> 
+                    <a href="admin-books.html"> <i class="fas fa-book-open"></i> Books    </a>
+                </li>                 
+                <li> 
+                    <a href="admin-users.html"> <i class="fas fa-user"></i> Users  </a>
+                </li>                 
+                <li> 
+                    <a href="admin-scripts.html"> <i class="fas fa-code"></i> Scripts    </a>
+                </li>                 
+                <li> 
+                    <a href="admin-courses.html"> <i class="fas fa-play"></i> Courses    </a>
+                </li>                 
+                <li> 
+                    <a href="admin-edite-profile.html"> <i class="fas fa-user"></i> edit profile    </a>
+                </li>                 
+                <ul class="uk-accordion" uk-accordion> 
+                    <li class="uk-open"> 
+                        <a href="ui-components.html" class="uk-accordion-title"> <i class="fas fa-layer-group"></i> sample link </a> 
+                        <div class="uk-accordion-content uk-margin-remove-top" aria-hidden="false"> 
+                            <a href="ui-elements.html">sample link 1</a> 
+                            <a href="ui-elements.html">sample link 2</a> 
+                            <a href="ui-elements.html">sample link 3</a> 
+                        </div>                         
+                    </li>                     
+                    <li class=" uk-margin-remove-top"> 
+                        <a href="ui-components.html" class="uk-accordion-title"> <i class="fas fa-layer-group"></i> sample link  </a> 
+                        <div class="uk-accordion-content uk-margin-remove-top" hidden="" aria-hidden="true"> 
+                            <a href="ui-components.html"> sample link  </a> 
+                        </div>                         
+                    </li>                     
+                </ul>                 
+                <li> 
+                    <a href="admin-login.html"> <i class="fas fa-user"></i> Logut </a>
+                </li>                 
+            </ul>             
+        </div>         
+        <!-- mobile  header -->         
+        <div class="admin-mobile-headder uk-hidden@m"> 
+            <span uk-toggle="target: #admin-side; cls: admin-side-active" class="uk-padding-small uk-text-white uk-float-right"><i class="fas fa-bars"></i></span> 
+            <a class="uk-logo" href="index.html"> <i class="fas fa-graduation-cap"> </i> CoursePlus </a> 
+        </div>         
+        <!-- main contant -->         
+        <div class="admin-content"> 
+            <!-- navbar -->             
+            <nav class="uk-navbar"> 
+                <div class="uk-navbar-left"> 
+                    <ul class="uk-navbar-nav"> 
+                        <li class="uk-active"> 
+                            <a href="admin.html">Dashboard</a> 
+                        </li>                         
+                        <li> 
+                            <a href="admin-users.html"> Users</a> 
+                        </li>                         
+                    </ul>                     
+                </div>                 
+                <!-- right navbar  -->                 
+                <div class="uk-navbar-right"> 
+                    <!-- User profile -->                     
+                    <a href="#"> 
+                        <img src="../assets/images/avatures/avature-2.png" alt="" class="uk-border-circle user-profile-tiny"> 
+                    </a>                     
+                    <div uk-dropdown="pos: top-right ;mode : click ;animation: uk-animation-slide-bottom-small" class="uk-dropdown uk-padding-small angle-top-right uk-dropdown-bottom-right" > 
+                        <p class="uk-margin-remove-bottom uk-margin-small-top uk-text-bold"> Hamse Mohamoud  </p>                                          
+                        <ul class="uk-nav uk-dropdown-nav"> 
+                            <li> 
+                                <a href="Profile.html"> <i class="fas fa-user uk-margin-small-right"></i> Profile</a> 
+                            </li>                                             
+                            <li> 
+                               <a href="admin-edite-profile.html"> <i class="fas fa-cog uk-margin-small-right"></i> Setting</a>                                 </li>                                             
+                            <li class="uk-nav-divider"></li>                                             
+                            <li> 
+                                <a href="admin-login.html"> <i class="fas fa-sign-out-alt uk-margin-small-right"></i> Log out</a> 
+                            </li>                                             
+                        </ul>                                         
+                    </div>                     
+                </div>                 
+            </nav>             
+            <div class="admin-content-inner"> 
+                <div class="uk-flex-inline uk-flex-middle"> 
+                    <i class="fas fa-user icon-large uk-margin-right"></i> 
+                    <h4 class="uk-margin-remove"> Users </h4> 
+                    <button class="uk-button uk-button-success uk-margin-medium-left admin-btn" href="#create-model" uk-tooltip="title: Create New User ; delay: 500 ; pos: top ;animation:	uk-animation-scale-up" uk-toggle> 
+                        <i class="fas fa-user-plus"></i> add new 
+                    </button>                     
+                    <!-- model -->                     
+                    <div id="create-model" uk-modal> 
+                        <div class="uk-modal-dialog"> 
+                            <button class="uk-modal-close-default uk-padding-small" type="button" uk-close></button>                             
+                            <div class="uk-modal-header"> 
+                                <h4> Create New User   </h4> 
+                            </div>                             
+                            <div class="uk-modal-body"> 
+                                <div uk-grid> 
+                                    <div class="uk-width-1-3@m"> 
+                                        <form action="/file-upload" class="dropzone  id=" y-awesome-dropzone""> 
+                                            <div class="fallback"> 
+                                                <input name="file" type="file" multiple/> 
+                                            </div>                                             
+                                        </form>                                         
+                                        <div class="uk-margin"> 
+                                            <span class="uk-text-middle uk-text-small"> Recomended 50 x 50</span> 
+                                            <div uk-form-custom="" class="uk-form-custom"> 
+                                                <input type="file"> 
+                                                <span class="uk-link">upload</span> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="uk-width-2-3@m"> 
+                                        <form> 
+                                            <div class="uk-margin"> 
+                                                <label> Name </label>                                                 
+                                                <input class="uk-input uk-form-width-large" placeholder="Name" type="text"> 
+                                            </div>                                             
+                                            <div class="uk-margin"> 
+                                                <label> Username </label>                                                 
+                                                <input class="uk-input uk-form-width-large" placeholder="Username" type="text"> 
+                                            </div>                                             
+                                            <div class="uk-margin"> 
+                                                <label> Email </label>                                                 
+                                                <input class="uk-input uk-form-width-large" placeholder="name@example.com" type="text"> 
+                                            </div>                                             
+                                            <div class="uk-margin"> 
+                                                <label> Password </label>                                                 
+                                                <input class="uk-input uk-form-width-large" placeholder="password" type="password"> 
+                                            </div>                                             
+                                            <div class="uk-margin"> 
+                                                <label> Level</label>                                                 
+                                                <select class="uk-select"> 
+                                                    <option> Begginers </option>                                                     
+                                                    <option> Intermediate </option>                                                     
+                                                    <option> Advance </option>                                                     
+                                                </select>                                                 
+                                            </div>                                             
+                                        </form>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                            <div class="uk-modal-footer uk-text-right"> 
+                                <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>                                 
+                                <button class="uk-button uk-button-primary" type="button">Save</button>                                 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </div>                 
+                <div class="uk-background-default uk-margin-top uk-padding"> 
+                    <div uk-grid> 
+                        <div class="uk-width-expand@m"> 
+                            <form class=" uk-flex-inline uk-flex-middle uk-text-small"> 
+                                <p class="uk-margin-remove-bottom uk-margin-right"> Show entries :  </p> 
+                                <select class="uk-select uk-width-small" id="form-horizontal-select"> 
+                                    <option>10 page </option>                                     
+                                    <option>20 page </option>                                     
+                                    <option>30 page </option>                                     
+                                    <option>50 page </option>                                     
+                                </select>                                 
+                            </form>                             
+                        </div>                         
+                        <div class="uk-width-auto@m uk-text-small"> 
+                            <form> 
+                                <input class="uk-input uk-form-width-medium" type="text" placeholder="Search user"> 
+                                <button class="uk-button uk-button-grey admin-btn">Search</button>                                 
+                            </form>                             
+                        </div>                         
+                    </div>                     
+                </div>                 
+                <div class="uk-overflow-auto"> 
+                    <table class="uk-table uk-table-hover uk-table-middle uk-table-divider"> 
+                        <thead> 
+                            <tr class="uk-text-small uk-text-bold"> 
+                                <th></th> 
+                                <th>Avature</th> 
+                                <th>Name</th> 
+                                <th>Email</th> 
+                                <th>Created</th> 
+                                <th>Membership</th> 
+                                <th>Role</th> 
+                                <th>Expand + Link</th> 
+                            </tr>                             
+                        </thead>                         
+                        <tbody> 
+                            <tr> 
+                                <td>
+                                    <input class="uk-checkbox" type="checkbox">
+                                </td>                                 
+                                <td>
+                                    <img class="uk-preserve-width uk-border-circle user-profile-small" src="../assets/images/avatures/avature-1.png" width="50" alt="">
+                                </td>                                 
+                                <td> username  </td> 
+                                <td> Username @gmail.com </td> 
+                                <td> 12/12/2020 </td> 
+                                <td>Paid</td> 
+                                <td>Administrater</td> 
+                                <td class="uk-flex-inline uk-flex-middle"> 
+                                    <button class="uk-button uk-button-success admin-table-btn"> 
+                                        <i class="fas fa-eye uk-visible@m"></i> View 
+                                    </button>                                     
+                                    <button class="uk-button uk-button-danger admin-table-btn"> 
+                                        <i class="fas fa-trash uk-visible@m"></i> Edit 
+                                    </button>                                     
+                                    <button class="uk-button uk-button-danger admin-table-btn"> 
+                                        <i class="fas fa-trash uk-visible@m"></i> Delelt 
+                                    </button>                                     
+                                </td>                                 
+                            </tr>                             
+                            <tr> 
+                                <td>
+                                    <input class="uk-checkbox" type="checkbox">
+                                </td>                                 
+                                <td>
+                                    <img class="uk-preserve-width uk-border-circle user-profile-small" src="../assets/images/avatures/avature-4.png" width="50" alt="">
+                                </td>                                 
+                                <td> username  </td> 
+                                <td> Username @gmail.com </td> 
+                                <td> 12/12/2020 </td> 
+                                <td> Free  </td> 
+                                <td>Registered</td> 
+                                <td class="uk-flex-inline uk-flex-middle"> 
+                                    <button class="uk-button uk-button-success admin-table-btn"> 
+                                        <i class="fas fa-eye uk-visible@m"></i> View 
+                                    </button>                                     
+                                    <button class="uk-button uk-button-danger admin-table-btn"> 
+                                        <i class="fas fa-trash uk-visible@m"></i> Edit 
+                                    </button>                                     
+                                    <button class="uk-button uk-button-danger admin-table-btn"> 
+                                        <i class="fas fa-trash uk-visible@m"></i> Delelt 
+                                    </button>                                     
+                                </td>                                 
+                            </tr>                             
+                            <tr> 
+                                <td>
+                                    <input class="uk-checkbox" type="checkbox">
+                                </td>                                 
+                                <td>
+                                    <img class="uk-preserve-width uk-border-circle user-profile-small" src="../assets/images/avatures/avature-2.png" width="50" alt="">
+                                </td>                                 
+                                <td> username  </td> 
+                                <td> Username @gmail.com </td> 
+                                <td> 12/12/2020 </td> 
+                                <td> Paid  </td> 
+                                <td> moderator </td> 
+                                <td class="uk-flex-inline uk-flex-middle"> 
+                                    <button class="uk-button uk-button-success admin-table-btn"> 
+                                        <i class="fas fa-eye uk-visible@m"></i> View 
+                                    </button>                                     
+                                    <button class="uk-button uk-button-danger admin-table-btn"> 
+                                        <i class="fas fa-trash uk-visible@m"></i> Edit 
+                                    </button>                                     
+                                    <button class="uk-button uk-button-danger admin-table-btn"> 
+                                        <i class="fas fa-trash uk-visible@m"></i> Delelt 
+                                    </button>                                     
+                                </td>                                 
+                            </tr>                             
+                            <tr> 
+                                <td>
+                                    <input class="uk-checkbox" type="checkbox">
+                                </td>                                 
+                                <td>
+                                    <img class="uk-preserve-width uk-border-circle user-profile-small" src="../assets/images/avatures/avature-3.png" width="50" alt="">
+                                </td>                                 
+                                <td> username  </td> 
+                                <td> Username @gmail.com </td> 
+                                <td> 12/12/2020 </td> 
+                                <td> Free  </td> 
+                                <td> Registered </td> 
+                                <td class="uk-flex-inline uk-flex-middle"> 
+                                    <button class="uk-button uk-button-success admin-table-btn"> 
+                                        <i class="fas fa-eye uk-visible@m"></i> View 
+                                    </button>                                     
+                                    <button class="uk-button uk-button-danger admin-table-btn"> 
+                                        <i class="fas fa-trash uk-visible@m"></i> Edit 
+                                    </button>                                     
+                                    <button class="uk-button uk-button-danger admin-table-btn"> 
+                                        <i class="fas fa-trash uk-visible@m"></i> Delelt 
+                                    </button>                                     
+                                </td>                                 
+                            </tr>                             
+                            <tr> 
+                                <td>
+                                    <input class="uk-checkbox" type="checkbox">
+                                </td>                                 
+                                <td>
+                                    <img class="uk-preserve-width uk-border-circle user-profile-small" src="../assets/images/avatures/avature-4.png" width="50" alt="">
+                                </td>                                 
+                                <td> username  </td> 
+                                <td> Username @gmail.com </td> 
+                                <td> 12/12/2020 </td> 
+                                <td> Paid  </td> 
+                                <td>editor</td> 
+                                <td class="uk-flex-inline uk-flex-middle"> 
+                                    <button class="uk-button uk-button-success admin-table-btn"> 
+                                        <i class="fas fa-eye uk-visible@m"></i> View 
+                                    </button>                                     
+                                    <button class="uk-button uk-button-danger admin-table-btn"> 
+                                        <i class="fas fa-trash uk-visible@m"></i> Edit 
+                                    </button>                                     
+                                    <button class="uk-button uk-button-danger admin-table-btn"> 
+                                        <i class="fas fa-trash uk-visible@m"></i> Delelt 
+                                    </button>                                     
+                                </td>                                 
+                            </tr>                             
+                            <tr> 
+                                <td>
+                                    <input class="uk-checkbox" type="checkbox">
+                                </td>                                 
+                                <td>
+                                    <img class="uk-preserve-width uk-border-circle user-profile-small" src="../assets/images/avatures/avature-5.png" width="50" alt="">
+                                </td>                                 
+                                <td> username  </td> 
+                                <td> Username @gmail.com </td> 
+                                <td> 12/12/2020 </td> 
+                                <td> Free  </td> 
+                                <td>Registered</td> 
+                                <td class="uk-flex-inline uk-flex-middle"> 
+                                    <button class="uk-button uk-button-success admin-table-btn"> 
+                                        <i class="fas fa-eye uk-visible@m"></i> View 
+                                    </button>                                     
+                                    <button class="uk-button uk-button-danger admin-table-btn"> 
+                                        <i class="fas fa-trash uk-visible@m"></i> Edit 
+                                    </button>                                     
+                                    <button class="uk-button uk-button-danger admin-table-btn"> 
+                                        <i class="fas fa-trash uk-visible@m"></i> Delelt 
+                                    </button>                                     
+                                </td>                                 
+                            </tr>                             
+                        </tbody>                         
+                    </table>                     
+                </div>                 
+                <div class="uk-padding uk-background-default"> 
+                    <ul class="uk-pagination uk-flex-center uk-margin-medium"> 
+                        <li class="uk-active"> 
+                            <span>1</span> 
+                        </li>                         
+                        <li> 
+                            <a href="#">2</a> 
+                        </li>                         
+                        <li> 
+                            <a href="#">3</a> 
+                        </li>                         
+                        <li> 
+                            <a href="#">4</a> 
+                        </li>                         
+                        <li> 
+                            <a href="#">5</a> 
+                        </li>                         
+                        <li> 
+                            <a href="#"><i class="fas fa-ellipsis-h uk-margin-small-top"></i></a> 
+                        </li>                         
+                        <li> 
+                            <a href="#">12</a> 
+                        </li>                         
+                    </ul>                     
+                    <p> you are showing 1 to 12 entries</p> 
+                </div>                 
+            </div>             
+        </div>         
+    </body>

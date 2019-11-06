@@ -1,0 +1,1536 @@
+<html lang="en"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="../assets/images/favicon.png">
+        <meta name="description" content="">
+        <title> Ui Components </title>         
+        <!-- Favicon -->
+        <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png">
+        <!-- Your stylesheet-->
+        <link rel="stylesheet" href="../assets/css/uikit.css"> 
+        <link rel="stylesheet" href="../assets/css/main.css"> 
+       
+         <!-- font awesome -->                  
+        <link rel="stylesheet" href="../assets/css/fontawesome.css">
+        
+        <!--  javascript -->
+        <script src="../assets/js/simplebar.js"></script>         
+        <script src="../assets/js/uikit.js"></script>  
+    </head> 
+    <body> 
+        <!-- PreLoader -->         
+        <div id="spinneroverlay"> 
+            <div class="spinner"></div>             
+        </div>   
+        
+       <!-- header  -->
+        <header class="tm-header" uk-sticky>
+            <div class=" uk-background-grey uk-navbar-container uk-navbar-transparent uk-padding-small uk-navbar-sticky">
+                <div class="uk-position-relative">
+                    <nav class="uk-navbar-transparent tm-mobile-header uk-animation-slide-top uk-position-z-index" uk-navbar>
+                        <!-- logo -->
+                        <!-- mobile icon for side nav on nav-mobile-->                         
+                        <span class="uk-hidden@m tm-mobile-menu-icon" uk-toggle="target: #mobile-sidebar"><i class="fas fa-bars icon-large"></i></span> 
+                        <!-- mobile icon for user icon on nav-mobile -->                         
+                        <span class="uk-hidden@m tm-mobile-user-icon uk-align-right" uk-toggle="target: #tm-show-on-mobile; cls: tm-show-on-mobile-active"><i class="fas fa-user icon-large"></i></span> 
+                        <!-- mobile logo -->                         
+                        <a class="uk-hidden@m uk-logo" href="Homepage.html"> CoursePlus</a> 
+                        <div class="uk-navbar-left uk-visible@m">
+                            <a href="Homepage.html" class="uk-logo uk-margin-left"> <i class="fas fa-graduation-cap"> </i> CoursePlace</a> 
+                        </div>                         
+                        <div class="uk-navbar-right tm-show-on-mobile uk-flex-right" id="tm-show-on-mobile"> 
+                            <!-- this will clouse after display user icon -->                             
+                            <span class="uk-hidden@m tm-mobile-user-close-icon uk-align-right" uk-toggle="target: #tm-show-on-mobile; cls: tm-show-on-mobile-active"><i class="fas fa-times icon-large"></i></span> 
+                            <ul class="uk-navbar-nav uk-flex-middle"> 
+                                <li> 
+                                    <a href="#modal-full" uk-toggle><i class="fas fa-search icon-medium"></i></a> 
+                                </li>                                 
+                                <li> 
+                                    <!-- your courses -->                                     
+                                    <a href="#"> <i class="fas fa-play uk-hidden@m"></i> <span class="uk-visible@m"> Your Courses</span> </a> 
+                                    <div uk-dropdown="pos: top-right ;mode : click; animation: uk-animation-slide-bottom-medium" class="uk-dropdown border-radius-6  uk-dropdown-top-right tm-dropdown-large uk-padding-remove"> 
+                                        <div class="uk-clearfix"> 
+                                            <div class="uk-float-left"> 
+                                                <h5 class="uk-padding-small uk-margin-remove uk-text-bold  uk-text-left">  Your Courses </h5> 
+                                            </div>                                             
+                                            <div class="uk-float-right"> 
+                                                <i class="fas fa-check uk-align-right  uk-margin-remove uk-margin-remove-left  uk-padding-small uk-text-small"> Completed 3 / 5 </i> 
+                                            </div>                                             
+                                        </div>                                         
+                                        <hr class=" uk-margin-remove"> 
+                                        <div class="uk-padding-smaluk-text-left uk-height-medium"> 
+                                            <div class="demo1" data-simplebar> 
+                                                <div class="uk-child-width-1-2@s  uk-grid-small uk-padding-small" uk-scrollspy="target: > div; cls:uk-animation-slide-bottom-small; delay: 100 ;repeat: true" uk-grid> 
+                                                    <div> 
+                                                        <a href="course-view.html" class="uk-link-reset"> 
+                                                            <div class="uk-padding-small uk-card-default"> 
+                                                                <progress id="js-progressbar" class="uk-progress progress-green uk-margin-small-bottom" value="100" max="100" style="height: 7px;"></progress>                                                                 
+                                                                <img src="../assets/images/courses/tags/css3.JPG" class="uk-align-left  uk-margin-small-right uk-margin-small-bottom  uk-width-1-3  uk-visible@s" alt=""> 
+                                                                <p class="uk-text-bold uk-margin-remove">CSS3 Introduciton </p> 
+                                                                <p class="uk-text-small uk-margin-remove"> by : Hamse mohamoud </p> 
+                                                                <div class="uk-margin-small"> 
+                                                                    <a class="Course-tags uk-margin-small-right   border-radius-6" href="#"> <i class="far fa-play"></i> Course resume</a> 
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                        </a>                                                         
+                                                    </div>                                                     
+                                                    <div> 
+                                                        <a href="course-view.html" class="uk-link-reset"> 
+                                                            <div class="uk-padding-small uk-card-default"> 
+                                                                <progress id="js-progressbar" class="uk-progress progress-coral  uk-margin-small-bottom" value="15" max="100" style="height: 7px !important;"></progress>                                                                 
+                                                                <img src="../assets/images/courses/tags/html5.jpg" class="uk-align-left  uk-margin-small-right uk-margin-small-bottom  uk-width-1-3  uk-visible@s" alt=""> 
+                                                                <p class="uk-text-bold uk-margin-remove">HTML5 Introduciton </p> 
+                                                                <p class="uk-text-small uk-margin-remove"> by : Hamse mohamoud </p> 
+                                                                <div class="uk-margin-small"> 
+                                                                    <a class="Course-tags uk-margin-small-right   border-radius-6" href="#"> <i class="far fa-play"></i> Course resume</a> 
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                        </a>                                                         
+                                                    </div>                                                     
+                                                    <div> 
+                                                        <a href="course-view.html" class="uk-link-reset"> 
+                                                            <div class="uk-padding-small uk-card-default"> 
+                                                                <progress id="js-progressbar" class="uk-progress uk-margin-small-bottom" value="50" max="100" style="height: 7px;"></progress>                                                                 
+                                                                <img src="../assets/images/courses/course-4.jpg" class="uk-align-left  uk-margin-small-right uk-margin-small-bottom  uk-width-1-3" alt=""> 
+                                                                <p class="uk-text-bold uk-margin-remove">Html Introduciton </p> 
+                                                                <p class="uk-text-small uk-margin-remove"> by : Hamse mohamoud </p> 
+                                                            </div>                                                             
+                                                        </a>                                                         
+                                                    </div>                                                     
+                                                    <div> 
+                                                        <a href="course-view.html" class="uk-link-reset"> 
+                                                            <div class="uk-padding-small uk-card-default"> 
+                                                                <progress id="js-progressbar" class="uk-progress progress-green uk-margin-small-bottom" value="100" max="100" style="height: 7px;"></progress>                                                                 
+                                                                <img src="../assets/images/courses/course-5.jpg" class="uk-align-left  uk-margin-small-right uk-margin-small-bottom  uk-width-1-3" alt=""> 
+                                                                <p class="uk-text-bold uk-margin-remove">Web Introduciton </p> 
+                                                                <p class="uk-text-small uk-margin-remove"> by : Hamse mohamoud </p> 
+                                                            </div>                                                             
+                                                        </a>                                                         
+                                                    </div>                                                     
+                                                    <div> 
+                                                        <a href="course-view.html" class="uk-link-reset"> 
+                                                            <div class="uk-padding-small uk-card-default uk-position-relative"> 
+                                                                <progress id="js-progressbar" class="uk-progress  uk-margin-small-bottom" value="30" max="100" style=" height: 7px;"></progress>                                                                 
+                                                                <img src="../assets/images/courses/course-10.jpg" alt=""> 
+                                                                <div class="uk-position-absolute uk-position-medium uk-position-bottom-left uk-text-white"> 
+                                                                    <p class="uk-text-bold uk-margin-remove">CSS3 Introduciton </p> 
+                                                                    <p class="uk-text-small uk-margin-remove"> by : Hamse mohamoud </p> 
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                        </a>                                                         
+                                                    </div>                                                     
+                                                    <div> 
+                                                        <a href="course-view.html" class="uk-link-reset"> 
+                                                            <div class="uk-padding-small uk-card-default uk-position-relative"> 
+                                                                <progress id="js-progressbar" class="uk-progress  uk-margin-small-bottom" value="70" max="100" style="height: 7px;"></progress>                                                                 
+                                                                <img src="../assets/images/courses/course-7.png" alt=""> 
+                                                                <div class="uk-position-absolute uk-position-medium uk-position-bottom-left uk-text-white"> 
+                                                                    <p class="uk-text-bold uk-margin-remove">Bootstrap Introduciton </p> 
+                                                                    <p class="uk-text-small uk-margin-remove"> by : Hamse mohamoud </p> 
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                        </a>                                                         
+                                                    </div>                                                     
+                                                    <div> 
+                                                        <a href="course-view.html" class="uk-link-reset"> 
+                                                            <div class="uk-padding-small uk-card-default"> 
+                                                                <progress id="js-progressbar" class="uk-progress progress-green uk-margin-small-bottom" value="100" max="100" style="height: 7px;"></progress>                                                                 
+                                                                <img src="../assets/images/courses/course-8.jpg" alt=""> 
+                                                                <div class=""> 
+                                                                    <p class="uk-text-bold uk-margin-small-top uk-margin-remove-bottom">Python Introduciton </p> 
+                                                                    <p class="uk-text-small uk-margin-remove"> by : Hamse mohamoud </p> 
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                        </a>                                                         
+                                                    </div>                                                     
+                                                    <div> 
+                                                        <a href="course-view.html" class="uk-link-reset"> 
+                                                            <div class="uk-padding-small uk-card-default"> 
+                                                                <progress id="js-progressbar" class="uk-progress  uk-margin-small-bottom" value="80" max="100" style="height: 7px;"></progress>                                                                 
+                                                                <img src="../assets/images/courses/course-9.jpg" alt=""> 
+                                                                <div class=""> 
+                                                                    <p class="uk-text-bold uk-margin-small-top uk-margin-remove-bottom"> JavaScript Introduciton </p> 
+                                                                    <p class="uk-text-small uk-margin-remove"> by : Hamse mohamoud </p> 
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                        </a>                                                         
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </div>                                             
+                                        </div>                                         
+                                        <hr class=" uk-margin-remove"> 
+                                        <h5 class="uk-padding-small uk-margin-remove uk-text-bold uk-text-center"><a class="uk-link-heading" href="#"> See all </a> </h5> 
+                                    </div>                                     
+                                </li>                                 
+                                <li> 
+                                    <!-- messages -->                                     
+                                    <a href="#"><i class="fas fa-envelope icon-medium"></i></a> 
+                                    <div uk-dropdown="pos: top-right ;mode : click; animation: uk-animation-slide-bottom-small" class="uk-dropdown uk-dropdown-top-right  tm-dropdown-medium border-radius-6 uk-padding-remove uk-box-shadow-large angle-top-right"> 
+                                        <h5 class="uk-padding-small uk-margin-remove uk-text-bold  uk-text-left"> Messages </h5> 
+                                        <a href="#" class="uk-position-top-right uk-link-reset"> <i class="fas fa-trash uk-align-right uk-text-small uk-padding-small"> Clear all</i> </a> 
+                                        <hr class=" uk-margin-remove"> 
+                                        <div class="uk-text-left uk-height-medium"> 
+                                            <div uk-scrollspy="target: > div; cls:uk-animation-slide-bottom-small; delay: 100" data-simplebar> 
+                                                <hr class="uk-margin-remove uk-animation-slide-top-small"> 
+                                                <div class=" uk-padding-small  uk-background-light uk-inline-clip uk-transition-toggle" tabindex="0"> 
+                                                    <div class="uk-transition-slide-right-small uk-position-top-right uk-position-z-index"> 
+                                                        <a class="uk-button uk-padding-small-right uk-padding-remove-left" href="#">    Delete </a> 
+                                                    </div>                                                     
+                                                    <div class="uk-transition-slide-right-medium uk-position-top-right uk-margin-medium-right"> 
+                                                        <a class="uk-button uk-margin-small-right" href="#">    Replay </a> 
+                                                    </div>                                                     
+                                                    <div class="uk-flex-middle uk-grid-small uk-grid" uk-grid=""> 
+                                                        <div class="uk-width-3-4"> 
+                                                            <p class="uk-margin-remove-bottom uk-text-bold">John keni  </p> 
+                                                            <p class="uk-margin-remove">Lorem ipsum dolor sit ame ..</p> 
+                                                            <p class="uk-margin-remove-top uk-text-small uk-text-muted">25 min</p> 
+                                                        </div>                                                         
+                                                        <div class="uk-width-1-4 uk-flex-first uk-first-column"> 
+                                                            <img src="../assets/images/avatures/avature-3.png" alt="Image" class="uk-border-circle uk-animation-slide-left-small"> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                </div>                                                 
+                                                <hr class=" uk-margin-remove"> 
+                                                <div class=" uk-padding-small  uk-background-light uk-inline-clip uk-transition-toggle" tabindex="0"> 
+                                                    <div class="uk-transition-slide-right-small uk-position-top-right uk-position-z-index"> 
+                                                        <a class="uk-button uk-padding-small-right uk-padding-remove-left" href="#">    Delete </a> 
+                                                    </div>                                                     
+                                                    <div class="uk-transition-slide-right-medium uk-position-top-right uk-margin-medium-right"> 
+                                                        <a class="uk-button uk-margin-small-right" href="#">    Replay </a> 
+                                                    </div>                                                     
+                                                    <div class="uk-flex-middle uk-grid-small uk-grid" uk-grid=""> 
+                                                        <div class="uk-width-3-4"> 
+                                                            <p class="uk-margin-remove-bottom uk-text-bold">John keni  </p> 
+                                                            <p class="uk-margin-remove">Lorem ipsum dolor sit ame ..</p> 
+                                                            <p class="uk-margin-remove-top uk-text-small uk-text-muted">25 min</p> 
+                                                        </div>                                                         
+                                                        <div class="uk-width-1-4 uk-flex-first uk-first-column"> 
+                                                            <img src="../assets/images/avatures/avature.jpg" alt="Image" class="uk-border-circle uk-animation-slide-left-small"> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                </div>                                                 
+                                                <hr class=" uk-margin-remove"> 
+                                                <div class=" uk-padding-small  uk-background-light uk-inline-clip uk-transition-toggle" tabindex="0"> 
+                                                    <div class="uk-transition-slide-right-small uk-position-top-right uk-position-z-index"> 
+                                                        <a class="uk-button uk-padding-small-right uk-padding-remove-left" href="#">    Delete </a> 
+                                                    </div>                                                     
+                                                    <div class="uk-transition-slide-right-medium uk-position-top-right uk-margin-medium-right"> 
+                                                        <a class="uk-button uk-margin-small-right" href="#">    Replay </a> 
+                                                    </div>                                                     
+                                                    <div class="uk-flex-middle uk-grid-small uk-grid" uk-grid=""> 
+                                                        <div class="uk-width-3-4"> 
+                                                            <p class="uk-margin-remove-bottom uk-text-bold">John keni  </p> 
+                                                            <p class="uk-margin-remove">Lorem ipsum dolor sit ame ..</p> 
+                                                            <p class="uk-margin-remove-top uk-text-small uk-text-muted">25 min</p> 
+                                                        </div>                                                         
+                                                        <div class="uk-width-1-4 uk-flex-first uk-first-column"> 
+                                                            <img src="../assets/images/avatures/avature-5.png" alt="Image" class="uk-border-circle uk-animation-slide-left-small"> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                </div>                                                 
+                                                <hr class=" uk-margin-remove"> 
+                                                <div class=" uk-padding-small  uk-background-light uk-inline-clip uk-transition-toggle" tabindex="0"> 
+                                                    <div class="uk-transition-slide-right-small uk-position-top-right uk-position-z-index"> 
+                                                        <a class="uk-button uk-padding-small-right uk-padding-remove-left" href="#">    Delete </a> 
+                                                    </div>                                                     
+                                                    <div class="uk-transition-slide-right-medium uk-position-top-right uk-margin-medium-right"> 
+                                                        <a class="uk-button uk-margin-small-right" href="#">    Replay </a> 
+                                                    </div>                                                     
+                                                    <div class="uk-flex-middle uk-grid-small uk-grid" uk-grid=""> 
+                                                        <div class="uk-width-3-4"> 
+                                                            <p class="uk-margin-remove-bottom uk-text-bold">John keni  </p> 
+                                                            <p class="uk-margin-remove">Lorem ipsum dolor sit ame ..</p> 
+                                                            <p class="uk-margin-remove-top uk-text-small uk-text-muted">25 min</p> 
+                                                        </div>                                                         
+                                                        <div class="uk-width-1-4 uk-flex-first uk-first-column"> 
+                                                            <img src="../assets/images/avatures/avature-2.png" alt="Image" class="uk-border-circle uk-animation-slide-left-small"> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                </div>                                                 
+                                                <hr class=" uk-margin-remove"> 
+                                                <div class=" uk-padding-small  uk-background-light uk-inline-clip uk-transition-toggle" tabindex="0"> 
+                                                    <div class="uk-transition-slide-right-small uk-position-top-right uk-position-z-index"> 
+                                                        <a class="uk-button uk-padding-small-right uk-padding-remove-left" href="#">    Delete </a> 
+                                                    </div>                                                     
+                                                    <div class="uk-transition-slide-right-medium uk-position-top-right uk-margin-medium-right"> 
+                                                        <a class="uk-button uk-margin-small-right" href="#">    Replay </a> 
+                                                    </div>                                                     
+                                                    <div class="uk-flex-middle uk-grid-small uk-grid" uk-grid=""> 
+                                                        <div class="uk-width-3-4"> 
+                                                            <p class="uk-margin-remove-bottom uk-text-bold">John keni  </p> 
+                                                            <p class="uk-margin-remove">Lorem ipsum dolor sit ame ..</p> 
+                                                            <p class="uk-margin-remove-top uk-text-small uk-text-muted">25 min</p> 
+                                                        </div>                                                         
+                                                        <div class="uk-width-1-4 uk-flex-first uk-first-column"> 
+                                                            <img src="../assets/images/avatures/avature-1.png" alt="Image" class="uk-border-circle"> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                </div>                                                 
+                                                <hr class=" uk-margin-remove"> 
+                                                <div class=" uk-padding-small  uk-background-light uk-inline-clip uk-transition-toggle" tabindex="0"> 
+                                                    <div class="uk-transition-slide-right-small uk-position-top-right uk-position-z-index"> 
+                                                        <a class="uk-button uk-padding-small-right uk-padding-remove-left" href="#">    Delete </a> 
+                                                    </div>                                                     
+                                                    <div class="uk-transition-slide-right-medium uk-position-top-right uk-margin-medium-right"> 
+                                                        <a class="uk-button uk-margin-small-right" href="#">    Replay </a> 
+                                                    </div>                                                     
+                                                    <div class="uk-flex-middle uk-grid-small uk-grid" uk-grid=""> 
+                                                        <div class="uk-width-3-4"> 
+                                                            <p class="uk-margin-remove-bottom uk-text-bold">John keni  </p> 
+                                                            <p class="uk-margin-remove">Lorem ipsum dolor sit ame ..</p> 
+                                                            <p class="uk-margin-remove-top uk-text-small uk-text-muted">25 min</p> 
+                                                        </div>                                                         
+                                                        <div class="uk-width-1-4 uk-flex-first uk-first-column"> 
+                                                            <img src="../assets/images/avatures/avature.jpg" alt="Image" class="uk-border-circle"> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </div>                                             
+                                        </div>                                         
+                                        <hr class=" uk-margin-remove"> 
+                                        <h5 class="uk-padding-small uk-margin-remove uk-text-bold uk-text-center"><a class="uk-link-heading" href=""> See all </a> </h5> 
+                                    </div>                                     
+                                </li>                                 
+                                <li> 
+                                    <!-- Notivications -->                                     
+                                    <a href="#"><i class="fas fa-bell icon-medium"></i></a> 
+                                    <div uk-dropdown="pos: top-right ;mode : hover; animation: uk-animation-slide-bottom-small" class="uk-dropdown uk-dropdown-top-right  tm-dropdown-small border-radius-6 uk-padding-remove uk-box-shadow-large angle-top-right"> 
+                                        <h5 class="uk-padding-small uk-margin-remove uk-text-bold  uk-text-left"> Notivications </h5> 
+                                        <a href="#" class="uk-position-top-right uk-link-reset"> <i class="fas fa-trash uk-align-right uk-text-small uk-padding-small"> Clear all</i></a> 
+                                        <hr class=" uk-margin-remove"> 
+                                        <div class="uk-padding-smaluk-text-left uk-height-medium"> 
+                                            <div data-simplebar> 
+                                                <div class="uk-padding-small" uk-scrollspy="target: > div; cls:uk-animation-slide-bottom-small; delay: 100 ; repeat: true"> 
+                                                    <div class="uk-flex-middle uk-grid-small" uk-grid> 
+                                                        <div class="uk-width-3-4"> 
+                                                            <p class="uk-margin-remove">Lorem ipsum dolor   ame ..</p> 
+                                                            <p class="uk-margin-remove-top uk-text-small uk-text-muted">25 min</p> 
+                                                        </div>                                                         
+                                                        <div class="uk-width-1-5 uk-flex-first"> 
+                                                            <img src="../assets/images/avatures/avature-4.png" alt="Image" class="uk-border-circle"> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                    <div class="uk-flex-middle uk-grid-small" uk-grid> 
+                                                        <div class="uk-width-3-4"> 
+                                                            <p class="uk-margin-remove">Lorem ipsum dolor   ame ..</p> 
+                                                            <p class="uk-margin-remove-top uk-text-small uk-text-muted">25 min</p> 
+                                                        </div>                                                         
+                                                        <div class="uk-width-1-5 uk-flex-first"> 
+                                                            <img src="../assets/images/avatures/avature-1.png" alt="Image" class="uk-border-circle"> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                    <div class="uk-flex-middle uk-grid-small" uk-grid> 
+                                                        <div class="uk-width-3-4"> 
+                                                            <p class="uk-margin-remove">Lorem ipsum dolor   ame ..</p> 
+                                                            <p class="uk-margin-remove-top uk-text-small uk-text-muted">25 min</p> 
+                                                        </div>                                                         
+                                                        <div class="uk-width-1-5 uk-flex-first"> 
+                                                            <img src="../assets/images/avatures/avature.jpg" alt="Image" class="uk-border-circle"> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                    <div class="uk-flex-middle uk-grid-small" uk-grid> 
+                                                        <div class="uk-width-3-4"> 
+                                                            <p class="uk-margin-remove">Lorem ipsum dolor   ame ..</p> 
+                                                            <p class="uk-margin-remove-top uk-text-small uk-text-muted">25 min</p> 
+                                                        </div>                                                         
+                                                        <div class="uk-width-1-5 uk-flex-first"> 
+                                                            <img src="../assets/images/avatures/avature-2.png" alt="Image" class="uk-border-circle"> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                    <div class="uk-flex-middle uk-grid-small" uk-grid> 
+                                                        <div class="uk-width-3-4"> 
+                                                            <p class="uk-margin-remove">Lorem ipsum dolor   ame ..</p> 
+                                                            <p class="uk-margin-remove-top uk-text-small uk-text-muted">25 min</p> 
+                                                        </div>                                                         
+                                                        <div class="uk-width-1-5 uk-flex-first"> 
+                                                            <img src="../assets/images/avatures/avature-3.png" alt="Image" class="uk-border-circle"> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                    <div class="uk-flex-middle uk-grid-small" uk-grid> 
+                                                        <div class="uk-width-3-4"> 
+                                                            <p class="uk-margin-remove">Lorem ipsum dolor   ame ..</p> 
+                                                            <p class="uk-margin-remove-top uk-text-small uk-text-muted">25 min</p> 
+                                                        </div>                                                         
+                                                        <div class="uk-width-1-5 uk-flex-first"> 
+                                                            <img src="../assets/images/avatures/avature-4.png" alt="Image" class="uk-border-circle"> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                    <div class="uk-flex-middle uk-grid-small" uk-grid> 
+                                                        <div class="uk-width-3-4"> 
+                                                            <p class="uk-margin-remove">Lorem ipsum dolor   ame ..</p> 
+                                                            <p class="uk-margin-remove-top uk-text-small uk-text-muted">25 min</p> 
+                                                        </div>                                                         
+                                                        <div class="uk-width-1-5 uk-flex-first"> 
+                                                            <img src="../assets/images/avatures/avature-1.png" alt="Image" class="uk-border-circle"> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                </li>
+                                <li> 
+                                    <!--  night mode  -->                                     
+                                    <a href="#"><i class="fas fa-moon icon-medium"></i></a>
+                                    <div uk-drop="pos: top-right ;mode:click ; offset: 20;animation: uk-animation-scale-up" class="uk-drop"> 
+                                        <div class="uk-card-small uk-box-shadow-xlarge uk-card-default uk-maring-small-left  border-radius-6"> 
+                                            <div class="uk-card uk-card-default border-radius-6"> 
+                                                <div class="uk-card-header"> 
+                                                    <h5 class="uk-card-title uk-margin-remove-bottom">Swich to night mode</h5> 
+                                                </div>                                                 
+                                                <div class="uk-card-body"> 
+                                                    <p>Turns the light surfaces of the page dark, creating an experience ideal for night. Try it!</p> 
+                                                    <p class="uk-text-small uk-align-left uk-margin-remove  uk-text-muted">DARK THEME </p> 
+                                                    <!-- night mode button -->                                                     
+                                                    <div class="btn-night uk-align-right" id="night-mode"> 
+                                                        <label class="tm-switch"> 
+                                                            <div class="uk-switch-button"></div>                                                             
+                                                        </label>                                                         
+                                                    </div>                                                     
+                                                    <!-- end  night mode button -->                                                     
+                                                </div>                                                 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                </li>                                 
+                                <li> 
+                                    <!-- User profile -->                                     
+                                    <a href="#"> 
+                                        <img src="../assets/images/avatures/avature-2.png" alt="" class="uk-border-circle user-profile-tiny"> 
+                                    </a>                                     
+                                    <div uk-dropdown="pos: top-right ;mode : click ;animation: uk-animation-slide-right" class="uk-dropdown uk-padding-small uk-dropdown-top-right  angle-top-right"> 
+                                        <p class="uk-margin-remove-bottom uk-margin-small-top uk-text-bold"> Hamse Mohamoud  </p> 
+                                        <p class="uk-margin-remove-top uk-text-small uk-margin-small-bottom"> Bankook China</p> 
+                                        <ul class="uk-nav uk-dropdown-nav"> 
+                                            <li> 
+                                                <a href="Profile.html"> <i class="fas fa-user uk-margin-small-right"></i> Profile</a> 
+                                            </li>                                             
+                                            <li> 
+                                                <a href="#"> <i class="fas fa-envelope uk-margin-small-right"></i> Messages </a> 
+                                            </li>                                             
+                                            <li> 
+                                                <a href="#"> <i class="fas fa-share uk-margin-small-right"></i> Invite freind</a> 
+                                            </li>                                             
+                                            <li> 
+                                                <a href="#"> <i class="fas fa-cog uk-margin-small-right"></i> Setting</a> 
+                                            </li>                                             
+                                            <li class="uk-nav-divider"></li>                                             
+                                            <li> 
+                                                <a href="#"> <i class="fas fa-sign-out-alt uk-margin-small-right"></i> Log out</a> 
+                                            </li>                                             
+                                        </ul>                                         
+                                    </div>                                     
+                                </li>                                 
+                            </ul>                             
+                        </div>
+                        <!-- Navigation for mobile -->
+                        <div id="mobile-sidebar" class="mobile-sidebar" uk-offcanvas="overlay:true">
+                            <div class="uk-offcanvas-bar uk-preserve-color uk-padding-remove"> 
+                                <ul uk-accordion> 
+                                    <li class="uk-open"> 
+                                        <a href="#" class="uk-accordion-title uk-text-black uk-padding-small"> <i class="fas fa-play-circle uk-margin-small-right"></i> Courses </a> 
+                                        <div class="uk-accordion-content uk-margin-remove-top"> 
+                                            <ul class="uk-list tm-drop-topic-list">
+                                                <li>
+                                                    <a href="course-grid.html"> All Development</a>
+                                                </li>                                                 
+                                                <li>
+                                                    <a href="course-grid.html"> Web  Development </a>
+                                                </li>                                                 
+                                                <li>
+                                                    <a href="course-grid.html">  Mobile App  </a>
+                                                </li>                                                 
+                                                <li>
+                                                    <a href="course-grid.html">  Programming language  </a>
+                                                </li>                                                 
+                                                <li>
+                                                    <a href="course-grid.html">  Software   </a>
+                                                </li>                                                 
+                                                <li>
+                                                    <a href="course-grid.html">  Ecommerce  </a>
+                                                </li>
+                                                <li>
+                                                    <a href="course-grid.html"> Training</a>
+                                                </li>                                                 
+                                            </ul>
+                                        </div>                                         
+                                    </li>
+                                    <li class="uk-margin-remove-top"> 
+                                        <a href="#" class="uk-accordion-title uk-text-black uk-padding-small"> <i class="fas fa-code uk-margin-small-right"></i> Scripts  </a> 
+                                        <div class="uk-accordion-content uk-margin-remove-top"> 
+                                            <ul class="uk-list tm-drop-topic-list">
+                                                <li>
+                                                    <a href="scripts.html"> Php scrips </a>
+                                                </li>                                                 
+                                                <li>
+                                                    <a href="scripts.html"> HTML templates </a>
+                                                </li>                                                 
+                                                <li>
+                                                    <a href="scripts.html">  Wordpress plugins  </a>
+                                                </li>                                                 
+                                                <li>
+                                                    <a href="scripts.html">  Wordpress themes  </a>
+                                                </li>                                                 
+                                                <li>
+                                                    <a href="scripts.html">  App source codes  </a>
+                                                </li>                                                  
+                                            </ul>
+                                        </div>                                         
+                                    </li>
+                                    <li class="uk-margin-remove-top"> 
+                                        <a href="#" class="uk-accordion-title uk-text-black uk-padding-small"> <i class="fas fa-clone uk-margin-small-right"></i> Pages </a> 
+                                        <div class="uk-accordion-content uk-margin-remove-top"> 
+                                            <ul class="uk-list tm-drop-topic-list"> 
+                                                <li>
+                                                    <a href="help.html"> Help </a>
+                                                </li>
+                                                <li>
+                                                    <a href="pages-term.html"> Term </a>
+                                                </li>                                                 
+                                                <li>
+                                                    <a href="pages-faq.html"> Faq </a>
+                                                </li>                                                 
+                                                <li>
+                                                    <a href="ui-compuntes.html"> Ui Compuntes </a>
+                                                </li>                                                 
+                                                <li>
+                                                    <a href="ui-elements.html"> Ui Elements </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui-helpers.html"> Ui Helpers </a>
+                                                </li>                                                 
+                                            </ul>
+                                        </div>                                         
+                                    </li> 
+                                    <li class="uk-margin-remove-top uk-padding-small"> 
+                                        <a href="books.html" class="uk-text-black"> <i class="fas fa-book-open uk-margin-small-right"></i> Books </a> 
+                                    </li> 
+                                    <li class="uk-margin-remove-top uk-padding-small"> 
+                                        <a href="blog.html" class="uk-text-black"> <i class="fas fa-file-alt uk-margin-small-right"></i> Blog </a> 
+                                    </li>                                       
+                                    <li class="uk-margin-remove-top uk-padding-small"> 
+                                        <a href="#" class="uk-text-black"> <i class="fas fa-comment-alt uk-margin-small-right"></i> Discussion </a> 
+                                    </li>
+                                                                        
+                                </ul>                                 
+                            </div>
+                        </div>                         
+                        <!-- search box -->                         
+                        <div id="modal-full" class="uk-modal-full uk-modal uk-animation-scale-down" uk-modal> 
+                            <div class="uk-modal-dialog uk-flex uk-flex-center" uk-height-viewport> 
+                                <button class="uk-modal-close-full" type="button" uk-close></button>                                 
+                                <form class="uk-search uk-margin-xlarge-top uk-search-large uk-animation-slide-bottom-medium"> 
+                                    <i class="fas fa-search uk-position-absolute uk-margin-top icon-xxlarge"></i> 
+                                    <input class="uk-search-input uk-margin-large-left" type="search" placeholder="Search..." autofocus> 
+                                </form>                                 
+                            </div>                             
+                        </div>                         
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- Navigation  -->
+        <div class="uk-navbar-sticky uk-background-grey">
+            <nav class="uk-padding-small uk-visible@m uk-navbar-transparent uk-animation-slide-to uk-position-z-index" uk-navbar>
+                <div class="uk-flex uk-flex-center uk-width-expand">
+                    <ul class="uk-subnav uk-subnav-2">
+                        <li>
+                            <a href="#"> <i class="fas fa-play icon-medium uk-margin-small-right"></i> Courses </a>
+                            <!-- drop topic list -->
+                            <div uk-drop="pos: top-left ;mode:click ; offset: 10;animation: uk-animation-slide-bottom-small" class="uk-drop angle-top-left"> 
+                                <div class="tm-drop-topic">
+                                    <div class="uk-grid-collapse uk-grid-match" uk-grid> 
+                                        <div class="uk-width-1-2"> 
+                                            <ul uk-tab="connect: #component-tab-left;animation: uk-animation-slide-left-small, uk-animation-slide-right-small" class="tm-drop-topic-list uk-card uk-card-default uk-margin-remove uk-box-shadow-large"> 
+                                                <li>
+                                                    <a href="#"> <i class="far fa-credit-card  uk-margin-small-right"></i> Web Development <i class="fas fa-chevron-right uk-position-center-right uk-margin-right"></i> </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"> <i class="fas fa-briefcase   uk-margin-small-right"></i>   Business  <i class="fas fa-chevron-right uk-position-center-right uk-margin-right"></i> </a> 
+                                                </li>                                                 
+                                                <li>
+                                                    <a href="#"> <i class="fas fa-pencil-ruler  uk-margin-small-right"></i>   Office Productivity  <i class="fas fa-chevron-right uk-position-center-right uk-margin-right"></i> </a> 
+                                                </li>
+                                                <li>
+                                                    <a href="#"> <i class="fas fa-brain  uk-margin-small-right"></i>    Personal Development <i class="fas fa-chevron-right uk-position-center-right uk-margin-right"></i> </a> 
+                                                </li>
+                                                <li>
+                                                    <a href="#"> <i class="fas fa-bullhorn uk-margin-small-right"></i>   Marketing  <i class="fas fa-chevron-right uk-position-center-right uk-margin-right"></i> </a> 
+                                                </li>
+                                                <li>
+                                                    <a href="#"> <i class="fas fa-life-ring  uk-margin-small-right"></i>   Life Style <i class="fas fa-chevron-right uk-position-center-right uk-margin-right"></i> </a> 
+                                                </li>                                                 
+                                                <li>
+                                                    <a href="#"> <i class="fas fa-camera uk-margin-small-right"></i>   Photography <i class="fas fa-chevron-right uk-position-center-right uk-margin-right"></i> </a> 
+                                                </li>
+                                                <li>
+                                                    <a href="#"> <i class="fas fa-briefcase-medical uk-margin-small-right"></i>   Health & Fitness <i class="fas fa-chevron-right uk-position-center-right uk-margin-right"></i> </a> 
+                                                </li>
+                                                <li>
+                                                    <a href="#"> <i class="fas fa-shopping-bag  uk-margin-small-right"></i>   Ecommerce <i class="fas fa-chevron-right uk-position-center-right uk-margin-right"></i> </a> 
+                                                </li>
+                                                <li>
+                                                    <a href="#"> <i class="fas fa-utensils  uk-margin-small-right"></i>   Food & cooking <i class="fas fa-chevron-right uk-position-center-right uk-margin-right"></i> </a> 
+                                                </li>
+                                            </ul>
+                                        </div>                                         
+                                        <div class="uk-width-1-2 uk-width-1-2"> 
+                                            <ul id="component-tab-left" class="uk-switcher uk-card uk-card-default uk-box-shadow-large">
+                                                <li>
+                                                    <!-- Web Development list -->                                                     
+                                                    <ul class="tm-drop-topic-list uk-padding-remove">
+                                                        <li>
+                                                            <a href="course-grid.html"> All Development</a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html"> Web  Development </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html">  Mobile App  </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html">  Programming language  </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html">  Game Development  </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html">  Software   </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html">  Development tools  </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html">  Ecommerce  </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="course-grid.html"> Training</a>
+                                                        </li>                                                         
+                                                    </ul>                                                     
+                                                </li>
+                                                <li>
+                                                    <!-- Business courses list -->                                                     
+                                                    <ul class="tm-drop-topic-list uk-padding-remove">
+                                                        <li>
+                                                            <a href="course-grid.html"> All Business </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html"> Finance </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html">  Sales  </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html">  Startegy  </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html">  Sales  </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html">  Other  </a>
+                                                        </li>                                                         
+                                                    </ul>                                                     
+                                                </li>
+                                                <li>
+                                                    <!-- IT & Software  courses list -->                                                     
+                                                    <ul class="tm-drop-topic-list uk-padding-remove"> 
+                                                        <li>
+                                                            <a href="course-grid.html"> Hadware   </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html"> Operating system  </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html"> Network  </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html"> Other  </a>
+                                                        </li>                                                         
+                                                    </ul>                                                     
+                                                </li>
+                                                <li>
+                                                    <!--Personal development  courses list -->                                                     
+                                                    <ul class="tm-drop-topic-list uk-padding-remove"> 
+                                                        <li>
+                                                            <a href="course-grid.html"> Leadership   </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html"> Productivity    </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html"> Personal Finance  </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html"> Other  </a>
+                                                        </li>                                                         
+                                                    </ul>                                                     
+                                                </li>
+                                                <li>
+                                                    <!-- Marketing  courses list -->                                                     
+                                                    <ul class="tm-drop-topic-list uk-padding-remove"> 
+                                                        <li>
+                                                            <a href="course-grid.html"> All Marketing   </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html"> Digital Marketing    </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html"> Search Engine Optimization  </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html"> Other  </a>
+                                                        </li>                                                         
+                                                    </ul>                                                     
+                                                </li>
+                                                <li>
+                                                    <!-- Life style  courses list -->                                                     
+                                                    <ul class="tm-drop-topic-list uk-padding-remove"> 
+                                                        <li>
+                                                            <a href="course-grid.html"> Food   </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html"> Travel    </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html"> Gaming   </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html"> Other  </a>
+                                                        </li>                                                         
+                                                    </ul>                                                     
+                                                </li>
+                                            </ul>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>
+                        </li>
+                        <li>
+                            <a href="books.html"> <i class="fas fa-book-open icon-medium uk-margin-small-right"></i> Books </a>
+                        </li>
+                        <li class="uk-active">
+                            <a href="#"> <i class="fas fa-file-alt icon-medium uk-margin-small-right"></i> Blogs </a>
+                            <div uk-dropdown> 
+                                <ul class="uk-nav uk-dropdown-nav"> 
+                                    <li>
+                                        <a href="blog.html"> Blogs </a>
+                                    </li>                                     
+                                    <li>
+                                        <a href="blog.html"> Articles</a>
+                                    </li>
+                                    <li class="uk-nav-header uk-margin-small-top"> Blog Videos </li>                                     
+                                    <li>
+                                        <a href="blog-video.html"> Video Layout 1 </a>
+                                    </li>                                     
+                                    <li>
+                                        <a href="blog-video-post.html"> Video Layout 2 </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fas fa-code icon-medium uk-margin-small-right"></i> Scripts </a>
+                            <div uk-drop="pos: top  ;mode:click ; offset: 10;animation: uk-animation-slide-bottom-small" class="uk-drop tm-dropdown-medium"> 
+                                <div class="uk-card-small uk-box-shadow-xlarge uk-card-default uk-maring-small-left  border-radius-6"> 
+                                    <div class="uk-card uk-card-default border-radius-6"> 
+                                        <div class="uk-card-body">
+                                            <div class="uk-child-width-1-3 uk-grid-collapse  uk-text-small uk-text-center uk-flex-center" uk-grid>
+                                                <div> 
+                                                    <a href="scripts.html" class="uk-link-reset"> <i class="fab fa-html5 info-big-icon"></i> <p class="uk-margin-small-top uk-margin-remove-bottom">  Html templates   </p> </a> 
+                                                </div>
+                                                <div> 
+                                                    <a href="scripts.html" class="uk-link-reset"> <i class="fab fa-php info-big-icon"></i> <p class="uk-margin-small-top uk-margin-remove-bottom">    PHP Scripts  </p> </a>
+                                                </div>
+                                                <div> 
+                                                    <a href="scripts.html" class="uk-link-reset"> <i class="fab fa-wordpress info-big-icon"></i> <p class="uk-margin-small-top uk-margin-remove-bottom">    Cms Plugins  </p> </a>
+                                                </div>
+                                                <div class="uk-margin-small-top"> 
+                                                    <a href="scripts.html" class="uk-link-reset"> <i class="fab fa-wordpress-simple info-big-icon"></i> <p class="uk-margin-small-top uk-margin-remove-bottom">  Cms themes  </p> </a>
+                                                </div>
+                                                <div class="uk-margin-small-top"> 
+                                                    <a href="scripts.html" class="uk-link-reset"> <i class="fab fa-android info-big-icon"></i> <p class="uk-margin-small-top uk-margin-remove-bottom">   Apps Source    </p> </a>
+                                                </div>
+                                                <div class="uk-margin-small-top"> 
+                                                    <a href="scripts.html" class="uk-link-reset"> <i class="fas fa-code  info-big-icon"></i> <p class="uk-margin-small-top uk-margin-remove-bottom">  All Scripts  </p> </a>
+                                                </div>
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                        </li>
+                        <li>
+                            <a href="discussion.html"> <i class="fas fa-comment-alt icon-medium uk-margin-small-right"></i> Discussion </a>
+                        </li>                         
+                        <li>
+                            <a href="#"> <i class="fas fa-clone icon-medium uk-margin-small-right"></i> Pages </a>
+                            <div class="tm-dropdown-medium" uk-dropdown="mode:click ;"> 
+                                <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid> 
+                                    <div> 
+                                        <ul class="uk-nav uk-dropdown-nav"> 
+                                            <li>
+                                                <a href="help.html"> Help </a> 
+                                            </li>                                             
+                                            <li>
+                                                <a href="pages-term.html"> Terms </a>
+                                            </li>                                             
+                                            <li>
+                                                <a href="pages-faq.html"> Faq </a>
+                                            </li>                                             
+                                            <li>
+                                                <a href="pages-term.html"> About    </a>
+                                            </li>
+                                        </ul>
+                                    </div>                                     
+                                    <div> 
+                                        <ul class="uk-nav uk-dropdown-nav"> 
+                                            <li>
+                                                <a href="profile.html"> Profile  </a>
+                                            </li>
+                                            <li>
+                                                <a href="ui-elements.html"> UI Elements  </a> 
+                                            </li>                                             
+                                            <li>
+                                                <a href="ui-compuntes.html"> Ui Compuntes</a>
+                                            </li>                                             
+                                            <li>
+                                                <a href="ui-helpers.html"> Ui Helpers </a>
+                                            </li>                                             
+                                        </ul>
+                                    </div>                                     
+                                </div>
+                            </div>
+                        </li>                         
+                    </ul>                     
+                </div>
+            </nav>             
+        </div>   
+        <main>
+            <div class="uk-section-small uk-section-default"> 
+                <div class="uk-container uk-text-center">
+                    <h1 class="uk-margin-medium-top">  Compounents </h1>
+                    <p>  Advanced multi-part components with lots of possibilities . </p> 
+                </div>
+            </div>
+            <button class="uk-button uk-button-default uk-hidden@m" type="button" uk-toggle="target: #tabs-moible; cls: tabs-moible" style="position: absolute;margin-top: -52px; margin-left: 32px;"> Open submenu </button>
+            <!-- Sub navigations -->
+            <ul uk-tab class="uk-tab uk-flex-center uk-margin-remove-top uk-background-default tabs-moible-hidden uk-nav-shadow" id="tabs-moible" uk-sticky="offset:86 ; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">
+                <li class="uk-active">
+                    <a href="#"> Modal </a>
+                </li>                 
+                <li>
+                    <a href="#"> Slideshow </a>
+                </li>
+                <li>
+                    <a href="#"> Lightbox </a>
+                </li>
+                <li>
+                    <a href="#"> Tooltip </a>
+                </li>
+                <li>
+                    <a href="#"> Accordion </a>
+                </li>
+                <li>
+                    <a href="#"> Toggle </a>
+                </li>
+                <li>
+                    <a href="#"> Switcher </a>
+                </li>
+                <li>
+                    <a href="#"> Sticky </a>
+                </li>
+            </ul>
+            <button class="uk-button uk-button-default uk-hidden@m" type="button" uk-toggle="target: #tabs-moible; cls: tabs-moible" style="position: absolute;margin-top: -52px; margin-left: 32px;"> Open subcatagory </button>
+            <!-- Content tabs  -->
+            <ul class="uk-switcher uk-margin uk-container-xsmall uk-margin-auto demo-content">
+                <!-- Content tabs  -->                 
+                <!--Modal -->
+                <li class="uk-active"> 
+                    <h3 class="el-title uk-margin">Modal</h3>
+                    <h6> Create modal dialogs with different styles and transitions.</h6>
+                    <p>The Modal component consists of an overlay, a dialog and an optional close button. You can use any element to toggle a modal dialog. To enable the necessary JavaScript, add the <code>uk-toggle</code> attribute. An <code>&lt;a&gt;</code> element needs to be linked to the modal's id. If you are using another element, like a button, just add the <code>uk-toggle="target: #ID"</code> attribute to target the id of the modal container.</p>
+                    <p>Add the <code>uk-modal</code> attribute to a <code>&lt;div&gt;</code> element to create the modal container and an overlay that blanks out the page. It is important to add an <code>id</code> to indicate the element for toggling. Use the following classes to define the modal's sections.</p>
+                    <h6> PREVIEW</h6>
+                    <!-- This is a button toggling the modal -->
+                    <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-example">Open</button>
+                    <!-- This is an anchor toggling the modal -->
+                    <a href="#modal-example" uk-toggle>Open</a>
+                    <!-- This is the modal -->
+                    <div id="modal-example" uk-modal>
+                        <div class="uk-modal-dialog uk-modal-body">
+                            <h2 class="uk-modal-title">Headline</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p class="uk-text-right"> <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button> <button class="uk-button uk-button-primary" type="button">Save</button> </p>
+                        </div>
+                    </div>                     
+                    <h3 class="el-title uk-margin-medium-top"> Close button </h3>
+                    <p>To create a close button, enable its functionality and add proper styling and positioning, add the <code>.uk-modal-close-default</code> class to an <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code> element. To place the close button outside the modal, add the <code>.uk-modal-close-outside</code> class.</p>
+                    <p>Add the <code>uk-close</code> attribute from the  Close component  to apply a close icon.</p>
+                    <h6> PREVIEW</h6>
+                    <!-- This is a button toggling the modal with the default close button -->
+                    <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-close-default">Default</button>
+                    <!-- This is the modal with the default close button -->
+                    <div id="modal-close-default" uk-modal>
+                        <div class="uk-modal-dialog uk-modal-body">
+                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                            <h2 class="uk-modal-title">Default</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                    <!-- This is a button toggling the modal with the outside close button -->
+                    <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-close-outside">Outside</button>
+                    <!-- This is the modal with the outside close button -->
+                    <div id="modal-close-outside" uk-modal>
+                        <div class="uk-modal-dialog uk-modal-body">
+                            <button class="uk-modal-close-outside" type="button" uk-close></button>
+                            <h2 class="uk-modal-title">Outside</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                    <h3 class="el-title uk-margin-medium-top"> Size modifiers. </h3>
+                    <p>Add the <code>.uk-modal-container</code> class to expand the modal dialog to the default Container< width.< p>
+                            <h6> PREVIEW</h6>
+                            <a class="uk-button uk-button-default" href="#modal-container" uk-toggle>Open</a>
+                            <div id="modal-container" class="uk-modal-container" uk-modal>
+                                <div class="uk-modal-dialog uk-modal-body">
+                                    <button class="uk-modal-close-default" type="button" uk-close></button>
+                                    <h2 class="uk-modal-title">Headline</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                            <h3 class="el-title uk-margin-medium-top"> Group modifiers. </h3>
+                            <p>  You can group multiple modals by linking from one to the other and back. Use this to create multistep wizards inside your modals.</p>
+                            <h6> PREVIEW</h6>
+                            <p uk-margin> <a class="uk-button uk-button-default" href="#modal-group-1" uk-toggle>Modal 1</a> <a class="uk-button uk-button-default" href="#modal-group-2" uk-toggle>Modal 2</a> </p>
+                            <div id="modal-group-1" uk-modal>
+                                <div class="uk-modal-dialog">
+                                    <button class="uk-modal-close-default" type="button" uk-close></button>
+                                    <div class="uk-modal-header">
+                                        <h2 class="uk-modal-title">Headline 1</h2>
+                                    </div>
+                                    <div class="uk-modal-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                    <div class="uk-modal-footer uk-text-right">
+                                        <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                                        <a href="#modal-group-2" class="uk-button uk-button-primary" uk-toggle>Next</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="modal-group-2" uk-modal>
+                                <div class="uk-modal-dialog">
+                                    <button class="uk-modal-close-default" type="button" uk-close></button>
+                                    <div class="uk-modal-header">
+                                        <h2 class="uk-modal-title">Headline 2</h2>
+                                    </div>
+                                    <div class="uk-modal-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                    <div class="uk-modal-footer uk-text-right">
+                                        <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                                        <a href="#modal-group-1" class="uk-button uk-button-primary" uk-toggle>Previous</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="el-title uk-margin-medium-top"> Size modifiers. </h3>
+                            <p> If you want to display media, you should first check, if the Lightbox component doesn't already offer everything you need. However, you can also use the modal to have more control over the markup to wrap your media in.</p>
+                            <p><span class="uk-label">Note</span> Use the <code>uk-video</code> attribute from the <a href="https://getuikit.com/docs/video">Video component</a> to make sure videos are stopped when the modal is closed.</p>
+                            <h6> PREVIEW</h6>
+                            <p uk-margin> <a class="uk-button uk-button-default" href="#modal-media-image" uk-toggle>Image</a> <a class="uk-button uk-button-default" href="#modal-media-video" uk-toggle>Video</a> <a class="uk-button uk-button-default" href="#modal-media-youtube" uk-toggle>YouTube</a> <a class="uk-button uk-button-default" href="#modal-media-vimeo" uk-toggle>Vimeo</a> </p>
+                            <div id="modal-media-image" class="uk-flex-top" uk-modal>
+                                <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+                                    <button class="uk-modal-close-outside" type="button" uk-close></button>
+                                    <img alt="" src="../Docs/../assets/images/photo.jpg">
+                                </div>
+                            </div>
+                            <div id="modal-media-video" class="uk-flex-top" uk-modal>
+                                <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+                                    <button class="uk-modal-close-outside" type="button" uk-close></button>
+                                    <video controls playsinline uk-video>
+                                        <source src="https://quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
+                                        <source src="https://quirksmode.org/html5/videos/big_buck_bunny.ogv" type="video/ogg">
+                                    </video>
+                                </div>
+                            </div>
+                            <div id="modal-media-youtube" class="uk-flex-top" uk-modal>
+                                <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+                                    <button class="uk-modal-close-outside" type="button" uk-close></button>
+                                    <iframe src="https://www.youtube-nocookie.com/embed/YE7VzlLtp-4" width="560" height="315" frameborder="0" uk-video></iframe>
+                                </div>
+                            </div>
+                            <div id="modal-media-vimeo" class="uk-flex-top" uk-modal>
+                                <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+                                    <button class="uk-modal-close-outside" type="button" uk-close></button>
+                                    <iframe src="https://player.vimeo.com/video/1084537" width="500" height="281" frameborder="0" uk-video></iframe>
+                                </div>
+                            </div>
+                </li>                 
+                <!--Slideshow -->
+                <li> 
+                    <h3 class="el-title uk-margin">Slideshow</h3>
+                    <h6>Create a responsive slideshow with images and videos.</h6>
+                    <p>The Slideshow component is fully responsive and supports touch and swipe navigation as well as mouse drag for desktops. When swiping between slides, the animation literally sticks at your fingertips or mouse cursor. It even accelerates to keep up with your pace when you click through previous and next navigation. All animations are hardware accelerated for a smoother performance.</p>
+                    <h6> Usage</h6>
+                    <p>To apply this component, add the <code>uk-slideshow</code> attribute to a container element and create a list of slides with the <code>.uk-slideshow-items</code> class.</p>
+                    <h6> PREVIEW</h6>
+                    <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
+                        <ul class="uk-slideshow-items">
+                            <li>
+                                <img src="../Docs/../assets/images/photo.jpg" lt="" uk-cover>
+                            </li>
+                            <li>
+                                <img src="../Docs/../assets/images/dark.jpg" alt="" uk-cover>
+                            </li>
+                            <li>
+                                <img src="../Docs/../assets/images/light.jpg" lt="" uk-cover>
+                            </li>
+                        </ul>
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                    </div>
+                    <h3 class="el-title uk-margin-medium-top">Animations </h3>
+                    <p>By default, the slideshow uses a <code>slide</code> animation. You can set the <code>animation</code> option to use a different animation. Possible values are as follows:</p>
+                    <h6> PREVIEW</h6>
+                    <div class="uk-child-width-1-2@m" uk-grid>
+                        <div>
+                            <div class="uk-h3">Slide</div>
+                            <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
+                                <ul class="uk-slideshow-items">
+                                    <li>
+                                        <img src="../Docs/../assets/images/photo.jpg" lt="" uk-cover>
+                                    </li>
+                                    <li>
+                                        <img src="../Docs/../assets/images/dark.jpg" alt="" uk-cover>
+                                    </li>
+                                    <li>
+                                        <img src="../Docs/../assets/images/light.jpg" lt="" uk-cover>
+                                    </li>
+                                </ul>
+                                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-h3">Fade</div>
+                            <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: fade">
+                                <ul class="uk-slideshow-items">
+                                    <li>
+                                        <img src="../Docs/../assets/images/photo.jpg" lt="" uk-cover>
+                                    </li>
+                                    <li>
+                                        <img src="../Docs/../assets/images/dark.jpg" alt="" uk-cover>
+                                    </li>
+                                    <li>
+                                        <img src="../Docs/../assets/images/light.jpg" lt="" uk-cover>
+                                    </li>
+                                </ul>
+                                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-h3">Scale</div>
+                            <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: scale">
+                                <ul class="uk-slideshow-items">
+                                    <li>
+                                        <img src="../Docs/../assets/images/photo.jpg" lt="" uk-cover>
+                                    </li>
+                                    <li>
+                                        <img src="../Docs/../assets/images/dark.jpg" alt="" uk-cover>
+                                    </li>
+                                    <li>
+                                        <img src="../Docs/../assets/images/light.jpg" lt="" uk-cover>
+                                    </li>
+                                </ul>
+                                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-h3">Pull</div>
+                            <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: pull">
+                                <ul class="uk-slideshow-items">
+                                    <li>
+                                        <img src="../Docs/../assets/images/photo.jpg" lt="" uk-cover>
+                                    </li>
+                                    <li>
+                                        <img src="../Docs/../assets/images/dark.jpg" alt="" uk-cover>
+                                    </li>
+                                    <li>
+                                        <img src="../Docs/../assets/images/light.jpg" lt="" uk-cover>
+                                    </li>
+                                </ul>
+                                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-h3">Push</div>
+                            <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: push">
+                                <ul class="uk-slideshow-items">
+                                    <li>
+                                        <img src="../Docs/../assets/images/photo.jpg" lt="" uk-cover>
+                                    </li>
+                                    <li>
+                                        <img src="../Docs/../assets/images/dark.jpg" alt="" uk-cover>
+                                    </li>
+                                    <li>
+                                        <img src="../Docs/../assets/images/light.jpg" lt="" uk-cover>
+                                    </li>
+                                </ul>
+                                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="el-title uk-margin-medium-top"> Video </h3>
+                    <p>The slideshow is not restricted to images. Other media, like videos, can be positioned in the background of each slide using the <code>uk-cover</code> attribute from the Cover component . Videos are muted, and play automatically. The video will pause whenever it's not visible, and resume once it becomes visible again.</p>
+                    <h6> PREVIEW</h6>
+                    <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: push">
+                        <ul class="uk-slideshow-items">
+                            <li>
+                                <img src="../assets/img/photo.jpg" alt="" uk-cover>
+                            </li>
+                            <li>
+                                <video autoplay loop muted playslinline uk-cover>
+                                    <source src="https://quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
+                                    <source src="https://quirksmode.org/html5/videos/big_buck_bunny.ogv" type="video/ogg">
+                                </video>
+                            </li>
+                            <li>
+                                <iframe src="https://www.youtube-nocookie.com/embed/YE7VzlLtp-4?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent&amp;playsinline=1" width="560" height="315" frameborder="0" allowfullscreen uk-cover></iframe>
+                            </li>
+                        </ul>
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                    </div>
+                </li>                 
+                <!--Lightbox -->
+                <li>
+                    <h3 class="el-title uk-margin">Lightbox</h3> 
+                    <h6> Create a responsive lightbox gallery with images and videos.</h6>
+                    <p> The lightbox component is fully responsive and supports touch and swipe navigation, as well as mouse drag for desktops. When swiping between slides the animation literally sticks at your fingertip or mouse cursor. Clicking fast on the previous and next navigation, will make animations even accelerate to keep up with your pace. All animations are hardware accelerated for a smoother performance</p>
+                    <h6> Usage</h6>
+                    <p> To apply this component, add the <code> uk-lightbox</code> attribute to a container to turn all anchors inside that container into lightbox links. </p>
+                    <h6> PREVIEW</h6>
+                    <div uk-lightbox>
+                        <a class="uk-button uk-button-default" href="../Docs/../assets/images/dark.jpg">Open Lightbox</a>
+                    </div>
+                    <h3 class="el-title uk-margin-medium-top">Caption </h3>
+                    <p>To display a caption at the bottom of the lightbox, set the <code> data-caption</code> attribute on an anchor.</p>
+                    <h6> PREVIEW</h6>
+                    <div uk-lightbox>
+                        <a class="uk-button uk-button-default" data-caption="Caption" href="../Docs/../assets/images/dark.jpg">Open Lightbox</a>
+                    </div>
+                    <h3 class="el-title uk-margin-medium-top">Content sources  . </h3>
+                    <p>  A lightbox is not restricted to images. Other media, like videos, can be displayed as well. The video will pause whenever it's not visible and resume once it becomes visible again. To display a poster image for a video, set the data-poster attribute.</p>
+                    <h6> PREVIEW</h6>
+                    <div uk-lightbox>
+                        <a class="uk-button uk-button-default" data-caption="Image" href="../Docs/../assets/images/light.jpg">Image</a>
+                        <a class="uk-button uk-button-default" href="https://quirksmode.org/html5/videos/big_buck_bunny.mp4" data-caption="Video">Video</a>
+                        <a class="uk-button uk-button-default" href="https://www.youtube.com/watch?v=YE7VzlLtp-4" data-caption="YouTube">YouTube</a>
+                        <a class="uk-button uk-button-default" href="https://vimeo.com/1084537" data-caption="Vimeo">Vimeo</a>
+                        <a class="uk-button uk-button-default" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4740.819266853735!2d9.99008871708242!3d53.550454675412404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3f9d24afe84a0263!2sRathaus!5e0!3m2!1sde!2sde!4v1499675200938" data-caption="Google Maps" data-type="iframe">Google Maps</a>
+                    </div>
+                </li>
+                <!--tooltip -->
+                <li>
+                    <h3 class="el-title uk-margin">Tooltip</h3>
+                    <h6>Easily create a nice looking tooltip</h6>
+                    <p>To apply this component, add the <code></code>  uk-tooltip</code> attribute to an element. You also need to add the 
+                    <code> title: TEXT</code> option to the attribute, whose  value will represent your tooltip's text.
+                </p>
+                <p>If <code>title</code> is the only option in the attribute value, you can also use <code>uk-tooltip="TEXT"</code></p>
+                <h6> PREVIEW</h6>
+                <button class="uk-button uk-button-default" uk-tooltip="Hello World">Hover</button>
+                <h3 class="el-title uk-margin-medium-top"> Alignment </h3>
+                <p>Add one of the following options to the <code>uk-tooltip</code> attribute to adjust the tooltip's alignment.</p>
+                <h6> PREVIEW</h6>
+                <p uk-margin> <button class="uk-button uk-button-default" uk-tooltip="Hello World">Top</button> <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: top-left">Top Left</button> <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: top-right">Top Right</button> <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: bottom">Bottom</button> <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: bottom-left">Bottom Left</button> <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: bottom-right">Bottom Right</button> <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: left">Left</button> <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: right">Right</button> </p>
+                <h3 class="el-title uk-margin-medium-top"> Delay </h3>
+                <p>If you want the tooltip to appear with a little delay, just add the <code>delay</code> option to the <code>uk-tooltip</code> attribute with your value in milliseconds.</p>
+                <h6> PREVIEW</h6>
+                <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; delay: 500">Hover</button>
+            </li>             
+            <!--ACCORDION -->
+            <li>
+                <h3 class="el-title uk-margin">ACCORDION</h3>
+                <h6>Create a list of items that can be shown individually by clicking an item's header </h6>
+                <h6> Usage</h6>
+                <p>The Accordion component consists of a parent container with the <code>uk-accordion</code> attribute, and a title and content part for each accordion item.</p>
+                <h6>PREVIEW</h6>
+                <ul uk-accordion>
+                    <li class="uk-open">
+                        <a class="uk-accordion-title" href="#">Item 1</a>
+                        <div class="uk-accordion-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title" href="#">Item 2</a>
+                        <div class="uk-accordion-content">
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title" href="#">Item 3</a>
+                        <div class="uk-accordion-content">
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                        </div>
+                    </li>
+                </ul>
+                <h3 class="el-title uk-margin-medium-top"> Multiple open items </h3>
+                <p>To display multiple content sections at the same time without one collapsing when the other one is opened, add the <code>multiple: true</code> option to the <code>uk-accordion</code> attribute.</p>
+                <h6> PREVIEW</h6>
+                <ul uk-accordion="multiple: true">
+                    <li class="uk-open">
+                        <a class="uk-accordion-title" href="#">Item 1</a>
+                        <div class="uk-accordion-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title" href="#">Item 2</a>
+                        <div class="uk-accordion-content">
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title" href="#">Item 3</a>
+                        <div class="uk-accordion-content">
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                        </div>
+                    </li>
+                </ul>
+            </li>             
+            <!--TOGGLE -->
+            <li>
+                <h3 class="el-title uk-margin">TOGGLE</h3>
+                <p>To apply this component, just add the <code>uk-toggle="target: #ID"</code> attribute to a <code>&lt;button&gt;</code> or <code>&lt;a&gt;</code> element. You can use any selector with the toggle attribute.</p>
+                <p>The toggle can be used to add or remove a class or attribute from the item. By default, it adds the <code>hidden</code> attribute to hide the element.</p>
+                <h6> PREVIEW</h6>
+                <div>
+                    <button class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-usage">Toggle</button>
+                    <p id="toggle-usage">What's up?</p>
+                </div>                 
+                <h3 class="el-title uk-margin-medium-top"> Multiple items </h3>
+                <p>You can also toggle multiple items at the same time. Just add the <code>target: SELECTOR</code> option to the <code>uk-toggle</code> attribute and use a selector that applies to all items.</p>
+                <h6> PREVIEW</h6>
+                <button class="uk-button uk-button-default" type="button" uk-toggle="target: .toggle">Toggle</button>
+                <p class="toggle">Hello!</p>
+                <p class="toggle" hidden>Bazinga!</p> 
+                <p><span class="uk-label">Note</span> In this example we added the <code>hidden</code> attribute to one of the items, so that only the other item will be shown. The toggle will switch visible states between both elements.</p>
+                <h3 class="el-title uk-margin-medium-top"> Custom class </h3>
+                <p>If you don't want to toggle the <code>hidden</code> attribute, you can also toggle a custom class. Just add the <code>cls: CLASS</code> option to the <code>uk-toggle</code> attribute. In this example we used the <code>.uk-card-primary</code> class to switch between different card styles.</p>
+                <h6> PREVIEW</h6>
+                <button class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-custom; cls: uk-card-secondary">Toggle</button>
+                <div id="toggle-custom" class="uk-card uk-card-default uk-card-body uk-margin-small">Custom class</div>
+                <h3 class="el-title uk-margin-medium-top"> Animations </h3>
+                <p>The Toggle component allows you to add animations to items when toggling between them. Just add one of the <code>.uk-animation-*</code> classes from the  Animation component to the animation parameter. The class will be applied to the in as well as the out animation. If you prefer a different out animation, just add another class.</p>
+                <h6> PREVIEW</h6>
+                <button href="#toggle-animation" class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-animation; animation: uk-animation-fade">Toggle</button>
+                <div id="toggle-animation" class="uk-card uk-card-default uk-card-body uk-margin-small">Animation</div>
+                <h3 class="el-title uk-margin-medium-top"> Multiple animations </h3>
+                <p></p>
+                <h6> PREVIEW</h6>
+                <button class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-animation-multiple; animation:  uk-animation-slide-left, uk-animation-slide-bottom">Toggle</button>
+                <div id="toggle-animation-multiple" class="uk-card uk-card-default uk-card-body uk-margin-small">Animation</div>
+            </li>
+            <!--Switcher -->
+            <li>
+                <h3 class="el-title uk-margin">Switcher</h3>
+                <h6>Dynamically transition through different content panes </h6>
+                <h6> Usage</h6>
+                <p>The Switcher component consists of a number of toggles and their related content items. Add the <code>uk-switcher</code> attribute to the element which contains the toggles. Add the <code>.uk-switcher</code> class to the element containing the content items.</p>
+                <p>By default, the element with the <code>.uk-switcher</code> class has to succeed the toggle directly in order for the switcher to function. If you need it to be nested in another element, for example when using a grid, add the <code>connect: SELECTOR</code> option to the <code>uk-switcher</code> attribute and select the element containing the items for switching.</p>
+                <p>Typically, the switcher toggles are styled through other components, some of which will be shown here.</p>
+                <h6>PREVIEW</h6>
+                <ul uk-tab uk-switcher>
+                    <li class="uk-active">
+                        <a href="#">Item</a>
+                    </li>
+                    <li>
+                        <a href="#">Item</a>
+                    </li>
+                    <li>
+                        <a href="#">Item</a>
+                    </li>
+                </ul>
+                <ul class="uk-switcher uk-margin">
+                    <li>Hello!</li>
+                    <li>Hello again!</li>
+                    <li>Bazinga!</li>
+                </ul>
+                <h3 class="el-title uk-margin-medium-top"> Size modifiers. </h3>
+                <p></p>
+                <h6> PREVIEW</h6>
+                <h3 class="el-title uk-margin-medium-top"> Navigation controls </h3>
+                <p>In some cases you want to switch to another content section from within the active content. This is possible using the <code>uk-switcher-item</code> attribute. To target the items, you need to set the attribute to the number of the respective content item.</p>
+                <p>Setting the attribute to <code>next</code> and <code>previous</code> will switch to the adjacent items.</p>
+                <h6> PREVIEW</h6>
+                <ul uk-tab uk-switcher>
+                    <li class="uk-active">
+                        <a href="#">Item</a>
+                    </li>
+                    <li>
+                        <a href="#">Item</a>
+                    </li>
+                    <li>
+                        <a href="#">Item</a>
+                    </li>
+                </ul>
+                <ul class="uk-switcher uk-margin">
+                    <li>Hello! 
+                        <a href="#" uk-switcher-item="2">Switch to item 3</a>
+                    </li>
+                    <li>Hello again! 
+                        <a href="#" uk-switcher-item="next">Next item</a>
+                    </li>
+                    <li>Bazinga! 
+                        <a href="#" uk-switcher-item="previous">Previous item</a>
+                    </li>
+                </ul>
+                <h3 class="el-title uk-margin-medium-top"> Connect multiple containers</h3>
+                <p>It is also possible to connect multiple content containers. Just add the <code>connect</code> parameter to the <code>uk-switcher</code> attribute and use a selector that applies to all items.</p>
+                <h6> PREVIEW</h6>
+                <ul uk-tab uk-switcher="connect: .switcher-container">
+                    <li class="uk-active">
+                        <a href="#">Active</a>
+                    </li>
+                    <li>
+                        <a href="#">Item</a>
+                    </li>
+                    <li>
+                        <a href="#">Item</a>
+                    </li>
+                </ul>
+                <h4>Container 1</h4>
+                <ul class="uk-switcher switcher-container uk-margin">
+                    <li>Hello!</li>
+                    <li>Hello again!</li>
+                    <li>Bazinga!</li>
+                </ul>
+                <h4>Container 2</h4>
+                <ul class="uk-switcher switcher-container uk-margin">
+                    <li>Hello! The first item.</li>
+                    <li>Hello again! The second item.</li>
+                    <li>Bazinga! The third item.</li>
+                </ul>
+                <h3 class="el-title uk-margin-medium-top"> Animations </h3>
+                <p>You can apply all animations from the Animation component  to switcher items. To do so, add the <code>animation</code> parameter with the relevant class to the <code>uk-switcher</code> attribute.</p>
+                <h6> PREVIEW</h6>
+                <ul uk-tab uk-switcher="animation: uk-animation-fade">
+                    <li class="uk-active">
+                        <a href="#">Item</a>
+                    </li>
+                    <li>
+                        <a href="#">Item</a>
+                    </li>
+                    <li>
+                        <a href="#">Item</a>
+                    </li>
+                </ul>
+                <ul class="uk-switcher uk-margin">
+                    <li>Hello!</li>
+                    <li>Hello again!</li>
+                    <li>Bazinga!</li>
+                </ul>
+                <h3 class="el-title uk-margin-medium-top">  Switcher and tab </h3>
+                <p>As an exception to the rule, add the <code>uk-tab</code> attribute instead of <code>uk-switcher</code> to the tabbed navigation to combine the switcher with the >Tab component .</p>
+                <h6> PREVIEW</h6> 
+                <ul uk-tab>
+                    <li class="uk-active">
+                        <a href="#">Item</a>
+                    </li>
+                    <li>
+                        <a href="#">Item</a>
+                    </li>
+                    <li>
+                        <a href="#">Item</a>
+                    </li>
+                </ul>
+                <ul class="uk-switcher uk-margin">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</li>
+                </ul>
+            </li>             
+            <!--Sticky -->
+            <li>
+                <h3 class="el-title uk-margin">Sticky</h3>
+                <h6>Make elements remain at the top of the viewport, like a sticky navigation. </h6>
+                <h6> Usage</h6>
+                <p>To create an element that remains at the top of the viewport when scrolling down the site, add the <code>uk-sticky</code> attribute to that element.</p>
+                <h6> PREVIEW</h6>
+                <div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="bottom: #Animation">Stick to the top</div>
+                <p><span class="uk-label">Note</span> Example elements on this page are only sticky until you scroll down to the next heading and disappear afterwards. This was done so as not to clutter your screen with all variations of sticky containers.</p>
+                <div style="height:100px"></div>                 
+                <h3 class="el-title uk-margin-medium-top" id="Animation"> Animation </h3>
+                <p>Add an animation from the Animation component in order to have the sticky element reappear smoothly.</p>
+                <h6> PREVIEW</h6>
+                <div class="uk-card uk-card-default uk-card-body" style="margin-bottom: 200px; z-index: 980;" uk-sticky="top: 100; animation: uk-animation-slide-top; bottom: #on-scroll">Animation Slide Top</div>
+                <h3 class="el-title uk-margin-medium-top" id="on-scroll"> Sticky on scroll up</h3>
+                <p>You can make the sticky element show only when scrolling up to save space. Together with an animation, this makes for a very smooth experience.</p>
+                <h6> PREVIEW</h6>
+                <div class="uk-card uk-card-default uk-card-body" style="margin-bottom: 200px; z-index: 980;" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #Offset">Slide in on scroll up</div>
+                <div style="height:300px"></div>
+                <h3 class="el-title uk-margin-medium-top" id="#Offset"> Offset. </h3>
+                <p>You can position the element below the viewport edge. Add the <code>offset</code> attribute and the distance in pixels.</p>
+                <h6> PREVIEW</h6>
+                <div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="offset: 100; bottom: #top">Stick 100px below the top</div>
+                <div style="height:600px"></div>                 
+            </li>             
+        </ul>  
+            
+            
+
+        </main>    
+        
+         
+        
+        
+        
+        <!-- footer -->         
+        <div class="uk-section-small uk-margin-medium-top"> 
+            <hr class="uk-margin-remove"> 
+            <div class="uk-container uk-align-center uk-margin-remove-bottom uk-position-relative"> 
+                <div uk-grid> 
+                    <div class="uk-width-1-3@m uk-width-1-2@s uk-first-column"> 
+                        <a href="pages-about.html" class="uk-link-heading uk-text-lead uk-text-bold"> <i class="fas fa-graduation-cap"></i>  CoursePlus</a> 
+                        <div class="uk-width-xlarge tm-footer-description">A unique and beautiful collection of UI elements that are all flexible and modular.   building the website of your dreams.</div>                         
+                    </div>                     
+                    <div class="uk-width-expand@m uk-width-1-2@s"> 
+                        <ul class="uk-list  tm-footer-list"> 
+                            <li> 
+                                <a href="#"> Browse Our Library </a> 
+                            </li>                             
+                            <li> 
+                                <a href="#"> Tutorials/Articles </a> 
+                            </li>                             
+                            <li> 
+                                <a href="#"> Scripts and codes</a> 
+                            </li>                             
+                            <li> 
+                                <a href="#"> Ebooks</a> 
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                    <div class="uk-width-expand@m uk-width-1-2@s"> 
+                        <ul class="uk-list tm-footer-list"> 
+                            <li> 
+                                <a href="#"> About us </a> 
+                            </li>                             
+                            <li> 
+                                <a href="#"> Contact Us </a> 
+                            </li>                             
+                            <li> 
+                                <a href="#"> Privacy   </a> 
+                            </li>                             
+                            <li> 
+                                <a href="#">   Policy </a> 
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                    <div class="uk-width-expand@m uk-width-1-2@s"> 
+                        <ul class="uk-list  tm-footer-list"> 
+                            <li> 
+                                <a href="#">Web Design </a> 
+                            </li>                             
+                            <li> 
+                                <a href="#">Web Development  </a> 
+                            </li>                             
+                            <li> 
+                                <a href="#"> iOS Development </a> 
+                            </li>                             
+                            <li> 
+                                <a href="#">  PHP Development </a> 
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                </div>                 
+                <hr>
+                <p class="uk-postion-absoult uk-margin-remove uk-position-bottom-right" style="bottom: 8px;right: 60px;" uk-tooltip="title: Visit Our Site; pos: top-center"> Powered By <a href="#" target="_blank" class="uk-text-bold uk-link-reset"> CoursePlus</a></p> 
+                <div class="uk-margin-small" uk-grid> 
+                    <div class="uk-width-1-2@m uk-width-1-2@s uk-first-column"> 
+                        <p class="uk-text-small"><i class="fas fa-copyright"></i> 2019 <span class="uk-text-bold">CoursePlus</span> . All rights reserved.</p> 
+                    </div>                     
+                    <div class="uk-width-1-3@m uk-width-1-2@s"> 
+                        <a href="#" class="uk-icon-button uk-link-reset" uk-tooltip="title: Our Youtube Chanal; pos: top-center"><i class="fab fa-youtube" style=" color: #fb7575  !important;"></i></a>
+                        <a href="#" class="uk-icon-button uk-link-reset" uk-tooltip="title: Our Facebook; pos: top-center"><i class="fab fa-Facebook" style=" color: #9160ec  !important;"></i></a>
+                        <a href="#" class="uk-icon-button uk-link-reset" uk-tooltip="title: Our Instagram; pos: top-center"><i class="fab fa-Instagram" style=" color: #dc2d2d  !important;"></i></a>
+                        <a href="#" class="uk-icon-button uk-link-reset" uk-tooltip="title: Our linkedin; pos: top-center"><i class="fab fa-linkedin " style=" color: #6949a5  !important;"></i></a>
+                        <a href="#" class="uk-icon-button uk-link-reset" uk-tooltip="title: Our google-plus; pos: top-center"><i class="fab fa-google-plus" style=" color: #f77070 !important;"></i></a>
+                        <a href="#" class="uk-icon-button uk-link-reset" uk-tooltip="title: Our Twitter; pos: top-center"><i class="fab fa-twitter" style=" color: #6f23ff !important;"></i></a>
+                    </div>                     
+                </div>                 
+            </div>             
+        </div>         
+        <!-- footer  end --> 
+
+        <!-- app end -->         
+        <!-- button scrollTop -->         
+        <button id="scrollTop" class="uk-animation-slide-bottom-medium"> 
+            <a href="#" class="uk-text-white" uk-totop uk-scroll></a> 
+        </button>         
+        <!--  Night mood -->         
+        <script>
+        (function (window, document, undefined) {
+          'use strict';
+          if (!('localStorage' in window)) return;
+          var nightMode = localStorage.getItem('gmtNightMode');
+          if (nightMode) {
+              document.documentElement.className += ' night-mode';
+          }
+        })(window, document);
+
+
+        (function (window, document, undefined) {
+
+          'use strict';
+
+          // Feature test
+          if (!('localStorage' in window)) return;
+
+          // Get our newly insert toggle
+          var nightMode = document.querySelector('#night-mode');
+          if (!nightMode) return;
+
+          // When clicked, toggle night mode on or off
+          nightMode.addEventListener('click', function (event) {
+              event.preventDefault();
+              document.documentElement.classList.toggle('night-mode');
+              if ( document.documentElement.classList.contains('night-mode') ) {
+                  localStorage.setItem('gmtNightMode', true);
+                  return;
+              }
+              localStorage.removeItem('gmtNightMode');
+          }, false);
+
+        })(window, document);
+
+        // Preloader
+        var spinneroverlay = document.getElementById("spinneroverlay");
+        window.addEventListener('load', function(){
+            spinneroverlay.style.display = 'none';
+        });
+
+         //scrollTop
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollTop").style.display = "block";
+            } else {
+                document.getElementById("scrollTop").style.display = "none";
+            }
+        }        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        </script>         
+    </body>     
+</html>

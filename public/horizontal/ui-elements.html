@@ -1,0 +1,2255 @@
+<html lang="en"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="../assets/images/favicon.png">
+        <meta name="description" content="">
+        <title> Ui Elements </title>         
+        <!-- Favicon -->
+        <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png">
+        <!-- Your stylesheet-->
+        <link rel="stylesheet" href="../assets/css/uikit.css"> 
+        <link rel="stylesheet" href="../assets/css/main.css">  
+        
+        <!-- font awesome -->                  
+        <link rel="stylesheet" href="../assets/css/fontawesome.css">
+        
+        <!--  javascript -->
+        <script src="../assets/js/simplebar.js"></script>         
+        <script src="../assets/js/uikit.js"></script>  
+    </head> 
+    <body> 
+        <!-- PreLoader -->         
+        <div id="spinneroverlay"> 
+            <div class="spinner"></div>             
+        </div>   
+        <!-- header  -->
+        <header class="tm-header" uk-sticky>
+            <div class=" uk-background-grey uk-navbar-container uk-navbar-transparent uk-padding-small uk-navbar-sticky">
+                <div class="uk-position-relative">
+                    <nav class="uk-navbar-transparent tm-mobile-header uk-animation-slide-top uk-position-z-index" uk-navbar>
+                        <!-- logo -->
+                        <!-- mobile icon for side nav on nav-mobile-->                         
+                        <span class="uk-hidden@m tm-mobile-menu-icon" uk-toggle="target: #mobile-sidebar"><i class="fas fa-bars icon-large"></i></span> 
+                        <!-- mobile icon for user icon on nav-mobile -->                         
+                        <span class="uk-hidden@m tm-mobile-user-icon uk-align-right" uk-toggle="target: #tm-show-on-mobile; cls: tm-show-on-mobile-active"><i class="fas fa-user icon-large"></i></span> 
+                        <!-- mobile logo -->                         
+                        <a class="uk-hidden@m uk-logo" href="Homepage.html"> CoursePlus</a> 
+                        <div class="uk-navbar-left uk-visible@m">
+                            <a href="Homepage.html" class="uk-logo uk-margin-left"> <i class="fas fa-graduation-cap"> </i> CoursePlace</a> 
+                        </div>                         
+                        <div class="uk-navbar-right tm-show-on-mobile uk-flex-right" id="tm-show-on-mobile"> 
+                            <!-- this will clouse after display user icon -->                             
+                            <span class="uk-hidden@m tm-mobile-user-close-icon uk-align-right" uk-toggle="target: #tm-show-on-mobile; cls: tm-show-on-mobile-active"><i class="fas fa-times icon-large"></i></span> 
+                            <ul class="uk-navbar-nav uk-flex-middle"> 
+                                <li> 
+                                    <a href="#modal-full" uk-toggle><i class="fas fa-search icon-medium"></i></a> 
+                                </li>                                 
+                                <li> 
+                                    <!-- your courses -->                                     
+                                    <a href="#"> <i class="fas fa-play uk-hidden@m"></i> <span class="uk-visible@m"> Your Courses</span> </a> 
+                                    <div uk-dropdown="pos: top-right ;mode : click; animation: uk-animation-slide-bottom-medium" class="uk-dropdown border-radius-6  uk-dropdown-top-right tm-dropdown-large uk-padding-remove"> 
+                                        <div class="uk-clearfix"> 
+                                            <div class="uk-float-left"> 
+                                                <h5 class="uk-padding-small uk-margin-remove uk-text-bold  uk-text-left">  Your Courses </h5> 
+                                            </div>                                             
+                                            <div class="uk-float-right"> 
+                                                <i class="fas fa-check uk-align-right  uk-margin-remove uk-margin-remove-left  uk-padding-small uk-text-small"> Completed 3 / 5 </i> 
+                                            </div>                                             
+                                        </div>                                         
+                                        <hr class=" uk-margin-remove"> 
+                                        <div class="uk-padding-smaluk-text-left uk-height-medium"> 
+                                            <div class="demo1" data-simplebar> 
+                                                <div class="uk-child-width-1-2@s  uk-grid-small uk-padding-small" uk-scrollspy="target: > div; cls:uk-animation-slide-bottom-small; delay: 100 ;repeat: true" uk-grid> 
+                                                    <div> 
+                                                        <a href="course-view.html" class="uk-link-reset"> 
+                                                            <div class="uk-padding-small uk-card-default"> 
+                                                                <progress id="js-progressbar" class="uk-progress progress-green uk-margin-small-bottom" value="100" max="100" style="height: 7px;"></progress>                                                                 
+                                                                <img src="../assets/images/courses/tags/css3.JPG" class="uk-align-left  uk-margin-small-right uk-margin-small-bottom  uk-width-1-3  uk-visible@s" alt=""> 
+                                                                <p class="uk-text-bold uk-margin-remove">CSS3 Introduciton </p> 
+                                                                <p class="uk-text-small uk-margin-remove"> by : Hamse mohamoud </p> 
+                                                                <div class="uk-margin-small"> 
+                                                                    <a class="Course-tags uk-margin-small-right   border-radius-6" href="#"> <i class="far fa-play"></i> Course resume</a> 
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                        </a>                                                         
+                                                    </div>                                                     
+                                                    <div> 
+                                                        <a href="course-view.html" class="uk-link-reset"> 
+                                                            <div class="uk-padding-small uk-card-default"> 
+                                                                <progress id="js-progressbar" class="uk-progress progress-coral  uk-margin-small-bottom" value="15" max="100" style="height: 7px !important;"></progress>                                                                 
+                                                                <img src="../assets/images/courses/tags/html5.jpg" class="uk-align-left  uk-margin-small-right uk-margin-small-bottom  uk-width-1-3  uk-visible@s" alt=""> 
+                                                                <p class="uk-text-bold uk-margin-remove">HTML5 Introduciton </p> 
+                                                                <p class="uk-text-small uk-margin-remove"> by : Hamse mohamoud </p> 
+                                                                <div class="uk-margin-small"> 
+                                                                    <a class="Course-tags uk-margin-small-right   border-radius-6" href="#"> <i class="far fa-play"></i> Course resume</a> 
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                        </a>                                                         
+                                                    </div>                                                     
+                                                    <div> 
+                                                        <a href="course-view.html" class="uk-link-reset"> 
+                                                            <div class="uk-padding-small uk-card-default"> 
+                                                                <progress id="js-progressbar" class="uk-progress uk-margin-small-bottom" value="50" max="100" style="height: 7px;"></progress>                                                                 
+                                                                <img src="../assets/images/courses/course-4.jpg" class="uk-align-left  uk-margin-small-right uk-margin-small-bottom  uk-width-1-3" alt=""> 
+                                                                <p class="uk-text-bold uk-margin-remove">Html Introduciton </p> 
+                                                                <p class="uk-text-small uk-margin-remove"> by : Hamse mohamoud </p> 
+                                                            </div>                                                             
+                                                        </a>                                                         
+                                                    </div>                                                     
+                                                    <div> 
+                                                        <a href="course-view.html" class="uk-link-reset"> 
+                                                            <div class="uk-padding-small uk-card-default"> 
+                                                                <progress id="js-progressbar" class="uk-progress progress-green uk-margin-small-bottom" value="100" max="100" style="height: 7px;"></progress>                                                                 
+                                                                <img src="../assets/images/courses/course-5.jpg" class="uk-align-left  uk-margin-small-right uk-margin-small-bottom  uk-width-1-3" alt=""> 
+                                                                <p class="uk-text-bold uk-margin-remove">Web Introduciton </p> 
+                                                                <p class="uk-text-small uk-margin-remove"> by : Hamse mohamoud </p> 
+                                                            </div>                                                             
+                                                        </a>                                                         
+                                                    </div>                                                     
+                                                    <div> 
+                                                        <a href="course-view.html" class="uk-link-reset"> 
+                                                            <div class="uk-padding-small uk-card-default uk-position-relative"> 
+                                                                <progress id="js-progressbar" class="uk-progress  uk-margin-small-bottom" value="30" max="100" style=" height: 7px;"></progress>                                                                 
+                                                                <img src="../assets/images/courses/course-10.jpg" alt=""> 
+                                                                <div class="uk-position-absolute uk-position-medium uk-position-bottom-left uk-text-white"> 
+                                                                    <p class="uk-text-bold uk-margin-remove">CSS3 Introduciton </p> 
+                                                                    <p class="uk-text-small uk-margin-remove"> by : Hamse mohamoud </p> 
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                        </a>                                                         
+                                                    </div>                                                     
+                                                    <div> 
+                                                        <a href="course-view.html" class="uk-link-reset"> 
+                                                            <div class="uk-padding-small uk-card-default uk-position-relative"> 
+                                                                <progress id="js-progressbar" class="uk-progress  uk-margin-small-bottom" value="70" max="100" style="height: 7px;"></progress>                                                                 
+                                                                <img src="../assets/images/courses/course-7.png" alt=""> 
+                                                                <div class="uk-position-absolute uk-position-medium uk-position-bottom-left uk-text-white"> 
+                                                                    <p class="uk-text-bold uk-margin-remove">Bootstrap Introduciton </p> 
+                                                                    <p class="uk-text-small uk-margin-remove"> by : Hamse mohamoud </p> 
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                        </a>                                                         
+                                                    </div>                                                     
+                                                    <div> 
+                                                        <a href="course-view.html" class="uk-link-reset"> 
+                                                            <div class="uk-padding-small uk-card-default"> 
+                                                                <progress id="js-progressbar" class="uk-progress progress-green uk-margin-small-bottom" value="100" max="100" style="height: 7px;"></progress>                                                                 
+                                                                <img src="../assets/images/courses/course-8.jpg" alt=""> 
+                                                                <div class=""> 
+                                                                    <p class="uk-text-bold uk-margin-small-top uk-margin-remove-bottom">Python Introduciton </p> 
+                                                                    <p class="uk-text-small uk-margin-remove"> by : Hamse mohamoud </p> 
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                        </a>                                                         
+                                                    </div>                                                     
+                                                    <div> 
+                                                        <a href="course-view.html" class="uk-link-reset"> 
+                                                            <div class="uk-padding-small uk-card-default"> 
+                                                                <progress id="js-progressbar" class="uk-progress  uk-margin-small-bottom" value="80" max="100" style="height: 7px;"></progress>                                                                 
+                                                                <img src="../assets/images/courses/course-9.jpg" alt=""> 
+                                                                <div class=""> 
+                                                                    <p class="uk-text-bold uk-margin-small-top uk-margin-remove-bottom"> JavaScript Introduciton </p> 
+                                                                    <p class="uk-text-small uk-margin-remove"> by : Hamse mohamoud </p> 
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                        </a>                                                         
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </div>                                             
+                                        </div>                                         
+                                        <hr class=" uk-margin-remove"> 
+                                        <h5 class="uk-padding-small uk-margin-remove uk-text-bold uk-text-center"><a class="uk-link-heading" href="#"> See all </a> </h5> 
+                                    </div>                                     
+                                </li>                                 
+                                <li> 
+                                    <!-- messages -->                                     
+                                    <a href="#"><i class="fas fa-envelope icon-medium"></i></a> 
+                                    <div uk-dropdown="pos: top-right ;mode : click; animation: uk-animation-slide-bottom-small" class="uk-dropdown uk-dropdown-top-right  tm-dropdown-medium border-radius-6 uk-padding-remove uk-box-shadow-large angle-top-right"> 
+                                        <h5 class="uk-padding-small uk-margin-remove uk-text-bold  uk-text-left"> Messages </h5> 
+                                        <a href="#" class="uk-position-top-right uk-link-reset"> <i class="fas fa-trash uk-align-right uk-text-small uk-padding-small"> Clear all</i> </a> 
+                                        <hr class=" uk-margin-remove"> 
+                                        <div class="uk-text-left uk-height-medium"> 
+                                            <div uk-scrollspy="target: > div; cls:uk-animation-slide-bottom-small; delay: 100" data-simplebar> 
+                                                <hr class="uk-margin-remove uk-animation-slide-top-small"> 
+                                                <div class=" uk-padding-small  uk-background-light uk-inline-clip uk-transition-toggle" tabindex="0"> 
+                                                    <div class="uk-transition-slide-right-small uk-position-top-right uk-position-z-index"> 
+                                                        <a class="uk-button uk-padding-small-right uk-padding-remove-left" href="#">    Delete </a> 
+                                                    </div>                                                     
+                                                    <div class="uk-transition-slide-right-medium uk-position-top-right uk-margin-medium-right"> 
+                                                        <a class="uk-button uk-margin-small-right" href="#">    Replay </a> 
+                                                    </div>                                                     
+                                                    <div class="uk-flex-middle uk-grid-small uk-grid" uk-grid=""> 
+                                                        <div class="uk-width-3-4"> 
+                                                            <p class="uk-margin-remove-bottom uk-text-bold">John keni  </p> 
+                                                            <p class="uk-margin-remove">Lorem ipsum dolor sit ame ..</p> 
+                                                            <p class="uk-margin-remove-top uk-text-small uk-text-muted">25 min</p> 
+                                                        </div>                                                         
+                                                        <div class="uk-width-1-4 uk-flex-first uk-first-column"> 
+                                                            <img src="../assets/images/avatures/avature-3.png" alt="Image" class="uk-border-circle uk-animation-slide-left-small"> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                </div>                                                 
+                                                <hr class=" uk-margin-remove"> 
+                                                <div class=" uk-padding-small  uk-background-light uk-inline-clip uk-transition-toggle" tabindex="0"> 
+                                                    <div class="uk-transition-slide-right-small uk-position-top-right uk-position-z-index"> 
+                                                        <a class="uk-button uk-padding-small-right uk-padding-remove-left" href="#">    Delete </a> 
+                                                    </div>                                                     
+                                                    <div class="uk-transition-slide-right-medium uk-position-top-right uk-margin-medium-right"> 
+                                                        <a class="uk-button uk-margin-small-right" href="#">    Replay </a> 
+                                                    </div>                                                     
+                                                    <div class="uk-flex-middle uk-grid-small uk-grid" uk-grid=""> 
+                                                        <div class="uk-width-3-4"> 
+                                                            <p class="uk-margin-remove-bottom uk-text-bold">John keni  </p> 
+                                                            <p class="uk-margin-remove">Lorem ipsum dolor sit ame ..</p> 
+                                                            <p class="uk-margin-remove-top uk-text-small uk-text-muted">25 min</p> 
+                                                        </div>                                                         
+                                                        <div class="uk-width-1-4 uk-flex-first uk-first-column"> 
+                                                            <img src="../assets/images/avatures/avature.jpg" alt="Image" class="uk-border-circle uk-animation-slide-left-small"> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                </div>                                                 
+                                                <hr class=" uk-margin-remove"> 
+                                                <div class=" uk-padding-small  uk-background-light uk-inline-clip uk-transition-toggle" tabindex="0"> 
+                                                    <div class="uk-transition-slide-right-small uk-position-top-right uk-position-z-index"> 
+                                                        <a class="uk-button uk-padding-small-right uk-padding-remove-left" href="#">    Delete </a> 
+                                                    </div>                                                     
+                                                    <div class="uk-transition-slide-right-medium uk-position-top-right uk-margin-medium-right"> 
+                                                        <a class="uk-button uk-margin-small-right" href="#">    Replay </a> 
+                                                    </div>                                                     
+                                                    <div class="uk-flex-middle uk-grid-small uk-grid" uk-grid=""> 
+                                                        <div class="uk-width-3-4"> 
+                                                            <p class="uk-margin-remove-bottom uk-text-bold">John keni  </p> 
+                                                            <p class="uk-margin-remove">Lorem ipsum dolor sit ame ..</p> 
+                                                            <p class="uk-margin-remove-top uk-text-small uk-text-muted">25 min</p> 
+                                                        </div>                                                         
+                                                        <div class="uk-width-1-4 uk-flex-first uk-first-column"> 
+                                                            <img src="../assets/images/avatures/avature-5.png" alt="Image" class="uk-border-circle uk-animation-slide-left-small"> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                </div>                                                 
+                                                <hr class=" uk-margin-remove"> 
+                                                <div class=" uk-padding-small  uk-background-light uk-inline-clip uk-transition-toggle" tabindex="0"> 
+                                                    <div class="uk-transition-slide-right-small uk-position-top-right uk-position-z-index"> 
+                                                        <a class="uk-button uk-padding-small-right uk-padding-remove-left" href="#">    Delete </a> 
+                                                    </div>                                                     
+                                                    <div class="uk-transition-slide-right-medium uk-position-top-right uk-margin-medium-right"> 
+                                                        <a class="uk-button uk-margin-small-right" href="#">    Replay </a> 
+                                                    </div>                                                     
+                                                    <div class="uk-flex-middle uk-grid-small uk-grid" uk-grid=""> 
+                                                        <div class="uk-width-3-4"> 
+                                                            <p class="uk-margin-remove-bottom uk-text-bold">John keni  </p> 
+                                                            <p class="uk-margin-remove">Lorem ipsum dolor sit ame ..</p> 
+                                                            <p class="uk-margin-remove-top uk-text-small uk-text-muted">25 min</p> 
+                                                        </div>                                                         
+                                                        <div class="uk-width-1-4 uk-flex-first uk-first-column"> 
+                                                            <img src="../assets/images/avatures/avature-2.png" alt="Image" class="uk-border-circle uk-animation-slide-left-small"> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                </div>                                                 
+                                                <hr class=" uk-margin-remove"> 
+                                                <div class=" uk-padding-small  uk-background-light uk-inline-clip uk-transition-toggle" tabindex="0"> 
+                                                    <div class="uk-transition-slide-right-small uk-position-top-right uk-position-z-index"> 
+                                                        <a class="uk-button uk-padding-small-right uk-padding-remove-left" href="#">    Delete </a> 
+                                                    </div>                                                     
+                                                    <div class="uk-transition-slide-right-medium uk-position-top-right uk-margin-medium-right"> 
+                                                        <a class="uk-button uk-margin-small-right" href="#">    Replay </a> 
+                                                    </div>                                                     
+                                                    <div class="uk-flex-middle uk-grid-small uk-grid" uk-grid=""> 
+                                                        <div class="uk-width-3-4"> 
+                                                            <p class="uk-margin-remove-bottom uk-text-bold">John keni  </p> 
+                                                            <p class="uk-margin-remove">Lorem ipsum dolor sit ame ..</p> 
+                                                            <p class="uk-margin-remove-top uk-text-small uk-text-muted">25 min</p> 
+                                                        </div>                                                         
+                                                        <div class="uk-width-1-4 uk-flex-first uk-first-column"> 
+                                                            <img src="../assets/images/avatures/avature-1.png" alt="Image" class="uk-border-circle"> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                </div>                                                 
+                                                <hr class=" uk-margin-remove"> 
+                                                <div class=" uk-padding-small  uk-background-light uk-inline-clip uk-transition-toggle" tabindex="0"> 
+                                                    <div class="uk-transition-slide-right-small uk-position-top-right uk-position-z-index"> 
+                                                        <a class="uk-button uk-padding-small-right uk-padding-remove-left" href="#">    Delete </a> 
+                                                    </div>                                                     
+                                                    <div class="uk-transition-slide-right-medium uk-position-top-right uk-margin-medium-right"> 
+                                                        <a class="uk-button uk-margin-small-right" href="#">    Replay </a> 
+                                                    </div>                                                     
+                                                    <div class="uk-flex-middle uk-grid-small uk-grid" uk-grid=""> 
+                                                        <div class="uk-width-3-4"> 
+                                                            <p class="uk-margin-remove-bottom uk-text-bold">John keni  </p> 
+                                                            <p class="uk-margin-remove">Lorem ipsum dolor sit ame ..</p> 
+                                                            <p class="uk-margin-remove-top uk-text-small uk-text-muted">25 min</p> 
+                                                        </div>                                                         
+                                                        <div class="uk-width-1-4 uk-flex-first uk-first-column"> 
+                                                            <img src="../assets/images/avatures/avature.jpg" alt="Image" class="uk-border-circle"> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </div>                                             
+                                        </div>                                         
+                                        <hr class=" uk-margin-remove"> 
+                                        <h5 class="uk-padding-small uk-margin-remove uk-text-bold uk-text-center"><a class="uk-link-heading" href=""> See all </a> </h5> 
+                                    </div>                                     
+                                </li>                                 
+                                <li> 
+                                    <!-- Notivications -->                                     
+                                    <a href="#"><i class="fas fa-bell icon-medium"></i></a> 
+                                    <div uk-dropdown="pos: top-right ;mode : hover; animation: uk-animation-slide-bottom-small" class="uk-dropdown uk-dropdown-top-right  tm-dropdown-small border-radius-6 uk-padding-remove uk-box-shadow-large angle-top-right"> 
+                                        <h5 class="uk-padding-small uk-margin-remove uk-text-bold  uk-text-left"> Notivications </h5> 
+                                        <a href="#" class="uk-position-top-right uk-link-reset"> <i class="fas fa-trash uk-align-right uk-text-small uk-padding-small"> Clear all</i></a> 
+                                        <hr class=" uk-margin-remove"> 
+                                        <div class="uk-padding-smaluk-text-left uk-height-medium"> 
+                                            <div data-simplebar> 
+                                                <div class="uk-padding-small" uk-scrollspy="target: > div; cls:uk-animation-slide-bottom-small; delay: 100 ; repeat: true"> 
+                                                    <div class="uk-flex-middle uk-grid-small" uk-grid> 
+                                                        <div class="uk-width-3-4"> 
+                                                            <p class="uk-margin-remove">Lorem ipsum dolor   ame ..</p> 
+                                                            <p class="uk-margin-remove-top uk-text-small uk-text-muted">25 min</p> 
+                                                        </div>                                                         
+                                                        <div class="uk-width-1-5 uk-flex-first"> 
+                                                            <img src="../assets/images/avatures/avature-4.png" alt="Image" class="uk-border-circle"> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                    <div class="uk-flex-middle uk-grid-small" uk-grid> 
+                                                        <div class="uk-width-3-4"> 
+                                                            <p class="uk-margin-remove">Lorem ipsum dolor   ame ..</p> 
+                                                            <p class="uk-margin-remove-top uk-text-small uk-text-muted">25 min</p> 
+                                                        </div>                                                         
+                                                        <div class="uk-width-1-5 uk-flex-first"> 
+                                                            <img src="../assets/images/avatures/avature-1.png" alt="Image" class="uk-border-circle"> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                    <div class="uk-flex-middle uk-grid-small" uk-grid> 
+                                                        <div class="uk-width-3-4"> 
+                                                            <p class="uk-margin-remove">Lorem ipsum dolor   ame ..</p> 
+                                                            <p class="uk-margin-remove-top uk-text-small uk-text-muted">25 min</p> 
+                                                        </div>                                                         
+                                                        <div class="uk-width-1-5 uk-flex-first"> 
+                                                            <img src="../assets/images/avatures/avature.jpg" alt="Image" class="uk-border-circle"> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                    <div class="uk-flex-middle uk-grid-small" uk-grid> 
+                                                        <div class="uk-width-3-4"> 
+                                                            <p class="uk-margin-remove">Lorem ipsum dolor   ame ..</p> 
+                                                            <p class="uk-margin-remove-top uk-text-small uk-text-muted">25 min</p> 
+                                                        </div>                                                         
+                                                        <div class="uk-width-1-5 uk-flex-first"> 
+                                                            <img src="../assets/images/avatures/avature-2.png" alt="Image" class="uk-border-circle"> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                    <div class="uk-flex-middle uk-grid-small" uk-grid> 
+                                                        <div class="uk-width-3-4"> 
+                                                            <p class="uk-margin-remove">Lorem ipsum dolor   ame ..</p> 
+                                                            <p class="uk-margin-remove-top uk-text-small uk-text-muted">25 min</p> 
+                                                        </div>                                                         
+                                                        <div class="uk-width-1-5 uk-flex-first"> 
+                                                            <img src="../assets/images/avatures/avature-3.png" alt="Image" class="uk-border-circle"> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                    <div class="uk-flex-middle uk-grid-small" uk-grid> 
+                                                        <div class="uk-width-3-4"> 
+                                                            <p class="uk-margin-remove">Lorem ipsum dolor   ame ..</p> 
+                                                            <p class="uk-margin-remove-top uk-text-small uk-text-muted">25 min</p> 
+                                                        </div>                                                         
+                                                        <div class="uk-width-1-5 uk-flex-first"> 
+                                                            <img src="../assets/images/avatures/avature-4.png" alt="Image" class="uk-border-circle"> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                    <div class="uk-flex-middle uk-grid-small" uk-grid> 
+                                                        <div class="uk-width-3-4"> 
+                                                            <p class="uk-margin-remove">Lorem ipsum dolor   ame ..</p> 
+                                                            <p class="uk-margin-remove-top uk-text-small uk-text-muted">25 min</p> 
+                                                        </div>                                                         
+                                                        <div class="uk-width-1-5 uk-flex-first"> 
+                                                            <img src="../assets/images/avatures/avature-1.png" alt="Image" class="uk-border-circle"> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                </li>
+                                <li> 
+                                    <!--  night mode  -->                                     
+                                    <a href="#"><i class="fas fa-moon icon-medium"></i></a>
+                                    <div uk-drop="pos: top-right ;mode:click ; offset: 20;animation: uk-animation-scale-up" class="uk-drop"> 
+                                        <div class="uk-card-small uk-box-shadow-xlarge uk-card-default uk-maring-small-left  border-radius-6"> 
+                                            <div class="uk-card uk-card-default border-radius-6"> 
+                                                <div class="uk-card-header"> 
+                                                    <h5 class="uk-card-title uk-margin-remove-bottom">Swich to night mode</h5> 
+                                                </div>                                                 
+                                                <div class="uk-card-body"> 
+                                                    <p>Turns the light surfaces of the page dark, creating an experience ideal for night. Try it!</p> 
+                                                    <p class="uk-text-small uk-align-left uk-margin-remove  uk-text-muted">DARK THEME </p> 
+                                                    <!-- night mode button -->                                                     
+                                                    <div class="btn-night uk-align-right" id="night-mode"> 
+                                                        <label class="tm-switch"> 
+                                                            <div class="uk-switch-button"></div>                                                             
+                                                        </label>                                                         
+                                                    </div>                                                     
+                                                    <!-- end  night mode button -->                                                     
+                                                </div>                                                 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                </li>                                 
+                                <li> 
+                                    <!-- User profile -->                                     
+                                    <a href="#"> 
+                                        <img src="../assets/images/avatures/avature-2.png" alt="" class="uk-border-circle user-profile-tiny"> 
+                                    </a>                                     
+                                    <div uk-dropdown="pos: top-right ;mode : click ;animation: uk-animation-slide-right" class="uk-dropdown uk-padding-small uk-dropdown-top-right  angle-top-right"> 
+                                        <p class="uk-margin-remove-bottom uk-margin-small-top uk-text-bold"> Hamse Mohamoud  </p> 
+                                        <p class="uk-margin-remove-top uk-text-small uk-margin-small-bottom"> Bankook China</p> 
+                                        <ul class="uk-nav uk-dropdown-nav"> 
+                                            <li> 
+                                                <a href="Profile.html"> <i class="fas fa-user uk-margin-small-right"></i> Profile</a> 
+                                            </li>                                             
+                                            <li> 
+                                                <a href="#"> <i class="fas fa-envelope uk-margin-small-right"></i> Messages </a> 
+                                            </li>                                             
+                                            <li> 
+                                                <a href="#"> <i class="fas fa-share uk-margin-small-right"></i> Invite freind</a> 
+                                            </li>                                             
+                                            <li> 
+                                                <a href="#"> <i class="fas fa-cog uk-margin-small-right"></i> Setting</a> 
+                                            </li>                                             
+                                            <li class="uk-nav-divider"></li>                                             
+                                            <li> 
+                                                <a href="#"> <i class="fas fa-sign-out-alt uk-margin-small-right"></i> Log out</a> 
+                                            </li>                                             
+                                        </ul>                                         
+                                    </div>                                     
+                                </li>                                 
+                            </ul>                             
+                        </div>
+                        <!-- Navigation for mobile -->
+                        <div id="mobile-sidebar" class="mobile-sidebar" uk-offcanvas="overlay:true">
+                            <div class="uk-offcanvas-bar uk-preserve-color uk-padding-remove"> 
+                                <ul uk-accordion> 
+                                    <li class="uk-open"> 
+                                        <a href="#" class="uk-accordion-title uk-text-black uk-padding-small"> <i class="fas fa-play-circle uk-margin-small-right"></i> Courses </a> 
+                                        <div class="uk-accordion-content uk-margin-remove-top"> 
+                                            <ul class="uk-list tm-drop-topic-list">
+                                                <li>
+                                                    <a href="course-grid.html"> All Development</a>
+                                                </li>                                                 
+                                                <li>
+                                                    <a href="course-grid.html"> Web  Development </a>
+                                                </li>                                                 
+                                                <li>
+                                                    <a href="course-grid.html">  Mobile App  </a>
+                                                </li>                                                 
+                                                <li>
+                                                    <a href="course-grid.html">  Programming language  </a>
+                                                </li>                                                 
+                                                <li>
+                                                    <a href="course-grid.html">  Software   </a>
+                                                </li>                                                 
+                                                <li>
+                                                    <a href="course-grid.html">  Ecommerce  </a>
+                                                </li>
+                                                <li>
+                                                    <a href="course-grid.html"> Training</a>
+                                                </li>                                                 
+                                            </ul>
+                                        </div>                                         
+                                    </li>
+                                    <li class="uk-margin-remove-top"> 
+                                        <a href="#" class="uk-accordion-title uk-text-black uk-padding-small"> <i class="fas fa-code uk-margin-small-right"></i> Scripts  </a> 
+                                        <div class="uk-accordion-content uk-margin-remove-top"> 
+                                            <ul class="uk-list tm-drop-topic-list">
+                                                <li>
+                                                    <a href="scripts.html"> Php scrips </a>
+                                                </li>                                                 
+                                                <li>
+                                                    <a href="scripts.html"> HTML templates </a>
+                                                </li>                                                 
+                                                <li>
+                                                    <a href="scripts.html">  Wordpress plugins  </a>
+                                                </li>                                                 
+                                                <li>
+                                                    <a href="scripts.html">  Wordpress themes  </a>
+                                                </li>                                                 
+                                                <li>
+                                                    <a href="scripts.html">  App source codes  </a>
+                                                </li>                                                  
+                                            </ul>
+                                        </div>                                         
+                                    </li>
+                                    <li class="uk-margin-remove-top"> 
+                                        <a href="#" class="uk-accordion-title uk-text-black uk-padding-small"> <i class="fas fa-clone uk-margin-small-right"></i> Pages </a> 
+                                        <div class="uk-accordion-content uk-margin-remove-top"> 
+                                            <ul class="uk-list tm-drop-topic-list"> 
+                                                <li>
+                                                    <a href="help.html"> Help </a>
+                                                </li>
+                                                <li>
+                                                    <a href="pages-term.html"> Term </a>
+                                                </li>                                                 
+                                                <li>
+                                                    <a href="pages-faq.html"> Faq </a>
+                                                </li>                                                 
+                                                <li>
+                                                    <a href="ui-compuntes.html"> Ui Compuntes </a>
+                                                </li>                                                 
+                                                <li>
+                                                    <a href="ui-elements.html"> Ui Elements </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui-helpers.html"> Ui Helpers </a>
+                                                </li>                                                 
+                                            </ul>
+                                        </div>                                         
+                                    </li> 
+                                    <li class="uk-margin-remove-top uk-padding-small"> 
+                                        <a href="books.html" class="uk-text-black"> <i class="fas fa-book-open uk-margin-small-right"></i> Books </a> 
+                                    </li> 
+                                    <li class="uk-margin-remove-top uk-padding-small"> 
+                                        <a href="blog.html" class="uk-text-black"> <i class="fas fa-file-alt uk-margin-small-right"></i> Blog </a> 
+                                    </li>                                       
+                                    <li class="uk-margin-remove-top uk-padding-small"> 
+                                        <a href="#" class="uk-text-black"> <i class="fas fa-comment-alt uk-margin-small-right"></i> Discussion </a> 
+                                    </li>
+                                                                        
+                                </ul>                                 
+                            </div>
+                        </div>                         
+                        <!-- search box -->                         
+                        <div id="modal-full" class="uk-modal-full uk-modal uk-animation-scale-down" uk-modal> 
+                            <div class="uk-modal-dialog uk-flex uk-flex-center" uk-height-viewport> 
+                                <button class="uk-modal-close-full" type="button" uk-close></button>                                 
+                                <form class="uk-search uk-margin-xlarge-top uk-search-large uk-animation-slide-bottom-medium"> 
+                                    <i class="fas fa-search uk-position-absolute uk-margin-top icon-xxlarge"></i> 
+                                    <input class="uk-search-input uk-margin-large-left" type="search" placeholder="Search..." autofocus> 
+                                </form>                                 
+                            </div>                             
+                        </div>                         
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- Navigation  -->
+        <div class="uk-navbar-sticky uk-background-grey">
+            <nav class="uk-padding-small uk-visible@m uk-navbar-transparent uk-animation-slide-to uk-position-z-index" uk-navbar>
+                <div class="uk-flex uk-flex-center uk-width-expand">
+                    <ul class="uk-subnav uk-subnav-2">
+                        <li>
+                            <a href="#"> <i class="fas fa-play icon-medium uk-margin-small-right"></i> Courses </a>
+                            <!-- drop topic list -->
+                            <div uk-drop="pos: top-left ;mode:click ; offset: 10;animation: uk-animation-slide-bottom-small" class="uk-drop angle-top-left"> 
+                                <div class="tm-drop-topic">
+                                    <div class="uk-grid-collapse uk-grid-match" uk-grid> 
+                                        <div class="uk-width-1-2"> 
+                                            <ul uk-tab="connect: #component-tab-left;animation: uk-animation-slide-left-small, uk-animation-slide-right-small" class="tm-drop-topic-list uk-card uk-card-default uk-margin-remove uk-box-shadow-large"> 
+                                                <li>
+                                                    <a href="#"> <i class="far fa-credit-card  uk-margin-small-right"></i> Web Development <i class="fas fa-chevron-right uk-position-center-right uk-margin-right"></i> </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"> <i class="fas fa-briefcase   uk-margin-small-right"></i>   Business  <i class="fas fa-chevron-right uk-position-center-right uk-margin-right"></i> </a> 
+                                                </li>                                                 
+                                                <li>
+                                                    <a href="#"> <i class="fas fa-pencil-ruler  uk-margin-small-right"></i>   Office Productivity  <i class="fas fa-chevron-right uk-position-center-right uk-margin-right"></i> </a> 
+                                                </li>
+                                                <li>
+                                                    <a href="#"> <i class="fas fa-brain  uk-margin-small-right"></i>    Personal Development <i class="fas fa-chevron-right uk-position-center-right uk-margin-right"></i> </a> 
+                                                </li>
+                                                <li>
+                                                    <a href="#"> <i class="fas fa-bullhorn uk-margin-small-right"></i>   Marketing  <i class="fas fa-chevron-right uk-position-center-right uk-margin-right"></i> </a> 
+                                                </li>
+                                                <li>
+                                                    <a href="#"> <i class="fas fa-life-ring  uk-margin-small-right"></i>   Life Style <i class="fas fa-chevron-right uk-position-center-right uk-margin-right"></i> </a> 
+                                                </li>                                                 
+                                                <li>
+                                                    <a href="#"> <i class="fas fa-camera uk-margin-small-right"></i>   Photography <i class="fas fa-chevron-right uk-position-center-right uk-margin-right"></i> </a> 
+                                                </li>
+                                                <li>
+                                                    <a href="#"> <i class="fas fa-briefcase-medical uk-margin-small-right"></i>   Health & Fitness <i class="fas fa-chevron-right uk-position-center-right uk-margin-right"></i> </a> 
+                                                </li>
+                                                <li>
+                                                    <a href="#"> <i class="fas fa-shopping-bag  uk-margin-small-right"></i>   Ecommerce <i class="fas fa-chevron-right uk-position-center-right uk-margin-right"></i> </a> 
+                                                </li>
+                                                <li>
+                                                    <a href="#"> <i class="fas fa-utensils  uk-margin-small-right"></i>   Food & cooking <i class="fas fa-chevron-right uk-position-center-right uk-margin-right"></i> </a> 
+                                                </li>
+                                            </ul>
+                                        </div>                                         
+                                        <div class="uk-width-1-2 uk-width-1-2"> 
+                                            <ul id="component-tab-left" class="uk-switcher uk-card uk-card-default uk-box-shadow-large">
+                                                <li>
+                                                    <!-- Web Development list -->                                                     
+                                                    <ul class="tm-drop-topic-list uk-padding-remove">
+                                                        <li>
+                                                            <a href="course-grid.html"> All Development</a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html"> Web  Development </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html">  Mobile App  </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html">  Programming language  </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html">  Game Development  </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html">  Software   </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html">  Development tools  </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html">  Ecommerce  </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="course-grid.html"> Training</a>
+                                                        </li>                                                         
+                                                    </ul>                                                     
+                                                </li>
+                                                <li>
+                                                    <!-- Business courses list -->                                                     
+                                                    <ul class="tm-drop-topic-list uk-padding-remove">
+                                                        <li>
+                                                            <a href="course-grid.html"> All Business </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html"> Finance </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html">  Sales  </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html">  Startegy  </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html">  Sales  </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html">  Other  </a>
+                                                        </li>                                                         
+                                                    </ul>                                                     
+                                                </li>
+                                                <li>
+                                                    <!-- IT & Software  courses list -->                                                     
+                                                    <ul class="tm-drop-topic-list uk-padding-remove"> 
+                                                        <li>
+                                                            <a href="course-grid.html"> Hadware   </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html"> Operating system  </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html"> Network  </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html"> Other  </a>
+                                                        </li>                                                         
+                                                    </ul>                                                     
+                                                </li>
+                                                <li>
+                                                    <!--Personal development  courses list -->                                                     
+                                                    <ul class="tm-drop-topic-list uk-padding-remove"> 
+                                                        <li>
+                                                            <a href="course-grid.html"> Leadership   </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html"> Productivity    </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html"> Personal Finance  </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html"> Other  </a>
+                                                        </li>                                                         
+                                                    </ul>                                                     
+                                                </li>
+                                                <li>
+                                                    <!-- Marketing  courses list -->                                                     
+                                                    <ul class="tm-drop-topic-list uk-padding-remove"> 
+                                                        <li>
+                                                            <a href="course-grid.html"> All Marketing   </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html"> Digital Marketing    </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html"> Search Engine Optimization  </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html"> Other  </a>
+                                                        </li>                                                         
+                                                    </ul>                                                     
+                                                </li>
+                                                <li>
+                                                    <!-- Life style  courses list -->                                                     
+                                                    <ul class="tm-drop-topic-list uk-padding-remove"> 
+                                                        <li>
+                                                            <a href="course-grid.html"> Food   </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html"> Travel    </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html"> Gaming   </a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a href="course-grid.html"> Other  </a>
+                                                        </li>                                                         
+                                                    </ul>                                                     
+                                                </li>
+                                            </ul>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>
+                        </li>
+                        <li>
+                            <a href="books.html"> <i class="fas fa-book-open icon-medium uk-margin-small-right"></i> Books </a>
+                        </li>
+                        <li class="uk-active">
+                            <a href="#"> <i class="fas fa-file-alt icon-medium uk-margin-small-right"></i> Blogs </a>
+                            <div uk-dropdown> 
+                                <ul class="uk-nav uk-dropdown-nav"> 
+                                    <li>
+                                        <a href="blog.html"> Blogs </a>
+                                    </li>                                     
+                                    <li>
+                                        <a href="blog.html"> Articles</a>
+                                    </li>
+                                    <li class="uk-nav-header uk-margin-small-top"> Blog Videos </li>                                     
+                                    <li>
+                                        <a href="blog-video.html"> Video Layout 1 </a>
+                                    </li>                                     
+                                    <li>
+                                        <a href="blog-video-post.html"> Video Layout 2 </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fas fa-code icon-medium uk-margin-small-right"></i> Scripts </a>
+                            <div uk-drop="pos: top  ;mode:click ; offset: 10;animation: uk-animation-slide-bottom-small" class="uk-drop tm-dropdown-medium"> 
+                                <div class="uk-card-small uk-box-shadow-xlarge uk-card-default uk-maring-small-left  border-radius-6"> 
+                                    <div class="uk-card uk-card-default border-radius-6"> 
+                                        <div class="uk-card-body">
+                                            <div class="uk-child-width-1-3 uk-grid-collapse  uk-text-small uk-text-center uk-flex-center" uk-grid>
+                                                <div> 
+                                                    <a href="scripts.html" class="uk-link-reset"> <i class="fab fa-html5 info-big-icon"></i> <p class="uk-margin-small-top uk-margin-remove-bottom">  Html templates   </p> </a> 
+                                                </div>
+                                                <div> 
+                                                    <a href="scripts.html" class="uk-link-reset"> <i class="fab fa-php info-big-icon"></i> <p class="uk-margin-small-top uk-margin-remove-bottom">    PHP Scripts  </p> </a>
+                                                </div>
+                                                <div> 
+                                                    <a href="scripts.html" class="uk-link-reset"> <i class="fab fa-wordpress info-big-icon"></i> <p class="uk-margin-small-top uk-margin-remove-bottom">    Cms Plugins  </p> </a>
+                                                </div>
+                                                <div class="uk-margin-small-top"> 
+                                                    <a href="scripts.html" class="uk-link-reset"> <i class="fab fa-wordpress-simple info-big-icon"></i> <p class="uk-margin-small-top uk-margin-remove-bottom">  Cms themes  </p> </a>
+                                                </div>
+                                                <div class="uk-margin-small-top"> 
+                                                    <a href="scripts.html" class="uk-link-reset"> <i class="fab fa-android info-big-icon"></i> <p class="uk-margin-small-top uk-margin-remove-bottom">   Apps Source    </p> </a>
+                                                </div>
+                                                <div class="uk-margin-small-top"> 
+                                                    <a href="scripts.html" class="uk-link-reset"> <i class="fas fa-code  info-big-icon"></i> <p class="uk-margin-small-top uk-margin-remove-bottom">  All Scripts  </p> </a>
+                                                </div>
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                        </li>
+                        <li>
+                            <a href="discussion.html"> <i class="fas fa-comment-alt icon-medium uk-margin-small-right"></i> Discussion </a>
+                        </li>                         
+                        <li>
+                            <a href="#"> <i class="fas fa-clone icon-medium uk-margin-small-right"></i> Pages </a>
+                            <div class="tm-dropdown-medium" uk-dropdown="mode:click ;"> 
+                                <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid> 
+                                    <div> 
+                                        <ul class="uk-nav uk-dropdown-nav"> 
+                                            <li>
+                                                <a href="help.html"> Help </a> 
+                                            </li>                                             
+                                            <li>
+                                                <a href="pages-term.html"> Terms </a>
+                                            </li>                                             
+                                            <li>
+                                                <a href="pages-faq.html"> Faq </a>
+                                            </li>                                             
+                                            <li>
+                                                <a href="pages-term.html"> About    </a>
+                                            </li>
+                                        </ul>
+                                    </div>                                     
+                                    <div> 
+                                        <ul class="uk-nav uk-dropdown-nav"> 
+                                            <li>
+                                                <a href="profile.html"> Profile  </a>
+                                            </li>
+                                            <li>
+                                                <a href="ui-elements.html"> UI Elements  </a> 
+                                            </li>                                             
+                                            <li>
+                                                <a href="ui-compuntes.html"> Ui Compuntes</a>
+                                            </li>                                             
+                                            <li>
+                                                <a href="ui-helpers.html"> Ui Helpers </a>
+                                            </li>                                             
+                                        </ul>
+                                    </div>                                     
+                                </div>
+                            </div>
+                        </li>                         
+                    </ul>                     
+                </div>
+            </nav>             
+        </div> 
+        <main>
+            
+            <div class="uk-section-small uk-section-default"> 
+                <div class="uk-container uk-text-center">
+                    <h1 class="uk-margin-medium-top">  Elements </h1>
+                    <p>  Essential interface elements that only require a single CSS class. </p>
+                </div>
+            </div>   
+    
+            
+            <button class="uk-button uk-button-default uk-hidden@m" type="button" uk-toggle="target: #tabs-moible; cls: tabs-moible" style="position: absolute;margin-top: -52px; margin-left: 32px;"> Open submenu </button>
+            <!-- Sub navigations -->
+            <ul uk-tab  class="uk-tab uk-flex-center uk-margin-remove-top uk-background-default tabs-moible-hidden  uk-nav-shadow"  id="tabs-moible"   uk-sticky=" offset:86 ;animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">
+                    <li aria-expanded="true" class="uk-active">
+                        <a href="#"> Breadcrumb </a>
+                    </li>                     
+                    <li aria-expanded="false" class="">
+                        <a href="#"> Button </a>
+                    </li>
+                    <li aria-expanded="false" class="">
+                        <a href="#"> Card </a>
+                    </li>
+                    <li aria-expanded="false" class="">
+                        <a href="#"> Dropdown </a>
+                    </li>
+                    <li aria-expanded="false" class="">
+                        <a href="#"> Form </a>
+                    </li>
+                    <li aria-expanded="false" class="">
+                        <a href="#"> Gird </a>
+                    </li>
+                    <li aria-expanded="false" class="">
+                        <a href="#"> nav </a>
+                    </li> 
+                    <li aria-expanded="false" class="">
+                        <a href="#"> Heading </a>
+                    </li>
+                    <li aria-expanded="false" class="">
+                            <a href="#"> Navbar </a>
+                        </li>
+                    <li aria-expanded="false" class="">
+                        <a href="#"> Taypography </a>
+                    </li> 
+                    <li aria-expanded="false" class="">
+                        <a href="#"> Pagination </a>
+                    </li>
+                </ul>
+              <!-- Content tabs  -->
+                <ul class="uk-switcher uk-margin uk-container-xsmall uk-margin-auto demo-content">
+                     <!-- Content tabs  -->                                    
+                    <!-- Breadcrumb  -->
+                    <li class="uk-active"> 
+                        <h3 class="el-title uk-margin">Breadcrumb</h3>
+                        <p>Create breadcrumbs to show users their location within a website.</p>
+                        <h6> 
+                            Usage
+                        </h6>
+                        <p>The Breadcrumb component consists of links, which are aligned side by side and separated by a divider. Add the <code>.uk-breadcrumb</code> class to a <code>&lt;ul&gt;</code> element to define the component. Use <code>&lt;a&gt;</code> elements as breadcrumb items within the list. An active state is automatically applied to the last <code>&lt;li&gt;</code> element.</p>
+                        <p>To add list items without a link, use a <code>&lt;span&gt;</code> element instead of an <code>&lt;a&gt;</code>. Alternatively, disable an <code>&lt;a&gt;</code> element by adding the <code>.uk-disabled</code> class to the <code>&lt;li&gt;</code> element and remove the <code>href</code> attribute from the anchor to make it inaccessible through keyboard navigation.</p>
+                        <h6> 
+                                PREVIEW 
+                        </h6>
+                        <ul class="uk-breadcrumb">
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li class="uk-disabled"><a>Disabled</a></li>
+                                <li><span>Active</span></li>
+                        </ul>
+
+                        <h6> 
+                                MARKUP
+                        </h6>
+ 
+  
+                    </li>
+                    <!--Button -->
+                    <li class=""> 
+                        <h3 class="el-title uk-margin">Button</h3>
+                        <h6> 
+                            Easily create nice looking buttons, which come in different styles.
+                        </h6>
+                        <h6>
+                            Usage
+                        </h6>
+                        <p>To apply this component, add the <code>.uk-button</code> class and a modifier such as <code>.uk-button-default</code> to an <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code> element. Add the <code>disabled</code> attribute to a <code>&lt;button&gt;</code> element to disable the button.</p>
+
+                        <h6>
+                            PREVIEW
+                        </h6>
+                        <p uk-margin>
+                                <a class="uk-button uk-button-default" href="#">Link</a>
+                                <button class="uk-button uk-button-default">Button</button>
+                                <button class="uk-button uk-button-default" disabled>Disabled</button>
+                        </p>
+  
+                     
+ 
+                    <h3 class="el-title uk-margin-medium-top">  Style modifiers  </h3>
+                    <p>   There are several style modifiers available. Just add one of the following classes to apply a different look.
+                    </p>
+                    <h6> PREVIEW</h6>
+                    <p uk-margin>
+                            <button class="uk-button uk-button-default">Default</button>
+                            <button class="uk-button uk-button-primary">Primary</button>
+                            <button class="uk-button uk-button-secondary">Secondary</button>
+                            <button class="uk-button uk-button-danger uk-text-bold">Danger</button>
+							<button class="uk-button uk-button-success uk-text-bold">Success</button>
+                            <button class="uk-button uk-button-text">Text</button>
+                            <button class="uk-button uk-button-link">Link</button>
+                    </p>
+  
+ 
+                    <h3 class="el-title uk-margin-medium-top"> Size modifiers  </h3>
+                    <p>Add the <code>.uk-button-small</code> or <code>.uk-button-large</code> class to a button to make it smaller or larger.</p>
+                    <h6> PREVIEW</h6>
+                       <p uk-margin>
+                            <button class="uk-button uk-button-default uk-button-small">Small button</button>
+                            <button class="uk-button uk-button-primary uk-button-small">Small button</button>
+                            <button class="uk-button uk-button-secondary uk-button-small">Small button</button>
+                        </p>
+                        
+                        <p uk-margin>
+                            <button class="uk-button uk-button-default uk-button-large">Large button</button>
+                            <button class="uk-button uk-button-primary uk-button-large">Large button</button>
+                            <button class="uk-button uk-button-secondary uk-button-large">Large button</button>
+                        </p>
+                        
+                      
+ 
+                     <h3 class="el-title uk-margin-medium-top">   Button with dropdowns  </h3>
+                     <p>A button can be used to trigger a dropdown menu from the Dropdown component. </p>
+
+                     <h6> PREVIEW</h6>
+                       <div class="uk-inline">
+                            <button class="uk-button uk-button-default" type="button">Dropdown</button>
+                            <div uk-dropdown>
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <li class="uk-active"><a href="#">Homepage</a></li>
+                                    <li><a href="#">Downloads</a></li>
+                                    <li class="uk-nav-header">Header</li>
+                                    <li><a href="#">Dropdown</a></li> 
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="#">Read more</a></li>
+                                </ul>
+                            </div>
+                        </div>
+  
+
+ 
+ 
+                         <h3 class="el-title uk-margin-medium-top"> Groups  </h3>
+                         <p>To create a button group, add the <code>.uk-button-group</code> class to a <code>&lt;div&gt;</code> element around the buttons. That's it! No further markup needed.</p>
+                         <h6> PREVIEW</h6>
+                         <div>
+                                <div class="uk-button-group">
+                                    <button class="uk-button uk-button-secondary">Button</button>
+                                    <button class="uk-button uk-button-secondary">Button</button>
+                                    <button class="uk-button uk-button-secondary">Button</button>
+                                </div>
+                            </div>
+                            
+                            <div class="uk-margin-small">
+                                <div class="uk-button-group">
+                                    <button class="uk-button uk-button-primary">Button</button>
+                                    <button class="uk-button uk-button-primary">Button</button>
+                                    <button class="uk-button uk-button-primary">Button</button>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="uk-button-group">
+                                    <button class="uk-button uk-button-danger">Button</button>
+                                    <button class="uk-button uk-button-danger">Button</button>
+                                    <button class="uk-button uk-button-danger">Button</button>
+                                </div>
+                            </div>
+  
+
+                    </li>
+                    <!--Card -->
+                    <li class=""> 
+                        <h3 class="el-title uk-margin">Card</h3>
+                        <h6>Create layout boxes with different styles</h6>
+                        <p>By default, a card is blank. That is why it is important to add a modifier class for styling. In our example we are using the <code>.uk-card-default</code> class.</p>
+
+                        <h6> PREVIEW</h6>
+                        <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+                            <h3 class="uk-card-title">Default</h3>
+                            <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+ 
+
+                         <h3 class="el-title uk-margin"> Style modifiers</h3>
+                         <p>UIkit includes a number of modifiers that can be used to add a specific style to cards.</p>
+
+                         <h6> PREVIEW</h6>
+                         <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+                            <div>
+                                <div class="uk-card uk-card-default uk-card-body">
+                                    <h3 class="uk-card-title">Default</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-primary uk-card-body">
+                                    <h3 class="uk-card-title">Primary</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-secondary uk-card-body">
+                                    <h3 class="uk-card-title">Secondary</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+ 
+
+                    <h3 class="elit-title uk-margin"> Hover modifier</h3>
+                    <p>To create a hover effect on the card, add the <code>.uk-card-hover</code> class. This comes in handy when working with anchors and can be combined with the other card modifiers.</p>
+                    <h6> PREVIEW</h6>
+
+                    <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-hover uk-card-body">
+                                <h3 class="uk-card-title">Hover</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                                <h3 class="uk-card-title">Default</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+                                <h3 class="uk-card-title">Primary</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-secondary uk-card-hover uk-card-body uk-light">
+                                <h3 class="uk-card-title">Secondary</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+ 
+
+
+                           <h3 class="elit-title uk-margin"> Size modifier</h3>
+                           <p>You can apply different size modifiers to cards that will decrease or increase their padding.</p>
+
+                           <h6> PREVIEW</h6>
+                           <div class="uk-child-width-1-2@s" uk-grid>
+                            <div>
+                                <div class="uk-card uk-card-default uk-card-small uk-card-body">
+                                    <h3 class="uk-card-title">Small</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default uk-card-large uk-card-body">
+                                    <h3 class="uk-card-title">Large</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+ 
+
+                    <h3 class="el-title uk-margin-medium-top"> Header & footer </h3>
+                    <p>You can also divide a card into header and footer — around the default body. Just add the <code>.uk-card-header</code> or <code>.uk-card-footer</code> class to a <code>&lt;div&gt;</code> element inside the card.</p>
+                    <h6> PREVIEW</h6>
+                    <div class="uk-card uk-card-default uk-width-1-2@m  uk-card-small">
+                        <div class="uk-card-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img class="uk-border-circle" src="../assets/images/avatures/avature-1.png" style="width:40px">
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+                                    <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                        <div class="uk-card-footer">
+                            <a href="#" class="uk-button uk-button-text">Read more</a>
+                        </div>
+                    </div>
+ 
+
+                          <h3 class="el-title uk-margin-medium-top"> Media modifiers. </h3>
+                          <p>To display an image inside a card without any spacing, add one of the following classes to a <code>&lt;div&gt;</code> around the <code>&lt;img&gt;</code> element. Mind that you need to modify the source order accordingly.</p>
+                          
+                               <h6> PREVIEW</h6>
+                               <div class="uk-child-width-1-2@m" uk-grid>
+                                <div>
+                                    <div class="uk-card uk-card-default">
+                                        <div class="uk-card-media-top">
+                                            <img src="../../docs/assets/images/light.jpg" alt="">
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <h3 class="uk-card-title">Media Top</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-card uk-card-default">
+                                        <div class="uk-card-body">
+                                            <h3 class="uk-card-title">Media Bottom</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                        </div>
+                                        <div class="uk-card-media-bottom">
+                                            <img src="../../docs/assets/images/light.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+ 
+                
+                       
+                    </li> 
+                    <!-- Dropdown  -->
+                    <li class=""> 
+                        <h3 class="el-title uk-margin">Dropdown</h3>
+                        <p>Defines different styles for a toggleable dropdown</p>
+                        <h6> Usage</h6>
+                        <p>Basically, a dropdown is a specific case of the <a href="https://getuikit.com/docs/drop">drop</a> that provides its own styling. Any content, like a button, can toggle a dropdown. Just add the <code>uk-dropdown</code> attribute to a block element following the toggle.</p>
+                        <pre><code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">uk-dropdown</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+
+                       <p>A dropdown can be enabled by hovering and clicking the toggle. Just add the <code>mode: click</code> option to the attribute to force <code>click</code> mode only. If you want to group the toggle and the dropdown, you can just add the <code>.uk-inline</code> class from the <a href="https://getuikit.com/docs/utility#inline">Utility component</a> to a container element around both.</p>
+
+                       <h6> PREVIEW</h6>
+                       <div class="uk-inline">
+                            <button class="uk-button uk-button-default" type="button">Hover</button>
+                            <div uk-dropdown>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                        </div>
+                        
+                        <div class="uk-inline">
+                            <button class="uk-button uk-button-default" type="button">Click</button>
+                            <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                        </div>
+
+                        <h6> MARKUP</h6>
+                         
+                       <h3 class="el-title uk-margin-medium-top"> Nav dropdown. </h3>
+                       <p>A dropdown can contain a nav from the <a href="https://getuikit.com/docs/nav">Nav component</a>. Just add the <code>.uk-nav</code> class and the <code>.uk-dropdown-nav</code> modifier to a <code>&lt;ul&gt;</code> element.</p>
+                       <h6> PREVIEW</h6>
+                       <button class="uk-button uk-button-default" type="button">Hover</button>
+<div uk-dropdown>
+    <ul class="uk-nav uk-dropdown-nav">
+        <li class="uk-active"><a href="#">Active</a></li>
+        <li><a href="#">Item</a></li>
+        <li class="uk-nav-header">Header</li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li class="uk-nav-divider"></li>
+        <li><a href="#">Item</a></li>
+    </ul>
+</div> 
+                     
+ 
+                      <h3 class="el-title uk-margin-medium-top"> Grid in dropdown  </h3>
+                      <p>You can place a grid from the <a href="https://getuikit.com/docs/grid">Grid component</a> inside a dropdown, which can hold a navigation or any other content. Just wrap the content with a <code>&lt;div&gt;</code> element and add the <code>uk-grid</code> attribute. If the grid should stack automatically, whenever the dropdown no longer fits its container, just add the <code>.uk-dropdown-grid</code> class.</p>
+                      <h6> PREVIEW  </h6>
+
+                      <button class="uk-button uk-button-default" type="button">Hover</button>
+                      <div class="uk-width-large" uk-dropdown>
+                          <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
+                              <div>
+                                  <ul class="uk-nav uk-dropdown-nav">
+                                      <li class="uk-active"><a href="#">Active</a></li>
+                                      <li><a href="#">Item</a></li>
+                                      <li class="uk-nav-header">Header</li>
+                                      <li><a href="#">Item</a></li>
+                                      <li><a href="#">Item</a></li>
+                                      <li class="uk-nav-divider"></li>
+                                      <li><a href="#">Item</a></li>
+                                  </ul>
+                              </div>
+                              <div>
+                                  <ul class="uk-nav uk-dropdown-nav">
+                                      <li class="uk-active"><a href="#">Active</a></li>
+                                      <li><a href="#">Item</a></li>
+                                      <li class="uk-nav-header">Header</li>
+                                      <li><a href="#">Item</a></li>
+                                      <li><a href="#">Item</a></li>
+                                      <li class="uk-nav-divider"></li>
+                                      <li><a href="#">Item</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div> 
+                     
+                        <h3 class="el-title uk-margin-medium-top">  Position  dropdown  </h3>                  
+                        <p>Add one of the following options to the <code>uk-dropdown</code> attribute to adjust the dropdown's alignment.</p>
+                        <h6> PREVIEW</h6>
+                        <div class="uk-inline">
+                                <button class="uk-button uk-button-default" type="button">Top Right</button>
+                                <div uk-dropdown="pos: top-right">
+                                    <ul class="uk-nav uk-dropdown-nav">
+                                        <li class="uk-active"><a href="#">Active</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li class="uk-nav-header">Header</li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li><a href="#">Item</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="uk-inline">
+                                <button class="uk-button uk-button-default" type="button">Bottom Justify</button>
+                                <div uk-dropdown="pos: bottom-justify">
+                                    <ul class="uk-nav uk-dropdown-nav">
+                                        <li class="uk-active"><a href="#">Active</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li class="uk-nav-header">Header</li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li><a href="#">Item</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="uk-inline">
+                                <button class="uk-button uk-button-default" type="button">Right Center</button>
+                                <div uk-dropdown="pos: right-center">
+                                    <ul class="uk-nav uk-dropdown-nav">
+                                        <li class="uk-active"><a href="#">Active</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li class="uk-nav-header">Header</li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li><a href="#">Item</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+  
+                    </li>
+                    <!-- Form -->
+                    <li class=""> 
+                        <h3 class="el-title uk-margin"> Form </h3>
+                        <h6> Easily create nice looking forms with different styles and layouts.</h6>
+  
+                        <p>Add the <code>.uk-fieldset</code> class to a <code>&lt;fieldset&gt;</code> element and the <code>.uk-legend</code> class to a <code>&lt;legend&gt;</code> element to define a fieldset and a form legend.</p>
+                        <h6> PREVIEW</h6>
+                        <form>
+                                <fieldset class="uk-fieldset">
+                            
+                                    <legend class="uk-legend">Legend</legend>
+                            
+                                    <div class="uk-margin">
+                                        <input class="uk-input" type="text" placeholder="Input">
+                                    </div>
+                            
+                                    <div class="uk-margin">
+                                        <select class="uk-select">
+                                            <option>Option 01</option>
+                                            <option>Option 02</option>
+                                        </select>
+                                    </div>
+                            
+                                    <div class="uk-margin">
+                                        <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+                                    </div>
+                            
+                                    <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                                        <label><input class="uk-radio" type="radio" name="radio2" checked> A</label>
+                                        <label><input class="uk-radio" type="radio" name="radio2"> B</label>
+                                    </div>
+                            
+                                    <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                                        <label><input class="uk-checkbox" type="checkbox" checked> A</label>
+                                        <label><input class="uk-checkbox" type="checkbox"> B</label>
+                                    </div>
+                            
+                                    <div class="uk-margin">
+                                        <input class="uk-range" type="range" value="2" min="0" max="10" step="0.1">
+                                    </div>
+                            
+                                </fieldset>
+                            </form>
+
+  
+                            <h3 class="el-title uk-margin-medium-top"> States modifiers. </h3> 
+                            <p> Provide the user with basic information throu gh feedback states on form controls by using one of the following classes</p>        
+                            <p>Add the <code>disabled</code> attribute to a form control and it will be appear muted.</p>
+                            <h6> PREVIEW</h6>
+                               <div class="uk-margin">
+                                    <input class="uk-input uk-form-danger uk-form-width-medium" type="text" placeholder="form-danger" value="form-danger">
+                                </div>
+                                
+                                <div class="uk-margin">
+                                    <input class="uk-input uk-form-success uk-form-width-medium" type="text" placeholder="form-success" value="form-success">
+                                </div>
+                                
+                                <div class="uk-margin">
+                                    <input class="uk-input uk-form-width-medium" type="text" placeholder="disabled" value="disabled" disabled>
+                                </div>
+ 
+                                
+
+
+ 
+                                <h3 class="el-title uk-margin-medium-top"> Size modifiers. </h3>
+                                <p>Add one of the classes to an <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code> or <code>&lt;textarea&gt;</code> element to modify its size.</p>
+                                <h6>PREVIEW</h6>
+                                <form>
+
+                                        <div class="uk-margin">
+                                            <input class="uk-input uk-form-width-medium uk-form-large" type="text" placeholder="Large">
+                                        </div>
+                                    
+                                        <div class="uk-margin">
+                                            <input class="uk-input uk-form-width-medium" type="text" placeholder="Default">
+                                        </div>
+                                    
+                                        <div class="uk-margin">
+                                            <input class="uk-input uk-form-width-medium uk-form-small" type="text" placeholder="Small">
+                                        </div>
+                                    
+                                    </form>
+
+   
+ 
+
+                                    <h3 class="el-title uk-margin-medium-top">  Width modifiers. </h3>
+                                    <p>Add one of the following classes to an <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code> or <code>&lt;textarea&gt;</code> element to adjust its width.</p>
+                                    
+                                    <h6> PREVIEW</h6>
+
+                                    <form>
+
+                                            <div class="uk-margin">
+                                                <input class="uk-input uk-form-width-large" type="text" placeholder="Large">
+                                            </div>
+                                        
+                                            <div class="uk-margin">
+                                                <input class="uk-input uk-form-width-medium" type="text" placeholder="Medium">
+                                            </div>
+                                        
+                                            <div class="uk-margin">
+                                                <input class="uk-input uk-form-width-small" type="text" placeholder="Small">
+                                            </div>
+                                        
+                                            <div class="uk-margin">
+                                                <input class="uk-input uk-form-width-xsmall" type="text" placeholder="XSmall">
+                                            </div>
+                                        
+                                        </form>
+
+                                
+
+
+                    </li>
+                    <!-- Gird  -->
+                    <li class=""> 
+                        <h3 class="el-title uk-margin">Grid</h3> 
+                        <h6> Create a fully responsive, fluid and nestable grid layout.</h6>
+                        <h6> Usage : </h6>
+                        <p>To create the grid container, add the <code>uk-grid</code> attribute to a <code>&lt;div&gt;</code> element. Add child <code>&lt;div&gt;</code> elements to create the cells. By default, all grid cells are stacked. To place them side by side, add one of the classes from the Width component . Using <code>.uk-child-width-expand</code> will automatically apply equal width to items, regardless of how many there are.</p>
+                        <h6> PREVIEW</h6>
+                        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+                            <div>
+                                <div class="uk-card uk-card-default uk-card-body">Item</div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default uk-card-body">Item</div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default uk-card-body">Item</div>
+                            </div>
+                        </div>
+
+                         
+
+                               <h3 class="el-title uk-margin-medium-top"> Gutter modifiers </h3>
+                               <p>The Grid component comes with a default gutter that is decreased automatically from a certain breakpoint usually on a smaller desktop viewport width. To apply a different gutter, add one of the following classes.</p>
+                               <h6> PREVIEW</h6>
+                               <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+                                    <div>
+                                        <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                    </div>
+                                </div>
+                                
+                                <table class="uk-table uk-table-divider">
+                                    <thead>
+                                        <tr>
+                                            <th style="text-align:left">Class</th>
+                                            <th style="text-align:left">Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align:left"><code>.uk-grid-small</code></td>
+                                            <td style="text-align:left">Add this class to apply a small gutter.</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:left"><code>.uk-grid-medium</code></td>
+                                            <td style="text-align:left">Add this class to apply a medium gutter like the default one, but without a breakpoint.</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:left"><code>.uk-grid-large</code></td>
+                                            <td style="text-align:left">Add this class to apply a large gutter with breakpoints.</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:left"><code>.uk-grid-collapse</code></td>
+                                            <td style="text-align:left">Add this class to remove the grid gutter entirely.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+
+                                <h6> PREVIEW</h6>
+                                <div class="uk-grid-large uk-child-width-expand@s uk-text-center" uk-grid>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                    </div>
+ 
+
+
+                                <h6> PREVIEW</h6>
+                                <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+                                        <div>
+                                            <div class="uk-background-muted uk-padding">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-background-primary uk-padding uk-light">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-background-secondary uk-padding uk-light">Item</div>
+                                        </div>
+                                    </div>
+                                
+
+
+                                <h3 class="el-title uk-margin-medium-top"> Nested grid </h3>
+                                <p> You can easily extend your grid layout with nested grids.</p>
+                                <h6> PREVIEW</h6>
+                                <div class="uk-child-width-1-2 uk-text-center" uk-grid>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-child-width-1-2 uk-text-center" uk-grid>
+                                                <div>
+                                                    <div class="uk-card uk-card-primary uk-card-body">Item</div>
+                                                </div>
+                                                <div>
+                                                    <div class="uk-card uk-card-primary uk-card-body">Item</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                 
+
+
+                                 <h3 class="el-title uk-margin-medium-top"> Grid and width </h3>
+                                 <p> The grid is mostly used in combination with the Width component. This allows for great flexibility when determining the column widths.</p>
+                                 <h6> PREVIEW</h6>
+                                 <div class="uk-text-center" uk-grid>
+                                        <div class="uk-width-auto@m">
+                                            <div class="uk-card uk-card-default uk-card-body">Auto</div>
+                                        </div>
+                                        <div class="uk-width-1-3@m">
+                                            <div class="uk-card uk-card-default uk-card-body">1-3</div>
+                                        </div>
+                                        <div class="uk-width-expand@m">
+                                            <div class="uk-card uk-card-default uk-card-body">Expand</div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                <h3 class="el-title uk-margin-medium-top"> Grid and width </h3>
+                                <p>If the grid columns are evenly split, you can add one of the <code>.uk-child-width-*</code> classes to the grid container instead of adding a class to each of the items.</p>
+                                <p>you can add one of this  <code>.uk-child-width-1-2</code> <code>.uk-child-width-1-3</code> <code>.uk-child-width-1-4</code><code>.uk-child-width-1-5 </code> <code>.uk-child-width-1-6 </code> </p>
+                                
+                                <h6> PREVIEW</h6>
+                                <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center uk-grid" uk-grid="">
+                                        <div class="uk-first-column">
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div class="">
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div class="">
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                    </div>
+
+ 
+                                    
+                                    
+     
+                    </li>
+                    <!-- nav  -->
+                    <li class=""> 
+                        <h3 class="el-title uk-margin">Nav</h3>
+                       <h6> Defines different styles for list navigations.</h6>
+                       <h6> Usage</h6>
+                       <p> To apply this component, use the following classes.</p>
+                       <h6> PREVIEW</h6>
+                       <div class="uk-width-1-2@s uk-width-2-5@m">
+                            <ul class="uk-nav uk-nav-default">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </div>
+                       
+                        
+                        <h3 class="el-title uk-margin-medium-top"> Nested navs  </h3>
+                        <p>Add the <code>.uk-parent</code> class to an item to turn it into a parent. Add the <code>.uk-nav-sub</code> class to a <code>&lt;ul&gt;</code> element inside the item to create the subnav.</p>
+                        <h6> PREVIEW</h6>
+                        <div class="uk-width-1-2@s uk-width-2-5@m">
+                                <ul class="uk-nav uk-nav-default">
+                                    <li class="uk-active"><a href="#">Active</a></li>
+                                    <li class="uk-parent">
+                                        <a href="#">Parent</a>
+                                        <ul class="uk-nav-sub">
+                                            <li><a href="#">Sub item</a></li>
+                                            <li>
+                                                <a href="#">Sub item</a>
+                                                <ul>
+                                                    <li><a href="#">Sub item</a></li>
+                                                    <li><a href="#">Sub item</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                          
+
+                            <h3 class="el-title uk-margin-medium-top"> Accordion nav </h3>
+                            <p>By default, child menu items are always visible. To apply an accordion effect, just add the <code>uk-nav</code> attribute to the main <code>&lt;ul&gt;</code>. Add the <code>.uk-nav-parent-icon</code> class to apply icons, indicating parent items.</p>
+
+                            <h6> PREVIEW</h6>
+                            <div class="uk-width-1-2@s uk-width-2-5@m">
+                                    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                                        <li class="uk-active"><a href="#">Active</a></li>
+                                        <li class="uk-parent">
+                                            <a href="#">Parent</a>
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="#">Sub item</a></li>
+                                                <li>
+                                                    <a href="#">Sub item</a>
+                                                    <ul>
+                                                        <li><a href="#">Sub item</a></li>
+                                                        <li><a href="#">Sub item</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="uk-parent">
+                                            <a href="#">Parent</a>
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="#">Sub item</a></li>
+                                                <li><a href="#">Sub item</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                            
+
+                        
+                    </li>
+                    <!-- Heading -->
+                    <li  class=""> 
+                        <h3 class="el-title uk-margin">Heading</h3>
+                        <h6> Define different styles for headings. </h6>
+                        <h6> Heading primary</h6>
+                        <p>To emphasize a heading with an alternative styling, for example a larger font size or a different color, add the <code>.uk-heading-primary</code> class. Usually, you would use this class on a <code>&lt;h1&gt;</code> element.</p>
+
+                        <h6> PREVIEW</h6>
+                        <h1 class="uk-heading-primary">Heading Primary</h1>
+
+                        <pre><code id="code-jnprfr4u" class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uk-heading-primary"</span>&gt;</span>Heading Primary<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></code></pre>
+
+
+                        
+                        <h3 class="el-title uk-margin-medium-top"> Heading hero </h3> 
+                        <p>You can further enlarge or highlight a heading, for example when using it inside a hero section. Just add the <code>.uk-heading-hero</code> class.</p>
+
+                        <h6> PREVIEW</h6>
+                        <h1 class="uk-heading-hero">Heading Hero</h1>
+                         
+                        <pre><code id="code-jnprfr4v" class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uk-heading-hero"</span>&gt;</span>Heading Hero<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></code></pre>
+
+                        <h3 class="el-title uk-margin-medium-top"> Heading divider </h3>  
+                        To apply a divider to a heading, add the <code>.uk-heading-divider</code> class. You can combine this with one of the heading classes from the Base component.
+
+                        <h6> PREVIEW</h6>
+                        <h1 class="uk-heading-divider">Heading Divider</h1>
+
+                        <pre><code id="code-jnprfr4w" class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uk-heading-divider"</span>&gt;</span>Heading Divider<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></code></pre>
+                        
+
+                        <h3 class="el-title uk-margin-medium-top"> Heading line </h3>
+                        <p>To apply a vertically centered line to a heading, add the <code>.uk-heading-line</code> class and place a <code>&lt;span&gt;</code> element inside the heading element. You can combine this with one of the heading classes from the  Base component. This modifier also works well with text alignment.</p>
+
+                        <h6> PREVIEW</h6>
+                        <h1 class="uk-heading-line"><span>Heading Line</span></h1>
+
+                        <h1 class="uk-heading-line uk-text-center"><span>Heading Line</span></h1>
+
+                        <h1 class="uk-heading-line uk-text-right"><span>Heading Line</span></h1>
+                         
+
+                         
+                        <h3 class="el-title uk-margin-medium-top"> Heading bullet</h3>
+                        <p>To apply a bullet to a heading, add the <code>.uk-heading-bullet</code> class. You can combine this with one of the heading classes from the Base component . This modifier also works well with text alignment.</p>
+
+                        <h6>PREVIEW</h6>
+                        <h1 class="uk-heading-bullet">Heading Bullet</h1>
+                        <p>To apply a bullet to a heading, add the <code>.uk-heading-bullet</code> class. You can combine this with one of the heading classes from the Base component . This modifier also works well with text alignment.</p>
+
+                        <pre><code id="code-jnprfr4x" class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uk-heading-bullet"</span>&gt;</span>Heading Bullet<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></code></pre>
+                        
+ 
+
+
+                         
+                    </li>
+                     <!--Navbar -->
+                     <li class="">
+                            <h3 class="el-title uk-margin">Navbar</h3>
+                            <h6> Create a navigation bar that can be used for your main site navigation. </h6>
+                            <h6> Usage</h6>
+                            <p>The Navbar component consists of a navbar container, the navbar itself and one or more navigations.</p>
+
+                            <h6> PREVIEW</h6>
+                            <nav class="uk-navbar-container uk-background-success" uk-navbar>
+                                    <div class="uk-navbar-left">
+                                
+                                        <ul class="uk-navbar-nav">
+                                            <li class="uk-active"><a href="#">Active</a></li>
+                                            <li>
+                                                <a href="#">Parent</a>
+                                                <div class="uk-navbar-dropdown">
+                                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                        <li class="uk-active"><a href="#">Active</a></li>
+                                                        <li><a href="#">Item</a></li>
+                                                        <li><a href="#">Item</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a href="#">Item</a></li>
+                                        </ul>
+                                
+                                    </div>
+                                </nav>
+ 
+
+
+                                <h3 class="el-title uk-margin-medium-top">Multiple navigations </h3>
+                                <p> You can place more than one navigation inside a navbar container. That way you can have a left aligned, a centered and a right aligned navigation inside the same navbar.</p>
+                                <h6> PREVIEW</h6>
+                                <nav class="uk-navbar-container" uk-navbar>
+
+                                        <div class="uk-navbar-left">
+                                    
+                                            <ul class="uk-navbar-nav">
+                                                <li class="uk-active"><a href="#">Active</a></li>
+                                                <li>
+                                                    <a href="#">Parent</a>
+                                                    <div class="uk-navbar-dropdown">
+                                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                            <li class="uk-active"><a href="#">Active</a></li>
+                                                            <li><a href="#">Item</a></li>
+                                                            <li><a href="#">Item</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li><a href="#">Item</a></li>
+                                            </ul>
+                                    
+                                        </div>
+                                    
+                                        <div class="uk-navbar-right">
+                                    
+                                            <ul class="uk-navbar-nav">
+                                                <li class="uk-active"><a href="#">Active</a></li>
+                                                <li>
+                                                    <a href="#">Parent</a>
+                                                    <div class="uk-navbar-dropdown">
+                                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                            <li class="uk-active"><a href="#">Active</a></li>
+                                                            <li><a href="#">Item</a></li>
+                                                            <li><a href="#">Item</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li><a href="#">Item</a></li>
+                                            </ul>
+                                    
+                                        </div>
+                                    
+                                    </nav>
+                              
+
+                                 <h3 class="el-title uk-margin-medium-top">Boundary alignment </h3>
+                                 <p>Dropdowns can be aligned to the navbar's boundary. Just append the <code>boundary-align: true</code> parameter to the <code>uk-navbar</code> attribute. Add the <code>align: left</code>, <code>align: center</code> or <code>align: right</code> option to change the alignment. By default, dropdowns are aligned to the left.</p>
+
+                                 <h6> PREVIEW</h6>
+                                 <nav class="uk-navbar-container" uk-navbar="boundary-align: true; align: center;">
+                                        <div class="uk-navbar-left">
+                                    
+                                            <ul class="uk-navbar-nav">
+                                                <li>
+                                                    <a href="#">Item</a>
+                                                    <div class="uk-navbar-dropdown">
+                                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                            <li class="uk-active"><a href="#">Active</a></li>
+                                                            <li><a href="#">Item</a></li>
+                                                            <li class="uk-nav-header">Header</li>
+                                                            <li><a href="#">Item</a></li>
+                                                            <li><a href="#">Item</a></li>
+                                                            <li class="uk-nav-divider"></li>
+                                                            <li><a href="#">Item</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Item</a>
+                                                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
+                                                        <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+                                                            <div>
+                                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                                    <li class="uk-active"><a href="#">Active</a></li>
+                                                                    <li><a href="#">Item</a></li>
+                                                                    <li class="uk-nav-header">Header</li>
+                                                                    <li><a href="#">Item</a></li>
+                                                                    <li><a href="#">Item</a></li>
+                                                                    <li class="uk-nav-divider"></li>
+                                                                    <li><a href="#">Item</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div>
+                                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                                    <li class="uk-active"><a href="#">Active</a></li>
+                                                                    <li><a href="#">Item</a></li>
+                                                                    <li class="uk-nav-header">Header</li>
+                                                                    <li><a href="#">Item</a></li>
+                                                                    <li><a href="#">Item</a></li>
+                                                                    <li class="uk-nav-divider"></li>
+                                                                    <li><a href="#">Item</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Item</a>
+                                                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-3">
+                                                        <div class="uk-navbar-dropdown-grid uk-child-width-1-3" uk-grid>
+                                                            <div>
+                                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                                    <li class="uk-active"><a href="#">Active</a></li>
+                                                                    <li><a href="#">Item</a></li>
+                                                                    <li class="uk-nav-header">Header</li>
+                                                                    <li><a href="#">Item</a></li>
+                                                                    <li><a href="#">Item</a></li>
+                                                                    <li class="uk-nav-divider"></li>
+                                                                    <li><a href="#">Item</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div>
+                                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                                    <li class="uk-active"><a href="#">Active</a></li>
+                                                                    <li><a href="#">Item</a></li>
+                                                                    <li class="uk-nav-header">Header</li>
+                                                                    <li><a href="#">Item</a></li>
+                                                                    <li><a href="#">Item</a></li>
+                                                                    <li class="uk-nav-divider"></li>
+                                                                    <li><a href="#">Item</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div>
+                                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                                    <li class="uk-active"><a href="#">Active</a></li>
+                                                                    <li><a href="#">Item</a></li>
+                                                                    <li class="uk-nav-header">Header</li>
+                                                                    <li><a href="#">Item</a></li>
+                                                                    <li><a href="#">Item</a></li>
+                                                                    <li class="uk-nav-divider"></li>
+                                                                    <li><a href="#">Item</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                    
+                                        </div>
+                                    
+                                        <div class="uk-navbar-right">
+                                            <ul class="uk-navbar-nav">
+                                                <li>
+                                                    <a href="#">Item</a>
+                                                    <div class="uk-navbar-dropdown">
+                                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                            <li class="uk-active"><a href="#">Active</a></li>
+                                                            <li><a href="#">Item</a></li>
+                                                            <li class="uk-nav-header">Header</li>
+                                                            <li><a href="#">Item</a></li>
+                                                            <li><a href="#">Item</a></li>
+                                                            <li class="uk-nav-divider"></li>
+                                                            <li><a href="#">Item</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    
+                                    </nav>
+ 
+
+                                  <h3 class="el-title uk-margin-medium-top"> Push </h3>
+                                  <p>By default, the dropbar overlays the site content. Add the <code>dropbar-mode: push;</code> option, to push the content down instead.</p>
+                                  <p><span class="uk-label">Note</span> The push mode does not work well if the navbar is contained within a sticky component.</p>
+                                  <h6> PREVIEW</h6>
+                                  <div class="uk-position-relative">
+
+                                        <nav class="uk-navbar-container" uk-navbar="dropbar: true; dropbar-mode: push">
+                                    
+                                            <div class="uk-navbar-left">
+                                    
+                                                <ul class="uk-navbar-nav">
+                                                    <li>
+                                                        <a href="#">Item</a>
+                                                        <div class="uk-navbar-dropdown">
+                                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                                <li class="uk-active"><a href="#">Active</a></li>
+                                                                <li><a href="#">Item</a></li>
+                                                                <li class="uk-nav-header">Header</li>
+                                                                <li><a href="#">Item</a></li>
+                                                                <li><a href="#">Item</a></li>
+                                                                <li class="uk-nav-divider"></li>
+                                                                <li><a href="#">Item</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Item</a>
+                                                        <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
+                                                            <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+                                                                <div>
+                                                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                                        <li class="uk-active"><a href="#">Active</a></li>
+                                                                        <li><a href="#">Item</a></li>
+                                                                        <li class="uk-nav-header">Header</li>
+                                                                        <li><a href="#">Item</a></li>
+                                                                        <li><a href="#">Item</a></li>
+                                                                        <li class="uk-nav-divider"></li>
+                                                                        <li><a href="#">Item</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div>
+                                                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                                        <li class="uk-active"><a href="#">Active</a></li>
+                                                                        <li><a href="#">Item</a></li>
+                                                                        <li class="uk-nav-header">Header</li>
+                                                                        <li><a href="#">Item</a></li>
+                                                                        <li><a href="#">Item</a></li>
+                                                                        <li class="uk-nav-divider"></li>
+                                                                        <li><a href="#">Item</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                    
+                                            </div>
+                                    
+                                            <div class="uk-navbar-right">
+                                    
+                                                <ul class="uk-navbar-nav">
+                                                    <li>
+                                                        <a href="#">Parent</a>
+                                                        <div class="uk-navbar-dropdown">
+                                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                                <li class="uk-active"><a href="#">Active</a></li>
+                                                                <li><a href="#">Item</a></li>
+                                                                <li class="uk-nav-header">Header</li>
+                                                                <li><a href="#">Item</a></li>
+                                                                <li><a href="#">Item</a></li>
+                                                                <li class="uk-nav-divider"></li>
+                                                                <li><a href="#">Item</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                    
+                                            </div>
+                                    
+                                        </nav>
+                                    
+                                        <div class="uk-navbar-dropbar"></div>
+                                    
+                                    </div>
+                                  
+                                   <h3 class="el-title uk-margin-medium-top">Sticky Navbar </h3>
+                                   <p>For a basic sticky navbar, wrap the navbar inside a container with the <code>uk-sticky</code> attribute from the   Sticky component .</p>
+                                   <p><span class="uk-label">Note</span> You can view more examples in the tests for the <a href="https://getuikit.com/../assets/uikit/tests/sticky-navbar.html">Sticky Navbar</a>.</p>
+
+                                   <h6> PREVIEW</h6>
+                                   <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+                                        <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+                                            <div class="uk-navbar-left">
+                                    
+                                                <ul class="uk-navbar-nav">
+                                                    <li class="uk-active"><a href="#">Active</a></li>
+                                                    <li>
+                                                        <a href="#">Parent</a>
+                                                        <div class="uk-navbar-dropdown">
+                                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                                <li class="uk-active"><a href="#">Active</a></li>
+                                                                <li><a href="#">Item</a></li>
+                                                                <li><a href="#">Item</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="#">Item</a></li>
+                                                </ul>
+                                    
+                                            </div>
+                                        </nav>
+                                    </div>
+                                   
+                                    <h3 class="el-title uk-margin-medium-top">Transparent Sticky Navbar </h3>
+                                    <p>When you use a  transparent navbar , your markup contains the <code>.uk-navbar-transparent</code> class together with <code>.uk-light</code> or <code>.uk-dark</code>. When the navbar is sticky, it is usually required to remove these classes and add them when the navbar returns to the non-sticky state. To do that, set <code>cls-inactive: uk-navbar-transparent uk-light</code>.</p>
+                                    <p>By default, the immediate toggling of classes does not look ideal. Instead, we can set <code>top: 200</code> to let the navbar disappear and then re-appear when the user has scrolled 200px past the navbar. In that case we can also define to have the navbar slide in with an animation, just set <code>animation: uk-animation-slide-top</code>.</p>
+
+                                    <h6> PREVIEW</h6>
+                                    <div class="uk-section-secondary uk-preserve-color">
+
+                                            <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200">
+                                        
+                                                <nav class="uk-navbar-container">
+                                                    <div class="uk-container uk-container-expand">
+                                                        <div uk-navbar>
+                                        
+                                                            <ul class="uk-navbar-nav">
+                                                                <li class="uk-active"><a href="#">Active</a></li>
+                                                                <li>
+                                                                    <a href="#">Parent</a>
+                                                                    <div class="uk-navbar-dropdown">
+                                                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                                            <li class="uk-active"><a href="#">Active</a></li>
+                                                                            <li><a href="#">Item</a></li>
+                                                                            <li><a href="#">Item</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                                <li><a href="#">Item</a></li>
+                                                            </ul>
+                                        
+                                                        </div>
+                                                    </div>
+                                                </nav>
+                                            </div>
+                                        
+                                            <div class="uk-section uk-light">
+                                                <div class="uk-container">
+                                        
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                                        
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                                        
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                                        
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
+                                 
+     
+
+                    </li>
+                    <!-- Taypography -->
+                    <li class="">
+                            <h3 class="el-title uk-margin">Taypography</h3>
+                            <h3> Headings </h3>
+                            <p>Use the <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> elements to define your headings.</p>
+                            <p>Add the <code>.uk-h1</code>, <code>.uk-h2</code>, <code>.uk-h3</code>, <code>.uk-h4</code>, <code>.uk-h5</code> or <code>.uk-h6</code> class to alter the size of your headings, for example have a h1 look like a h3. For additional styling options, take a look at the <a href="https://getuikit.com/docs/heading">Heading component</a>.</p>
+
+                            <h6> PREVIEW</h6>
+                            <h1>h1 Heading 1</h1>
+                            <h2>h2 Heading 2</h2>
+                            <h3>h3 Heading 3</h3>
+                            <h4>h4 Heading 4</h4>
+                            <h5>h5 Heading 5</h5>
+                            <h6>h6 Heading 6</h6>
+
+
+
+                            <h3> Lists </h3>
+                            <ul> <li>Item 1</li> <li>Item 2 <ul> <li>Item 1</li> <li>Item 2 <ul> <li>Item 1</li> <li>Item 2</li> </ul> </li> </ul> </li> <li>Item 3</li> <li>Item 4</li></ul>
+
+                    </li>
+                    <!-- Pagination -->
+                    <li class="">
+                            <h3 class="el-title uk-margin">Pagination</h3>
+                            <h6> Easily create a nice looking pagination to navigate through pages. </h6>
+                            <h6> Usage</h6>
+                            <p>The Pagination component consists of button-like styled links, that are aligned side by side in a horizontal list.</p>
+                            <h6> PREVIEW</h6>
+                                <ul class="uk-pagination" uk-margin>
+                                    <li><a href="#"><span uk-pagination-previous></span></a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li class="uk-disabled"><span>...</span></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">6</a></li>
+                                    <li class="uk-active"><span>7</span></li>
+                                    <li><a href="#">8</a></li>
+                                    <li><a href="#">9</a></li>
+                                    <li><a href="#">10</a></li>
+                                    <li class="uk-disabled"><span>...</span></li>
+                                    <li><a href="#">20</a></li>
+                                    <li><a href="#"><span uk-pagination-next></span></a></li>
+                                </ul> 
+ 
+
+
+                               <h3 class="el-title uk-margin-medium-top"> Alignment </h3>
+                               <p></p>
+                               <h6> PREVIEW</h6>
+                               <ul class="uk-pagination uk-flex-center" uk-margin>
+                                    <li><a href="#"><span uk-pagination-previous></span></a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li class="uk-disabled"><span>...</span></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">6</a></li>
+                                    <li class="uk-active"><span>7</span></li>
+                                    <li><a href="#">8</a></li>
+                                    <li><a href="#"><span uk-pagination-next></span></a></li>
+                                </ul>
+                                
+                                <ul class="uk-pagination uk-flex-right uk-margin-medium-top" uk-margin>
+                                    <li><a href="#"><span uk-pagination-previous></span></a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li class="uk-disabled"><span>...</span></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">6</a></li>
+                                    <li class="uk-active"><span>7</span></li>
+                                    <li><a href="#">8</a></li>
+                                    <li><a href="#"><span uk-pagination-next></span></a></li>
+                                </ul>
+                                
+                               
+                                <h3 class="el-title uk-margin-medium-top">  Previous and next </h3> 
+                                <p>To apply a previous and next button, add the <code>uk-pagination-previous</code> or <code>uk-pagination-next</code> attribute to a <code>&lt;span&gt;</code> element inside a pagination item.</p>
+                                <h6> PREVIEW</h6> 
+                                   <ul class="uk-pagination">
+                                        <li><a href="#"><span class="uk-margin-small-right" uk-pagination-previous></span> Previous</a></li>
+                                        <li class="uk-margin-auto-left"><a href="#">Next <span class="uk-margin-small-left" uk-pagination-next></span></a></li>
+                                    </ul>
+                            
+
+                    </li>
+                </ul>
+           
+            
+
+        </main>    
+        
+         
+        
+        
+        
+        <!-- footer -->         
+        <div class="uk-section-small uk-margin-medium-top"> 
+            <hr class="uk-margin-remove"> 
+            <div class="uk-container uk-align-center uk-margin-remove-bottom uk-position-relative"> 
+                <div uk-grid> 
+                    <div class="uk-width-1-3@m uk-width-1-2@s uk-first-column"> 
+                        <a href="pages-about.html" class="uk-link-heading uk-text-lead uk-text-bold"> <i class="fas fa-graduation-cap"></i>  CoursePlus</a> 
+                        <div class="uk-width-xlarge tm-footer-description">A unique and beautiful collection of UI elements that are all flexible and modular.   building the website of your dreams.</div>                         
+                    </div>                     
+                    <div class="uk-width-expand@m uk-width-1-2@s"> 
+                        <ul class="uk-list  tm-footer-list"> 
+                            <li> 
+                                <a href="#"> Browse Our Library </a> 
+                            </li>                             
+                            <li> 
+                                <a href="#"> Tutorials/Articles </a> 
+                            </li>                             
+                            <li> 
+                                <a href="#"> Scripts and codes</a> 
+                            </li>                             
+                            <li> 
+                                <a href="#"> Ebooks</a> 
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                    <div class="uk-width-expand@m uk-width-1-2@s"> 
+                        <ul class="uk-list tm-footer-list"> 
+                            <li> 
+                                <a href="#"> About us </a> 
+                            </li>                             
+                            <li> 
+                                <a href="#"> Contact Us </a> 
+                            </li>                             
+                            <li> 
+                                <a href="#"> Privacy   </a> 
+                            </li>                             
+                            <li> 
+                                <a href="#">   Policy </a> 
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                    <div class="uk-width-expand@m uk-width-1-2@s"> 
+                        <ul class="uk-list  tm-footer-list"> 
+                            <li> 
+                                <a href="#">Web Design </a> 
+                            </li>                             
+                            <li> 
+                                <a href="#">Web Development  </a> 
+                            </li>                             
+                            <li> 
+                                <a href="#"> iOS Development </a> 
+                            </li>                             
+                            <li> 
+                                <a href="#">  PHP Development </a> 
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                </div>                 
+                <hr>
+                <p class="uk-postion-absoult uk-margin-remove uk-position-bottom-right" style="bottom: 8px;right: 60px;" uk-tooltip="title: Visit Our Site; pos: top-center"> Powered By <a href="#" target="_blank" class="uk-text-bold uk-link-reset"> CoursePlus</a></p> 
+                <div class="uk-margin-small" uk-grid> 
+                    <div class="uk-width-1-2@m uk-width-1-2@s uk-first-column"> 
+                        <p class="uk-text-small"><i class="fas fa-copyright"></i> 2019 <span class="uk-text-bold">CoursePlus</span> . All rights reserved.</p> 
+                    </div>                     
+                    <div class="uk-width-1-3@m uk-width-1-2@s"> 
+                        <a href="#" class="uk-icon-button uk-link-reset" uk-tooltip="title: Our Youtube Chanal; pos: top-center"><i class="fab fa-youtube" style=" color: #fb7575  !important;"></i></a>
+                        <a href="#" class="uk-icon-button uk-link-reset" uk-tooltip="title: Our Facebook; pos: top-center"><i class="fab fa-Facebook" style=" color: #9160ec  !important;"></i></a>
+                        <a href="#" class="uk-icon-button uk-link-reset" uk-tooltip="title: Our Instagram; pos: top-center"><i class="fab fa-Instagram" style=" color: #dc2d2d  !important;"></i></a>
+                        <a href="#" class="uk-icon-button uk-link-reset" uk-tooltip="title: Our linkedin; pos: top-center"><i class="fab fa-linkedin " style=" color: #6949a5  !important;"></i></a>
+                        <a href="#" class="uk-icon-button uk-link-reset" uk-tooltip="title: Our google-plus; pos: top-center"><i class="fab fa-google-plus" style=" color: #f77070 !important;"></i></a>
+                        <a href="#" class="uk-icon-button uk-link-reset" uk-tooltip="title: Our Twitter; pos: top-center"><i class="fab fa-twitter" style=" color: #6f23ff !important;"></i></a>
+                    </div>                     
+                </div>                 
+            </div>             
+        </div>         
+        <!-- footer  end --> 
+
+        <!-- app end -->         
+        <!-- button scrollTop -->         
+        <button id="scrollTop" class="uk-animation-slide-bottom-medium"> 
+            <a href="#" class="uk-text-white" uk-totop uk-scroll></a> 
+        </button>         
+        <!--  Night mood -->         
+        <script>
+        (function (window, document, undefined) {
+          'use strict';
+          if (!('localStorage' in window)) return;
+          var nightMode = localStorage.getItem('gmtNightMode');
+          if (nightMode) {
+              document.documentElement.className += ' night-mode';
+          }
+        })(window, document);
+
+
+        (function (window, document, undefined) {
+
+          'use strict';
+
+          // Feature test
+          if (!('localStorage' in window)) return;
+
+          // Get our newly insert toggle
+          var nightMode = document.querySelector('#night-mode');
+          if (!nightMode) return;
+
+          // When clicked, toggle night mode on or off
+          nightMode.addEventListener('click', function (event) {
+              event.preventDefault();
+              document.documentElement.classList.toggle('night-mode');
+              if ( document.documentElement.classList.contains('night-mode') ) {
+                  localStorage.setItem('gmtNightMode', true);
+                  return;
+              }
+              localStorage.removeItem('gmtNightMode');
+          }, false);
+
+        })(window, document);
+
+        // Preloader
+        var spinneroverlay = document.getElementById("spinneroverlay");
+        window.addEventListener('load', function(){
+            spinneroverlay.style.display = 'none';
+        });
+
+         //scrollTop
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollTop").style.display = "block";
+            } else {
+                document.getElementById("scrollTop").style.display = "none";
+            }
+        }        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        </script>         
+    </body>     
+</html>

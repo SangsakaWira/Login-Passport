@@ -1,0 +1,412 @@
+<html lang="en"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="shortcut icon" href="../assets/images/favicon.png"> 
+        <meta name="description" content=""> 
+        <title> Lesson </title>         
+        <!-- Favicon -->         
+        <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png"> 
+        <!-- Your stylesheet-->         
+        <link rel="stylesheet" href="../assets/css/uikit.css"> 
+        <link rel="stylesheet" href="../assets/css/main.css"> 
+        <link rel="stylesheet" href="../assets/css/admin.css"> 
+        <!-- font awesome -->         
+        <link rel="stylesheet" href="../assets/css/fontawesome.css"> 
+        <!--  javascript -->         
+        <script src="../assets/js/simplebar.js"></script>         
+        <script src="../assets/js/uikit.js"></script>         
+        <!-- for uploads -->         
+        <link rel="stylesheet" href="../assets/css/dropzone.css"> 
+        <script src="../assets/js/dropzone.min.js"></script>         
+    </head>     
+    <body> 
+        <!-- sidebar -->         
+        <div class="admin-side" id="admin-side"> 
+            <a href="#" class="admin-logo"><i class="fas fa-graduation-cap"></i> CoursePlus</a> 
+            <ul data-simplebar> 
+                <li> 
+                    <a href="admin.html"> <i class="fas fa-user"></i> Dashboard  </a>
+                </li>                 
+                <li> 
+                    <a href="admin-books.html"> <i class="fas fa-book-open"></i> Books    </a>
+                </li>                 
+                <li> 
+                    <a href="admin-users.html"> <i class="fas fa-user"></i> Users  </a>
+                </li>                 
+                <li> 
+                    <a href="admin-scripts.html"> <i class="fas fa-code"></i> Scripts    </a>
+                </li>                 
+                <li> 
+                    <a href="admin-courses.html"> <i class="fas fa-play"></i> Courses    </a>
+                </li>                 
+                <li> 
+                    <a href="admin-edite-profile.html"> <i class="fas fa-user"></i> edit profile    </a>
+                </li>                 
+                <ul class="uk-accordion" uk-accordion> 
+                    <li class="uk-open"> 
+                        <a href="ui-components.html" class="uk-accordion-title"> <i class="fas fa-layer-group"></i> sample link </a> 
+                        <div class="uk-accordion-content uk-margin-remove-top" aria-hidden="false"> 
+                            <a href="ui-elements.html">sample link 1</a> 
+                            <a href="ui-elements.html">sample link 2</a> 
+                            <a href="ui-elements.html">sample link 3</a> 
+                        </div>                         
+                    </li>                     
+                    <li class=" uk-margin-remove-top"> 
+                        <a href="ui-components.html" class="uk-accordion-title"> <i class="fas fa-layer-group"></i> sample link  </a> 
+                        <div class="uk-accordion-content uk-margin-remove-top" hidden="" aria-hidden="true"> 
+                            <a href="ui-components.html"> sample link  </a> 
+                        </div>                         
+                    </li>                     
+                </ul>                 
+                <li> 
+                    <a href="admin-login.html"> <i class="fas fa-user"></i> Logut </a>
+                </li>                 
+            </ul>             
+        </div>         
+        <!-- mobile  header -->         
+        <div class="admin-mobile-headder uk-hidden@m"> 
+            <span uk-toggle="target: #admin-side; cls: admin-side-active" class="uk-padding-small uk-text-white uk-float-right"><i class="fas fa-bars"></i></span> 
+            <a class="uk-logo" href="index.html"> <i class="fas fa-graduation-cap"> </i> CoursePlus </a> 
+        </div>         
+        <!-- main contant -->         
+        <div class="admin-content"> 
+            <!-- navbar -->             
+            <nav class="uk-navbar"> 
+                <div class="uk-navbar-left"> 
+                    <ul class="uk-navbar-nav"> 
+                        <li class="uk-active"> 
+                            <a href="admin.html">Dashboard</a> 
+                        </li>                         
+                        <li> 
+                            <a href="admin-scripts.html"> Scripts </a> 
+                        </li>                         
+                    </ul>                     
+                </div>                 
+                <!-- right navbar  -->                 
+                <div class="uk-navbar-right"> 
+                    <!-- User profile -->                     
+                    <a href="#"> 
+                        <img src="../assets/images/avatures/avature-2.png" alt="" class="uk-border-circle user-profile-tiny"> 
+                    </a>                     
+                    <div uk-dropdown="pos: top-right ;mode : click ;animation: uk-animation-slide-bottom-small" class="uk-dropdown uk-padding-small angle-top-right uk-dropdown-bottom-right" > 
+                        <p class="uk-margin-remove-bottom uk-margin-small-top uk-text-bold"> Hamse Mohamoud  </p>                                          
+                        <ul class="uk-nav uk-dropdown-nav"> 
+                            <li> 
+                                <a href="Profile.html"> <i class="fas fa-user uk-margin-small-right"></i> Profile</a> 
+                            </li>                                             
+                            <li> 
+                               <a href="admin-edite-profile.html"> <i class="fas fa-cog uk-margin-small-right"></i> Setting</a>                                 </li>                                             
+                            <li class="uk-nav-divider"></li>                                             
+                            <li> 
+                                <a href="admin-login.html"> <i class="fas fa-sign-out-alt uk-margin-small-right"></i> Log out</a> 
+                            </li>                                             
+                        </ul>                                         
+                    </div>                     
+                </div>                 
+            </nav>             
+            <div class="admin-content-inner"> 
+                <div class="uk-margin uk-flex-inline uk-flex-middle"> 
+                    <i class="fas fa-code icon-large uk-margin-right"></i> 
+                    <h4 class="uk-margin-remove"> Scripts  </h4> 
+                    <button class="uk-button uk-button-success uk-margin-medium-left admin-btn uk-text-uppercase" href="#create-model" uk-tooltip="title: Create New User ; delay: 500 ; pos: top ;animation:	uk-animation-scale-up" uk-toggle> 
+                        <i class="fas fa-plus"></i> add new 
+                    </button>                     
+                </div>                 
+                <!-- model -->                 
+                <div id="create-model" uk-modal> 
+                    <div class="uk-modal-dialog uk-width-2-3@m"> 
+                        <button class="uk-modal-close-default uk-padding-small" type="button" uk-close></button>                         
+                        <div class="uk-modal-header uk-background-grey"> 
+                            <h4 class="uk-text-white"> Add New Script   </h4> 
+                        </div>                         
+                        <ul class="uk-margin-remove-top uk-flex-center" uk-tab uk-switcher="connect: #component; animation: uk-animation-fade"> 
+                            <li class="uk-active"> 
+                                <a href="#"> Basic info  </a>
+                            </li>                             
+                            <li>
+                                <a href="#"> Feature images</a>
+                            </li>                             
+                        </ul>                         
+                        <ul id="component" class="uk-switcher uk-padding-small"> 
+                            <li> 
+                                <div uk-grid> 
+                                    <div class="uk-width-1-2@m"> 
+                                        <form action="/file-upload" class="dropzone  id=" y-awesome-dropzone""> 
+                                            <div class="fallback"> 
+                                                <input name="file" type="file"/> 
+                                            </div>                                             
+                                        </form>                                         
+                                        <div class="uk-margin"> 
+                                            <span class="uk-text-middle uk-text-small"> Recomended 367 x 186</span> 
+                                            <div uk-form-custom="" class="uk-form-custom"> 
+                                                <input type="file"> 
+                                                <span class="uk-link">upload</span> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="uk-width-1-2@m"> 
+                                        <form> 
+                                            <div class="uk-margin"> 
+                                                <label> Title </label>                                                 
+                                                <input class="uk-input uk-form-width-large" placeholder="Name" type="text"> 
+                                            </div>                                             
+                                            <div class="uk-margin"> 
+                                                <label> Description </label>                                                 
+                                                <textarea class="uk-textarea" rows="5" placeholder="Description"></textarea>                                                 
+                                            </div>                                             
+                                            <div class="uk-margin"> 
+                                                <label> Demo link </label>                                                 
+                                                <input class="uk-input uk-form-width-large" placeholder="http://www.mydomain.com/script-demo/" type="text"> 
+                                            </div>                                             
+                                            <div class="uk-margin"> 
+                                                <label> Download link </label>                                                 
+                                                <input class="uk-input uk-form-width-large" placeholder="http://www.mydomain.com/script-demo/" type="text"> 
+                                            </div>                                             
+                                            <div class="uk-margin"> 
+                                                <label> Category</label>                                                 
+                                                <select class="uk-select"> 
+                                                    <option> HTML5 Templates </option>                                                     
+                                                    <option> Php Scripts  </option>                                                     
+                                                    <option> Wordpress themes  </option>                                                     
+                                                    <option> Wordpress Plugins  </option>                                                     
+                                                    <option> Android Codes  </option>                                                     
+                                                </select>                                                 
+                                            </div>                                             
+                                        </form>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </li>                             
+                            <li> 
+                                <div uk-grid> 
+                                    <div class="uk-width-1-2@m"> 
+                                        <form action="/file-upload" class="dropzone  id=" y-awesome-dropzone""> 
+                                            <div class="fallback"> 
+                                                <input name="file" type="file" multiple/> 
+                                            </div>                                             
+                                        </form>                                         
+                                        <div class="uk-margin"> 
+                                            <span class="uk-text-middle uk-text-small"> Recomended 586 x 336</span> 
+                                            <div uk-form-custom="" class="uk-form-custom"> 
+                                                <input type="file"> 
+                                                <span class="uk-link">upload</span> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="uk-width-1-2@m"> 
+                                        <form> 
+                                            <div class="uk-margin"> 
+                                                <label> Title </label>                                                 
+                                                <input class="uk-input uk-form-width-large" placeholder="Title" type="text"> 
+                                            </div>                                             
+                                            <div class="uk-margin"> 
+                                                <label> Description </label>                                                 
+                                                <textarea class="uk-textarea" rows="5" placeholder="Description"></textarea>                                                 
+                                            </div>                                             
+                                        </form>                                         
+                                    </div>                                     
+                                </div>                                 
+                                <hr> 
+                                <div uk-grid> 
+                                    <div class="uk-width-1-2@m"> 
+                                        <form action="/file-upload" class="dropzone  id=" y-awesome-dropzone""> 
+                                            <div class="fallback"> 
+                                                <input name="file" type="file" multiple/> 
+                                            </div>                                             
+                                        </form>                                         
+                                        <div class="uk-margin"> 
+                                            <span class="uk-text-middle uk-text-small"> Recomended 586 x 336 </span> 
+                                            <div uk-form-custom="" class="uk-form-custom"> 
+                                                <input type="file"> 
+                                                <span class="uk-link">upload</span> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="uk-width-1-2@m"> 
+                                        <form> 
+                                            <div class="uk-margin"> 
+                                                <label> Title </label>                                                 
+                                                <input class="uk-input uk-form-width-large" placeholder="Title" type="text"> 
+                                            </div>                                             
+                                            <div class="uk-margin"> 
+                                                <label> Description </label>                                                 
+                                                <textarea class="uk-textarea" rows="5" placeholder="Description"></textarea>                                                 
+                                            </div>                                             
+                                        </form>                                         
+                                    </div>                                     
+                                </div>                                 
+                                <hr> 
+                                <div uk-grid> 
+                                    <div class="uk-width-1-2@m"> 
+                                        <form action="/file-upload" class="dropzone  id=" y-awesome-dropzone""> 
+                                            <div class="fallback"> 
+                                                <input name="file" type="file" multiple/> 
+                                            </div>                                             
+                                        </form>                                         
+                                        <div class="uk-margin"> 
+                                            <span class="uk-text-middle uk-text-small"> Recomended 586 x 336</span> 
+                                            <div uk-form-custom="" class="uk-form-custom"> 
+                                                <input type="file"> 
+                                                <span class="uk-link">upload</span> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="uk-width-1-2@m"> 
+                                        <form> 
+                                            <div class="uk-margin"> 
+                                                <label> Title </label>                                                 
+                                                <input class="uk-input uk-form-width-large" placeholder="Title" type="text"> 
+                                            </div>                                             
+                                            <div class="uk-margin"> 
+                                                <label> Description </label>                                                 
+                                                <textarea class="uk-textarea" rows="5" placeholder="Description"></textarea>                                                 
+                                            </div>                                             
+                                        </form>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </li>                             
+                        </ul>                         
+                        <div class="uk-modal-footer uk-text-right"> 
+                            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>                             
+                            <button class="uk-button uk-button-primary" type="button">Save</button>                             
+                        </div>                         
+                    </div>                     
+                </div>                 
+                <div class="uk-background-default uk-position-relative uk-box-shadow-medium"> 
+                    <h5 class="uk-padding-small uk-margin-remove uk-text-bold  uk-text-left"> Your Scirpts  </h5> 
+                    <p class="uk-position-top-right uk-position-small"> 12 Scripts Stored </p> 
+                    <hr class="uk-margin-remove"> 
+                    <div class="uk-padding-small" uk-grid> 
+                        <div class="uk-width-1-3@m uk-visible@m"> 
+                            <img src="../assets/images/scripts/scritps.jpg" alt="" class="uk-animation-fade"> 
+                            <h6 class="uk-heading-line uk-text-center uk-margin-small"><span>Feature shoots</span></h6> 
+                            <div class="uk-position-relative uk-visible-toggle uk-light uk-margin-small" uk-slider> 
+                                <ul class="uk-slider-items uk-grid-small uk-child-width-1-2@m uk-child-width-1-3@s" uk-grid> 
+                                    <li class="uk-active"> 
+                                        <img src="../assets/images/scripts/script-description-feature.jpg"> 
+                                    </li>                                     
+                                    <li> 
+                                        <img src="../assets/images/scripts/script-description-feature.jpg"> 
+                                    </li>                                     
+                                    <li> 
+                                        <img src="../assets/images/scripts/script-description-feature.jpg"> 
+                                    </li>                                     
+                                    <li> 
+                                        <img src="../assets/images/scripts/script-description-feature.jpg"> 
+                                    </li>                                     
+                                </ul>                                 
+                                <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a> 
+                                <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a> 
+                            </div>                             
+                        </div>                         
+                        <div class="uk-width-expand"> 
+                            <div class="uk-align-right"> 
+                                <a class="el-content uk-button uk-button-primary uk-circle" href="Homepage.html"> <i class="fas fa-check"></i> Edit </a> 
+                                <a class="el-content uk-button uk-button-danger uk-circle" href="Homepage.html"> <i class="fas fa-times"></i>  Delete  </a> 
+                            </div>                             
+                            <h3 class="uk-margin-top"> Modeno simple template </h3> 
+                            <h5 class="uk-margin-remove"> Catagory : Html5 Templates </h5> 
+                            <h5 class="uk-margin-small uk-text-muted"> Theme Description</h5> 
+                            <p> Lorem ipsum dolor sit amet, est ei idque voluptua copiosae, pro detracto disputando reformidans at, ex vel suas eripuit. Vel alii zril maiorum ex, mea id sale eirmod epicurei. Sit te possit senserit, eam alia veritus maluisset ei, id cibo vocent ocurreret per. Te qui doming doclus referrentur, usu debet tamquam et. Sea ut nullam aperiam, mei cu tollit salutatus delicatissimi. His appareat perfecto intellegat te. </p> 
+                        </div>                         
+                    </div>                     
+                    <hr> 
+                    <div class="uk-padding-small" uk-grid> 
+                        <div class="uk-width-1-3@m uk-visible@m"> 
+                            <img src="../assets/images/scripts/scritps.jpg" alt="" class="uk-animation-fade"> 
+                            <h6 class="uk-heading-line uk-text-center uk-margin-small"><span>Feature shoots</span></h6> 
+                            <div class="uk-position-relative uk-visible-toggle uk-light uk-margin-small" uk-slider> 
+                                <ul class="uk-slider-items uk-grid-small uk-child-width-1-2@m uk-child-width-1-3@s" uk-grid> 
+                                    <li class="uk-active"> 
+                                        <img src="../assets/images/scripts/script-description-feature.jpg"> 
+                                    </li>                                     
+                                    <li> 
+                                        <img src="../assets/images/scripts/script-description-feature.jpg"> 
+                                    </li>                                     
+                                    <li> 
+                                        <img src="../assets/images/scripts/script-description-feature.jpg"> 
+                                    </li>                                     
+                                    <li> 
+                                        <img src="../assets/images/scripts/script-description-feature.jpg"> 
+                                    </li>                                     
+                                </ul>                                 
+                                <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a> 
+                                <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a> 
+                            </div>                             
+                        </div>                         
+                        <div class="uk-width-expand"> 
+                            <div class="uk-align-right"> 
+                                <a class="el-content uk-button uk-button-primary uk-circle" href="Homepage.html"> <i class="fas fa-check"></i> Edit </a> 
+                                <a class="el-content uk-button uk-button-danger uk-circle" href="Homepage.html"> <i class="fas fa-times"></i>  Delete  </a> 
+                            </div>                             
+                            <h3 class="uk-margin-top"> Modeno simple template </h3> 
+                            <h5 class="uk-margin-remove"> Catagory : Html5 Templates </h5> 
+                            <h5 class="uk-margin-small uk-text-muted"> Theme Description</h5> 
+                            <p> Lorem ipsum dolor sit amet, est ei idque voluptua copiosae, pro detracto disputando reformidans at, ex vel suas eripuit. Vel alii zril maiorum ex, mea id sale eirmod epicurei. Sit te possit senserit, eam alia veritus maluisset ei, id cibo vocent ocurreret per. Te qui doming doctus referrentur, usu debet tamquam et. Sea ut nullam aperiam, mei cu tollit salutatus delicatissimi. His appareat perfecto intellegat te. </p> 
+                        </div>                         
+                    </div>                     
+                    <hr> 
+                    <div class="uk-padding-small" uk-grid> 
+                        <div class="uk-width-1-3@m uk-visible@m"> 
+                            <img src="../assets/images/scripts/scritps.jpg" alt="" class="uk-animation-fade"> 
+                            <h6 class="uk-heading-line uk-text-center uk-margin-small"><span>Feature shoots</span></h6> 
+                            <div class="uk-position-relative uk-visible-toggle uk-light uk-margin-small" uk-slider> 
+                                <ul class="uk-slider-items uk-grid-small uk-child-width-1-2@m uk-child-width-1-3@s" uk-grid> 
+                                    <li class="uk-active"> 
+                                        <img src="../assets/images/scripts/script-description-feature.jpg"> 
+                                    </li>                                     
+                                    <li> 
+                                        <img src="../assets/images/scripts/script-description-feature.jpg"> 
+                                    </li>                                     
+                                    <li> 
+                                        <img src="../assets/images/scripts/script-description-feature.jpg"> 
+                                    </li>                                     
+                                    <li> 
+                                        <img src="../assets/images/scripts/script-description-feature.jpg"> 
+                                    </li>                                     
+                                </ul>                                 
+                                <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a> 
+                                <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a> 
+                            </div>                             
+                        </div>                         
+                        <div class="uk-width-expand"> 
+                            <div class="uk-align-right"> 
+                                <a class="el-content uk-button uk-button-primary uk-circle" href="Homepage.html"> <i class="fas fa-check"></i> Edit </a> 
+                                <a class="el-content uk-button uk-button-danger uk-circle" href="Homepage.html"> <i class="fas fa-times"></i>  Delete  </a> 
+                            </div>                             
+                            <h3 class="uk-margin-top"> Modeno simple template </h3> 
+                            <h5 class="uk-margin-remove"> Catagory : Html5 Templates </h5> 
+                            <h5 class="uk-margin-small uk-text-muted"> Theme Description</h5> 
+                            <p> Lorem ipsum dolor sit amet, est ei idque voluptua copiosae, pro detracto disputando reformidans at, ex vel suas eripuit. Vel alii zril maiorum ex, mea id sale eirmod epicurei. Sit te possit senserit, eam alia veritus maluisset ei, id cibo vocent ocurreret per. Te qui doming doctus referrentur, usu debet tamquam et. Sea ut nullam aperiam, mei cu tollit salutatus delicatissimi. His appareat perfecto intellegat te. </p> 
+                        </div>                         
+                    </div>                     
+                </div>                 
+                <div class="uk-padding uk-background-default"> 
+                    <ul class="uk-pagination uk-flex-center uk-margin-medium"> 
+                        <li class="uk-active"> 
+                            <span>1</span> 
+                        </li>                         
+                        <li> 
+                            <a href="#">2</a> 
+                        </li>                         
+                        <li> 
+                            <a href="#">3</a> 
+                        </li>                         
+                        <li> 
+                            <a href="#">4</a> 
+                        </li>                         
+                        <li> 
+                            <a href="#">5</a> 
+                        </li>                         
+                        <li> 
+                            <a href="#"><i class="fas fa-ellipsis-h uk-margin-small-top"></i></a> 
+                        </li>                         
+                        <li> 
+                            <a href="#">12</a> 
+                        </li>                         
+                    </ul>                     
+                    <p>  You are showing 1 to 12 entries</p> 
+                </div>                 
+            </div>             
+        </div>         
+    </body>

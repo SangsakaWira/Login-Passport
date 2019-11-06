@@ -1,0 +1,187 @@
+<html lang="en"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="shortcut icon" href="../assets/images/favicon.png"> 
+        <meta name="description" content=""> 
+        <title> Lesson </title>         
+        <!-- Favicon -->         
+        <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png"> 
+        <!-- Your stylesheet-->         
+        <link rel="stylesheet" href="../assets/css/uikit.css"> 
+        <link rel="stylesheet" href="../assets/css/main.css"> 
+        <link rel="stylesheet" href="../assets/css/admin.css"> 
+        <!-- font awesome -->         
+        <link rel="stylesheet" href="../assets/css/fontawesome.css"> 
+        <!--  javascript -->         
+        <script src="../assets/js/simplebar.js"></script>         
+        <script src="../assets/js/uikit.js"></script>         
+        <!-- for uploads -->         
+        <link rel="stylesheet" href="../assets/css/dropzone.css"> 
+        <script src="../assets/js/dropzone.min.js"></script>         
+    </head>     
+    <body> 
+        <!-- sidebar -->         
+        <div class="admin-side" id="admin-side"> 
+            <a href="#" class="admin-logo"><i class="fas fa-graduation-cap"></i> CoursePlus</a> 
+            <ul data-simplebar> 
+                <li> 
+                    <a href="admin.html"> <i class="fas fa-user"></i> Dashboard  </a>
+                </li>                 
+                <li> 
+                    <a href="admin-books.html"> <i class="fas fa-book-open"></i> Books    </a>
+                </li>                 
+                <li> 
+                    <a href="admin-users.html"> <i class="fas fa-user"></i> Users  </a>
+                </li>                 
+                <li> 
+                    <a href="admin-scripts.html"> <i class="fas fa-code"></i> Scripts    </a>
+                </li>                 
+                <li> 
+                    <a href="admin-courses.html"> <i class="fas fa-play"></i> Courses    </a>
+                </li>                 
+                <li> 
+                    <a href="admin-edite-profile.html"> <i class="fas fa-user"></i> edit profile    </a>
+                </li>                 
+                <ul class="uk-accordion" uk-accordion> 
+                    <li class="uk-open"> 
+                        <a href="ui-components.html" class="uk-accordion-title"> <i class="fas fa-layer-group"></i> sample link </a> 
+                        <div class="uk-accordion-content uk-margin-remove-top" aria-hidden="false"> 
+                            <a href="ui-elements.html">  sample link  1 </a> 
+                            <a href="ui-elements.html">  sample link 2 </a> 
+                            <a href="ui-elements.html">  sample link  3</a> 
+                        </div>                         
+                    </li>                     
+                    <li class=" uk-margin-remove-top"> 
+                        <a href="ui-components.html" class="uk-accordion-title"> <i class="fas fa-layer-group"></i> sample link  </a> 
+                        <div class="uk-accordion-content uk-margin-remove-top" hidden="" aria-hidden="true"> 
+                            <a href="ui-components.html"> sample link  </a> 
+                        </div>                         
+                    </li>                     
+                </ul>                 
+                <li> 
+                    <a href="admin-login.html"> <i class="fas fa-user"></i> Logut </a>
+                </li>                 
+            </ul>             
+        </div>         
+        <!-- mobile  header -->         
+        <div class="admin-mobile-headder uk-hidden@m"> 
+            <span uk-toggle="target: #admin-side; cls: admin-side-active" class="uk-padding-small uk-text-white uk-float-right"><i class="fas fa-bars"></i></span> 
+            <a class="uk-logo" href="index.html"> <i class="fas fa-graduation-cap"> </i> CoursePlus </a> 
+        </div>         
+        <!-- main contant -->         
+        <div class="admin-content"> 
+            <!-- navbar -->             
+            <nav class="uk-navbar"> 
+                <div class="uk-navbar-left"> 
+                    <ul class="uk-navbar-nav"> 
+                        <li class="uk-active"> 
+                            <a href="admin.html">Dashboard</a> 
+                        </li>                         
+                        <li> 
+                            <a href="admin-edite-profile.html"> Users profile</a> 
+                        </li>                         
+                    </ul>                     
+                </div>                 
+                <!-- right navbar  -->                 
+                <div class="uk-navbar-right"> 
+                    <!-- User profile -->                     
+                    <a href="#"> 
+                        <img src="../assets/images/avatures/avature-2.png" alt="" class="uk-border-circle user-profile-tiny"> 
+                    </a>                     
+                    <div uk-dropdown="pos: top-right ;mode : click ;animation: uk-animation-slide-bottom-small" class="uk-dropdown uk-padding-small angle-top-right uk-dropdown-bottom-right" > 
+                        <p class="uk-margin-remove-bottom uk-margin-small-top uk-text-bold"> Hamse Mohamoud  </p>                                          
+                        <ul class="uk-nav uk-dropdown-nav"> 
+                            <li> 
+                                <a href="Profile.html"> <i class="fas fa-user uk-margin-small-right"></i> Profile</a> 
+                            </li>                                             
+                            <li> 
+                               <a href="admin-edite-profile.html"> <i class="fas fa-cog uk-margin-small-right"></i> Setting</a>                                 </li>                                             
+                            <li class="uk-nav-divider"></li>                                             
+                            <li> 
+                                <a href="admin-login.html"> <i class="fas fa-sign-out-alt uk-margin-small-right"></i> Log out</a> 
+                            </li>                                             
+                        </ul>                                         
+                    </div>                     
+                </div>                 
+            </nav>             
+            <div class="admin-content-inner"> 
+                <div class="uk-card-small uk-card-default"> 
+                    <div class="uk-card-header uk-text-bold">
+                        <i class="fas fa-user uk-margin-small-right"></i> Profile details 
+                    </div>                     
+                    <div class="uk-card-body "> 
+                        <div uk-grid> 
+                            <div class="uk-width-1-3@m"> 
+                                <p>Your profile photo</p> 
+                                <form action="/file-upload" class="dropzone  id=" y-awesome-dropzone""> 
+                                    <div class="fallback"> 
+                                        <input name="file" type="file" multiple/> 
+                                    </div>                                     
+                                </form>
+                                <p>Recomend size 50 x 50</p>
+                            </div>                             
+                            <div class="uk-width-2-3@m"> 
+                                <form class="uk-grid-small" uk-grid> 
+                                    <div class="uk-width-1-2"> 
+                                        <div class="uk-form-label"> Name  </div>                                         
+                                        <input class="uk-input" type="text" placeholder="Your Name"> 
+                                    </div>                                     
+                                    <div class="uk-width-1-2"> 
+                                        <div class="uk-form-label"> Last name   </div>                                         
+                                        <input class="uk-input" type="text" placeholder="Your Last name"> 
+                                    </div>                                     
+                                    <div class="uk-width-1-2"> 
+                                        <div class="uk-form-label"> Email  </div>                                         
+                                        <input class="uk-input" type="text" placeholder="Your Email"> 
+                                    </div>                                     
+                                    <div class="uk-width-1-2"> 
+                                        <div class="uk-form-label"> Telephone  </div>                                         
+                                        <input class="uk-input" type="text" placeholder="Your Telephone"> 
+                                    </div>                                     
+                                    <div class="uk-width-1-1"> 
+                                        <div class="uk-form-label"> Personal info   </div>                                         
+                                        <textarea class="uk-textarea" rows="5" placeholder="Personal info"></textarea>                                         
+                                    </div>                                     
+                                </form>                                 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </div>                 
+                <div class="uk-margin-medium"> 
+                    <div uk-grid> 
+                        <div class="uk-width-1-2@m"> 
+                            <div class="uk-card-small uk-card-default"> 
+                                <div class="uk-card-header uk-text-bold">
+                                    <i class="fas fa-envelope uk-margin-small-right"></i> Change  Email 
+                                </div>                                 
+                                <div class="uk-card-body uk-padding-remove-top"> 
+                                    <div class="uk-form-label"> Old email  </div>                                     
+                                    <input class="uk-input" type="text"> 
+                                    <div class="uk-form-label"> New email  </div>                                     
+                                    <input class="uk-input" type="text"> 
+                                    <div class="uk-form-label"> Confirm new email  </div>                                     
+                                    <input class="uk-input" type="text"> 
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                        <div class="uk-width-1-2@m"> 
+                            <div class="uk-card-small uk-card-default"> 
+                                <div class="uk-card-header uk-text-bold"> 
+                                    <i class="fas fa-lock uk-margin-small-right"></i> Change password 
+                                </div>                                 
+                                <div class="uk-card-body uk-padding-remove-top"> 
+                                    <div class="uk-form-label"> Old password  </div>                                     
+                                    <input class="uk-input" type="text"> 
+                                    <div class="uk-form-label"> New password  </div>                                     
+                                    <input class="uk-input" type="text"> 
+                                    <div class="uk-form-label"> Confirm new password  </div>                                     
+                                    <input class="uk-input" type="text"> 
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                    <input class="uk-button uk-button-grey  uk-margin" type="submit" class="button" value="Sign in"> 
+                </div>                 
+            </div>             
+    </body>
